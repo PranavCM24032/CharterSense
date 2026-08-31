@@ -1,0 +1,956 @@
+/**
+ * CharterSense — White, Yellow & Black Enterprise Design System
+ * Application: Steel Authority of India Limited (SAIL) Ocean Freight & Chartering System
+ * Theme: Crisp White Canvas · Rich Charcoal/Black Typography · Industrial Gold/Yellow Accents
+ */
+
+:root {
+  /* White & Light Canvas Tokens */
+  --bg-app: #F8FAFC;
+  --bg-subnav: #FFFFFF;
+  --bg-panel: #FFFFFF;
+  --bg-panel-secondary: #F1F5F9;
+  --bg-input: #FFFFFF;
+  --bg-hover: #FEF9C3;
+
+  /* Crisp Borders */
+  --border-color: #E2E8F0;
+  --border-subtle: #F1F5F9;
+  --border-dark: #0F172A;
+  --border-focus: #F59E0B;
+  --panel-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  --card-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.05);
+
+  /* Iconic White + Yellow + Black Accents */
+  --brand-yellow: #F59E0B;
+  --brand-yellow-light: #FEF08A;
+  --brand-yellow-subtle: #FFFBEB;
+  --brand-yellow-hover: #D97706;
+  --brand-black: #0F172A;
+  --brand-black-deep: #020617;
+  --brand-charcoal: #1E293B;
+
+  /* Functional Status Accents */
+  --accent-emerald: #059669;
+  --accent-emerald-subtle: #ECFDF5;
+  --accent-blue: #2563EB;
+  --accent-blue-subtle: #EFF6FF;
+  --accent-red: #DC2626;
+  --accent-red-subtle: #FEF2F2;
+
+  /* Vessel Taxonomy Colors (High Contrast on White) */
+  --color-capesize: #0F172A;   /* Onyx Black */
+  --color-panamax: #D97706;    /* Industrial Amber Yellow */
+  --color-supramax: #0284C7;   /* Deep Marine Blue */
+
+  /* High Legibility Typography Tokens */
+  --text-main: #0F172A;
+  --text-muted: #475569;
+  --text-dim: #64748B;
+  --text-light: #94A3B8;
+
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* ============================================================
+   1. RESET & BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.enterprise-theme {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* ============================================================
+   2. APP HEADER (WHITE + BLACK + YELLOW ACCENTS)
+   ============================================================ */
+.app-header {
+  background: #FFFFFF;
+  border-bottom: 2px solid var(--brand-black);
+  padding: 14px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.org-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sail-emblem {
+  background: var(--brand-black);
+  color: var(--brand-yellow);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 2px solid var(--brand-yellow);
+  box-shadow: 2px 2px 0 var(--brand-black);
+}
+
+.system-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--brand-black);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.system-version {
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--brand-yellow-light);
+  color: #854D0E;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid #FACC15;
+  font-family: var(--font-mono);
+}
+
+.org-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.tender-meta {
+  background: var(--brand-yellow-subtle);
+  border: 1px solid #FDE047;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.meta-label {
+  color: #854D0E;
+  font-weight: 500;
+}
+
+.meta-val {
+  color: var(--brand-black);
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+.connection-status.standalone {
+  background: var(--brand-yellow-subtle);
+  color: #854D0E;
+  border-color: #FDE047;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.system-time {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--brand-black);
+  background: #F1F5F9;
+  padding: 5px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Sub-Header Workspace Bar */
+.workspace-bar {
+  background: #FFFFFF;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+}
+
+.workspace-title {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.workspace-title strong {
+  color: var(--brand-black);
+}
+
+.workspace-title .sep {
+  color: var(--text-dim);
+}
+
+.ws-active {
+  color: #D97706;
+  font-weight: 600;
+}
+
+.workspace-tools {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-tool {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  color: var(--brand-black);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.btn-tool:hover {
+  background: var(--brand-yellow-subtle);
+  border-color: var(--brand-yellow);
+  color: #854D0E;
+}
+
+/* ============================================================
+   3. APP MAIN LAYOUT & KPI STRIP
+   ============================================================ */
+.app-main {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 24px 32px 60px;
+}
+
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kpi-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--brand-yellow);
+  border-radius: 6px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: var(--panel-shadow);
+}
+
+.kpi-box-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kpi-box-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+
+.kpi-trend {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.kpi-trend.positive {
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+.kpi-trend.blue {
+  background: var(--brand-yellow-light);
+  color: #854D0E;
+  border: 1px solid #FDE047;
+}
+
+.kpi-trend.neutral {
+  background: #F1F5F9;
+  color: var(--brand-black);
+  border: 1px solid var(--border-color);
+}
+
+.kpi-trend.verified {
+  background: #EFF6FF;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+}
+
+.kpi-box-val {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--brand-black);
+  margin: 2px 0;
+}
+
+.kpi-box-sub {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   4. PANEL UTILITY & FILTER BAR
+   ============================================================ */
+.panel {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--panel-shadow);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.panel-title {
+  font-size: 15px;
+  color: var(--brand-black);
+}
+
+.panel-title strong {
+  font-weight: 700;
+}
+
+.panel-subtitle {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+.pill-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  background: #F1F5F9;
+  border: 1px solid var(--border-color);
+  padding: 3px 9px;
+  border-radius: 4px;
+  color: var(--brand-black);
+}
+
+/* Parameter Controls Grid */
+.filter-panel {
+  background: #FFFFFF;
+  border-left: 4px solid var(--brand-yellow);
+}
+
+.scenario-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.scenario-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.btn-scenario {
+  background: #F8FAFC;
+  border: 1px solid var(--border-color);
+  color: var(--brand-black);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-scenario:hover {
+  background: var(--brand-yellow-light);
+  border-color: var(--brand-yellow);
+  color: #854D0E;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--brand-black);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.form-control {
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-color);
+  color: var(--brand-black);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 12px;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.form-control:focus {
+  border-color: var(--brand-yellow);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+.form-control-sm {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.input-with-addon {
+  position: relative;
+}
+
+.input-addon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+/* Primary Action Button (High Contrast Solid Black + Yellow Accent) */
+.btn-primary {
+  background: var(--brand-black);
+  color: #FFFFFF;
+  border: 2px solid var(--brand-black);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  height: 38px;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background: var(--brand-yellow);
+  border-color: var(--brand-yellow);
+  color: var(--brand-black);
+}
+
+/* ============================================================
+   5. TWO-COLUMN SPLIT (Map + Fixture)
+   ============================================================ */
+.dashboard-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.map-container {
+  background: #F8FAFC;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.map-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.corridor-meta-bar {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.corridor-desc {
+  font-size: 12px;
+  color: var(--text-main);
+  font-weight: 500;
+  font-family: var(--font-mono);
+  background: var(--brand-yellow-subtle);
+  padding: 8px 12px;
+  border: 1px solid #FDE047;
+  border-radius: 4px;
+}
+
+.draft-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+}
+
+.chip-success {
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+.chip-warning {
+  background: #FFFBEB;
+  color: #854D0E;
+  border: 1px solid #FDE047;
+}
+
+/* Recommended Fixture Card */
+.fixture-summary-panel {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--brand-black);
+}
+
+.status-tag-recommended {
+  background: var(--brand-yellow);
+  color: var(--brand-black);
+  border: 1px solid #D97706;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.03em;
+}
+
+.fixture-highlight-box {
+  background: #FFFBEB;
+  border: 1.5px solid #FDE047;
+  border-radius: 6px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.highlight-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #854D0E;
+  letter-spacing: 0.05em;
+}
+
+.highlight-cost-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 6px 0;
+}
+
+.highlight-amount {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--brand-black);
+}
+
+.savings-tag {
+  background: #10B981;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+}
+
+.highlight-sub {
+  font-size: 12px;
+  color: #78350F;
+  font-family: var(--font-mono);
+}
+
+.fixture-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+
+.detail-tile {
+  background: #F8FAFC;
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--brand-black);
+  border-radius: 4px;
+  padding: 11px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tile-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+
+.tile-val {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--brand-black);
+}
+
+/* ============================================================
+   6. CHART & FORECASTING
+   ============================================================ */
+.vessel-legend {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--brand-black);
+  font-weight: 600;
+}
+
+.legend-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.color-dot.capesize { background: var(--color-capesize); }
+.color-dot.panamax { background: var(--color-panamax); }
+.color-dot.supramax { background: var(--color-supramax); }
+
+.chart-wrapper {
+  position: relative;
+  height: 380px;
+  width: 100%;
+  margin: 14px 0 8px;
+  background: #FFFFFF;
+}
+
+#forecastChart {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.chart-foot {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ============================================================
+   7. LAYCAN LEDGER TIMELINE
+   ============================================================ */
+.ledger-indicators {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.ind-box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.ind-box.best { background: #F59E0B; }
+.ind-box.normal { background: #0F172A; }
+.ind-box.risk { background: #DC2626; }
+
+.ledger-container {
+  padding: 12px 0;
+  overflow-x: auto;
+}
+
+.ledger-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 14px;
+}
+
+.ledger-label {
+  width: 135px;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.ledger-label b {
+  display: block;
+  font-size: 13.5px;
+  color: var(--brand-black);
+  font-weight: 700;
+}
+
+.ledger-track {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  min-width: 600px;
+}
+
+.ledger-cell {
+  flex: 1;
+  min-width: 14px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  background: #F1F5F9;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: all 0.15s ease;
+}
+
+.ledger-cell:hover {
+  border-color: var(--brand-black);
+  transform: translateY(-2px);
+  z-index: 10;
+}
+
+.ledger-cell.best {
+  border: 2px solid var(--brand-yellow);
+  background: #FEF9C3;
+}
+
+.ledger-cell .fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--brand-black);
+  border-radius: 0 0 1px 1px;
+  transition: height 0.25s ease;
+}
+
+.ledger-cell.best .fill {
+  background: var(--brand-yellow);
+}
+
+.ledger-cell .tip {
+  position: absolute;
+  bottom: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--brand-black);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  display: none;
+  z-index: 20;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.ledger-cell:hover .tip {
+  display: block;
+}
+
+.ledger-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 149px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+/* ============================================================
+   8. DATA TABLE
+   ============================================================ */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.enterprise-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  text-align: left;
+}
+
+.enterprise-table th, .enterprise-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.enterprise-table th {
+  background: #F8FAFC;
+  color: var(--brand-black);
+  font-weight: 700;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.enterprise-table tbody tr:hover {
+  background: #FEF9C3;
+}
+
+.enterprise-table tr.best-row {
+  background: #FFFBEB;
+}
+
+.enterprise-table tr.best-row td {
+  color: #854D0E;
+  font-weight: 700;
+}
+
+.status-badge-tbl {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+}
+
+.status-badge-tbl.optimal {
+  background: var(--brand-yellow);
+  color: var(--brand-black);
+  border: 1px solid #D97706;
+}
+
+.status-badge-tbl.viable {
+  background: #F1F5F9;
+  color: var(--text-dim);
+  border: 1px solid var(--border-color);
+}
+
+/* ============================================================
+   9. ENTERPRISE FOOTER
+   ============================================================ */
+.app-footer {
+  background: #FFFFFF;
+  border-top: 1px solid var(--border-color);
+  padding: 22px 32px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.footer-container {
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: #F8FAFC;
+  border: 1px solid var(--border-color);
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--brand-black);
+  font-family: var(--font-mono);
+}

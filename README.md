@@ -1,150 +1,57 @@
-# CharterSense 🚢
+# CharterSense — Intelligent Freight Rate Forecasting & Vessel Charter Optimization
 
-> **Smart Freight Rate Forecasting & Vessel Charter Optimization for SAIL**
-> Built for Smart India Hackathon (SIH) 2026
-
-CharterSense is a full-stack AI-powered platform that helps SAIL (Steel Authority of India Limited) make data-driven decisions on when to charter vessels, which vessel class to use, and what freight rates to expect — minimizing chartering costs through intelligent forecasting.
-
----
-
-## ✨ Features
-
-- 📈 **Freight Rate Forecasting** — Prophet + ARIMA ensemble model predicting 30/60/90-day freight rate trends
-- 🛳️ **Charter Recommendation Engine** — Optimal vessel class and timing suggestions with risk scoring
-- 🌐 **Port Compatibility** — Route-wise port suitability and constraints
-- 📊 **Risk Advisory Dashboard** — Real-time KPIs, volatility indicators, and market signals
-- 🐳 **Dockerized** — Both services containerized and ready to deploy
+> **SIH 2026 Problem Statement ID:** 26006  
+> **Organization:** Ministry of Steel — Steel Authority of India Limited (SAIL)  
+> **Domain:** Software · Maritime Logistics & Supply Chain Procurement
 
 ---
 
-## 🧱 Tech Stack
+## 🚢 Overview
 
-| Layer | Technology |
-|---|---|
-| **Backend** | FastAPI (Python 3.11) |
-| **Frontend** | React 18 + Vite + Tailwind CSS |
-| **ML Models** | Prophet, ARIMA (statsmodels), scikit-learn |
-| **Data** | Synthetic freight market data (Python-generated) |
-| **Infra** | Docker |
+**CharterSense** is an AI-powered decision support platform built for **SAIL (Steel Authority of India Limited)** to optimize ocean freight procurement for bulk raw material imports (coking coal, iron ore, limestone) shipped to the East Coast of India (Visakhapatnam, Paradip, Haldia).
+
+The system replaces manual, error-prone daily market exploration with:
+- **Time-Series Forecasting Engine:** Ensembles Seasonal ARIMA and Mean-Reverting regularized models to forecast 60-day freight trajectories across Capesize, Panamax, and Supramax vessels.
+- **Port Draft & Berthing Feasibility Solver:** Enforces Salt Water Draft (SWD) limitations and automatically excludes non-feasible vessel classes (e.g. Capesize restrictions at Haldia).
+- **Laycan Procurement Optimizer:** Evaluates laytime windows, base freight, late delivery penalties, and congestion demurrage risks to pinpoint the minimum net procurement fixture.
+- **Interactive Maritime Radar Map:** Visualizes shipping corridors from major global loading ports (Port Hedland AU, Richards Bay SA, Samarinda ID, Tubarão BR) to Indian discharge terminals.
 
 ---
 
-## 🗂️ Project Structure
+## 💻 Tech Stack
 
-```
-SIH/
-├── chartersense-backend/        # FastAPI backend
-│   ├── app/
-│   │   ├── main.py              # App entry point + CORS
-│   │   ├── routes/              # API route handlers
-│   │   │   ├── forecast.py
-│   │   │   ├── charter.py
-│   │   │   └── dashboard.py
-│   │   ├── services/            # Business logic
-│   │   │   ├── forecast_service.py
-│   │   │   ├── optimization_service.py
-│   │   │   └── data_generator.py
-│   │   └── models/              # Pydantic schemas
-│   │       └── freight.py
-│   ├── requirements.txt
-│   └── Dockerfile
-│
-├── chartersense-frontend/       # React + Vite frontend
-│   ├── src/
-│   ├── package.json
-│   └── Dockerfile
-│
-└── README.md
-```
+- **Backend:** Python 3 (FastAPI, NumPy, Pandas, Statsmodels ARIMA, Uvicorn)
+- **Frontend:** HTML5, CSS3 Enterprise Design System, JavaScript (ES6+), Chart.js & HTML5 Canvas
+- **Architecture:** Dual-mode execution (FastAPI Full-Stack & Zero-Dependency Standalone Browser Engine)
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Option 1: Full-Stack Mode (FastAPI + Web UI)
 
-- Python 3.10+
-- Node.js 18+
+1. **Install Dependencies:**
+   ```bash
+   pip install fastapi uvicorn pandas numpy statsmodels
+   ```
 
-### Backend
+2. **Start the Platform:**
+   ```bash
+   python main.py
+   ```
 
-```bash
-cd chartersense-backend
-
-# Create and activate virtual environment
-python -m venv .venv
-
-# Windows
-.venv\Scripts\activate
-# macOS / Linux
-source .venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the server
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-API docs available at → **http://localhost:8000/docs**
-
-### Frontend
-
-```bash
-cd chartersense-frontend
-npm install
-npm run dev
-```
-
-Open → **http://localhost:3000**
+3. **Access in Browser:**
+   - Web Platform: [http://localhost:8000](http://localhost:8000)
+   - Interactive Swagger API Documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
-## 🐳 Docker (Optional)
+### Option 2: Standalone Zero-Server Mode
 
-```bash
-# Backend
-cd chartersense-backend
-docker build -t chartersense-backend .
-docker run -p 8000:8000 chartersense-backend
-
-# Frontend
-cd chartersense-frontend
-docker build -t chartersense-frontend .
-docker run -p 3000:3000 chartersense-frontend
-```
+Simply open `index.html` in any modern web browser. The built-in client engine automatically runs all statistical forecasts, route mappings, and fixture optimizations client-side.
 
 ---
 
-## 📡 API Reference
+## 👥 Authors
 
-| Method | Endpoint | Description |
-|---|---|---|
-| `POST` | `/api/forecast/predict` | Get freight rate forecast |
-| `GET` | `/api/forecast/routes` | List available routes |
-| `GET` | `/api/forecast/vessel-classes` | List vessel classes |
-| `POST` | `/api/charter/recommend` | Get charter recommendation |
-| `GET` | `/api/charter/ports` | List ports with metadata |
-| `GET` | `/api/dashboard/kpi` | Fetch dashboard KPIs |
-
----
-
-## 🧪 Demo Flow
-
-1. Select a **route** (e.g., Australia → East Coast India)
-2. Select a **vessel class** (Capesize / Panamax / Supramax)
-3. Click **Generate Forecast** — see 30/60/90-day rate predictions with confidence bands
-4. Click **Get Charter Recommendation** — get optimal charter window + risk score
-5. Review the **Dashboard** for live KPIs and market signals
-
----
-
-## ⚠️ Disclaimer
-
-This is a **synthetic prototype** built for SIH 2026 evaluation. All freight data is procedurally generated for demonstration purposes and does not represent real market data.
-
----
-
-## 📄 License
-
-[MIT](./LICENSE)
+Developed for **Smart India Hackathon 2026 (PS 26006)**.

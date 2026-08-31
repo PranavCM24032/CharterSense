@@ -1,13 +1,307 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CharterSense</title>
-    <meta name="description" content="AI-powered freight forecasting and charter recommendation platform" />
-  </head>
-  <body class="bg-slate-100">
-    <div id="root"></div>
-    <script type="module" src="./chartersense-frontend/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CharterSense Enterprise </title>
+  <meta name="description"
+    content="Steel Authority of India Limited (SAIL) Ocean Freight Rate Forecasting & Vessel Chartering Decision-Support System." />
+
+  <!-- Professional Enterprise Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+
+  <!-- Enterprise Design System -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="enterprise-theme">
+
+  <!-- Enterprise Application Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="org-brand">
+        <div class="sail-emblem">
+          <span>SAIL</span>
+        </div>
+        <div class="org-titles">
+          <div class="system-title">CharterSense</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="header-right">
+      <div id="apiStatusBadge" class="connection-status connected">
+        <span class="status-dot"></span>
+        <span id="apiStatusText">Connected to Analytics Service</span>
+      </div>
+      <div class="system-time" id="liveClock">00:00:00 UTC</div>
+    </div>
+  </header>
+
+  <!-- Sub-Header Workspace Bar -->
+  <div class="workspace-bar">
+    <div class="workspace-title">
+      <strong>Overseas Raw Material Inbound Logistics</strong>
+      <span class="sep">/</span>
+      <span class="ws-active">East Coast India Import Corridors (Coking Coal &amp; Iron Ore)</span>
+    </div>
+    <div class="workspace-tools">
+      <button type="button" class="btn-tool" id="exportBtn">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Export Procurement Note (CSV)
+      </button>
+      <button type="button" class="btn-tool" onclick="window.print()">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        Print Executive Brief
+      </button>
+    </div>
+  </div>
+
+  <main class="app-main">
+
+
+
+    <!-- Procurement Parameters & Controls Toolbar -->
+    <section class="panel filter-panel">
+      <div class="panel-header">
+        <div class="panel-title">
+          <strong>Cargo Procurement &amp; Laycan Window Parameters</strong>
+        </div>
+        <div class="scenario-buttons">
+          <span class="scenario-label">Presets:</span>
+          <button type="button" class="btn-scenario" data-port="Vizag" data-cargo="Coking Coal"
+            data-tonnage="150000">150k MT Coal → Vizag (Capesize)</button>
+          <button type="button" class="btn-scenario" data-port="Paradip" data-cargo="Iron Ore"
+            data-tonnage="120000">120k MT Ore → Paradip</button>
+          <button type="button" class="btn-scenario" data-port="Haldia" data-cargo="Coking Coal"
+            data-tonnage="70000">70k MT Panamax → Haldia (Draft Check)</button>
+        </div>
+      </div>
+
+      <div class="filter-grid">
+        <div class="form-group">
+          <label for="portSel">Discharge Port (East Coast India)</label>
+          <select id="portSel" class="form-control">
+            <option value="Vizag" selected>Visakhapatnam Port (Vizag · Max Draft 18.5m)</option>
+            <option value="Paradip">Paradip Port Authority (Max Draft 17.1m)</option>
+            <option value="Haldia">Haldia Dock Complex (Max Draft 12.5m · Shallow)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cargoSel">Cargo Commodity</label>
+          <select id="cargoSel" class="form-control">
+            <option value="Coking Coal" selected>Hard Coking Coal (Metallurgical)</option>
+            <option value="Iron Ore">Iron Ore (Fines / Pellets)</option>
+            <option value="Limestone">Limestone / Dolomite (Flux)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tonnageInp">Required Volume (Metric Tons)</label>
+          <div class="input-with-addon">
+            <input id="tonnageInp" type="number" min="10000" max="500000" step="5000" value="150000"
+              class="form-control" />
+            <span class="input-addon">MT</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="laycanStart">Earliest Laycan Date</label>
+          <input id="laycanStart" type="date" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="laycanEnd">Latest Laycan Date</label>
+          <input id="laycanEnd" type="date" class="form-control" />
+        </div>
+
+        <div class="form-group form-action">
+          <button id="runBtn" class="btn-primary">
+            Run Optimization Engine
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Two-Column Grid: Corridor Berth Compatibility + Optimal Recommendation -->
+    <div class="dashboard-split">
+
+      <!-- Maritime Shipping Corridor & Draft Analysis -->
+      <section class="panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <strong>Maritime Trade Corridors &amp; Port Compatibility</strong>
+          </div>
+          <span class="pill-badge">Active Radar Map</span>
+        </div>
+
+        <div class="map-container">
+          <svg id="routeSvg" viewBox="0 0 580 300" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+
+        <div class="corridor-meta-bar">
+          <div class="corridor-desc" id="routeCaption">
+            Loading route specifications...
+          </div>
+          <div class="draft-chips">
+            <span class="chip chip-success">Vizag: Capesize / Panamax / Supramax</span>
+            <span class="chip chip-success">Paradip: Capesize / Panamax / Supramax</span>
+            <span class="chip chip-warning">Haldia: Panamax / Supramax (Draft &le; 12.5m)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Optimal Recommended Fixture -->
+      <section class="panel fixture-summary-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <strong>Optimal Charter Fixture Recommendation</strong>
+          </div>
+          <span class="status-tag-recommended">RECOMMENDED FIXTURE</span>
+        </div>
+
+        <div class="fixture-highlight-box">
+          <div class="highlight-main">
+            <span class="highlight-label">PROJECTED TOTAL PROCUREMENT EXPENDITURE</span>
+            <div class="highlight-cost-line">
+              <span id="recCost" class="highlight-amount">$0</span>
+              <span id="recSavingsPill" class="savings-tag">SAVE 12.3%</span>
+            </div>
+            <div id="recModelQuality" class="highlight-sub">Model: MAE $0.42/t · 95% Confidence Interval</div>
+          </div>
+        </div>
+
+        <div class="fixture-details-grid" id="recGrid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Multi-Horizon Freight Rate Time-Series Forecast -->
+    <section class="panel chart-panel">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title">
+            <strong>Multi-Horizon Freight Rate Forecast (USD / Metric Ton)</strong>
+          </div>
+          <div class="panel-subtitle">Audited Baltic Exchange Spot History + 60-Day Forward Predictive Trajectory</div>
+        </div>
+        <div class="vessel-legend">
+          <div class="legend-chip"><span class="color-dot capesize"></span> Capesize (180k DWT)</div>
+          <div class="legend-chip"><span class="color-dot panamax"></span> Panamax (75k DWT)</div>
+          <div class="legend-chip"><span class="color-dot supramax"></span> Supramax (55k DWT)</div>
+        </div>
+      </div>
+
+      <div class="chart-wrapper">
+        <canvas id="forecastChart"></canvas>
+      </div>
+
+      <div class="chart-foot">
+        <span>* Forecast trajectory models seasonal demand cycles, monsoon congestion risks, bunker fuel indices, and
+          vessel supply elasticity.</span>
+      </div>
+    </section>
+
+    <!-- Laycan Cost Ledger & Timeline -->
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title">
+            <strong>Laycan Timeline Cost Distribution</strong>
+          </div>
+          <div class="panel-subtitle">Day-by-day simulated procurement cost factoring base ocean freight, delivery
+            window penalties, and demurrage risk</div>
+        </div>
+        <div class="ledger-indicators">
+          <span class="ind-box best"></span> Lowest Cost Window
+          <span class="ind-box normal"></span> Standard Market Range
+          <span class="ind-box risk"></span> High Congestion / Delay Risk
+        </div>
+      </div>
+
+      <div class="ledger-container" id="ledger">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- Comprehensive Candidate Evaluation Matrix -->
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title">
+            <strong>Charter Candidate Evaluation Matrix</strong>
+          </div>
+          <div class="panel-subtitle">Parametric candidate fixtures evaluated across laycan dates, vessel deadweight
+            allocations, and demurrage allowances</div>
+        </div>
+        <div class="table-search-box">
+          <input type="text" id="tableFilter" placeholder="Filter by date or vessel class..."
+            class="form-control form-control-sm" />
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table id="planTable" class="enterprise-table">
+          <thead>
+            <tr>
+              <th>Evaluation Status</th>
+              <th>Charter Laycan Date</th>
+              <th>Vessel Class &amp; DWT</th>
+              <th>Freight Rate ($/t)</th>
+              <th>Base Ocean Freight</th>
+              <th>Late-Window Penalty</th>
+              <th>Demurrage Allowance</th>
+              <th>Total Net Expenditure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Enterprise Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <strong>CharterSense Ocean Freight Decision Support System</strong> · SIH 2026 Problem Statement ID: 26006
+        <br />
+        <span>Developed for Steel Authority of India Limited (SAIL) — Ministry of Steel, Government of India.</span>
+      </div>
+      <div class="footer-right">
+        <span class="tech-tag">FastAPI REST Core</span>
+        <span class="tech-tag">ARIMA Time-Series Engine</span>
+        <span class="tech-tag">Port Draft Protection</span>
+        <span class="tech-tag">HTML5 / CSS3 / ES6</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+
 </html>
