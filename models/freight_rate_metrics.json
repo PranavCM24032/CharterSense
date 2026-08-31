@@ -1,0 +1,31 @@
+{
+  "dataset": "shipping_disruptions.csv",
+  "target": "freight_rate_usd",
+  "training_rows": 2000,
+  "test_rows": 500,
+  "date_range": {
+    "start": "2015-01-04",
+    "end": "2024-12-29"
+  },
+  "validation": {
+    "name": "gradient_boosting",
+    "mae": 472.35,
+    "rmse": 580.76,
+    "r2": 0.0798
+  },
+  "candidates": [
+    {
+      "name": "random_forest",
+      "mae": 477.64,
+      "rmse": 588.94,
+      "r2": 0.0537
+    },
+    {
+      "name": "gradient_boosting",
+      "mae": 472.35,
+      "rmse": 580.76,
+      "r2": 0.0798
+    }
+  ],
+  "note": "Validated on the latest 20% of observations; this dataset models general shipping disruption rates, not bulk-vessel route quotes."
+}

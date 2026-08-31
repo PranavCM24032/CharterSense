@@ -10,9 +10,6 @@
   // ============================================================
   // CONFIG & DOMAIN CONSTANTS
   // ============================================================
-  const PORTS = ["Vizag", "Paradip", "Haldia"];
-  const CARGO_TYPES = ["Coking Coal", "Iron Ore", "Limestone"];
-
   // Vessel capacities in Metric Tons and freight multipliers
   const VESSEL_CLASSES = {
     "Capesize": { dwt: 180000, mult: 0.82, draftLimit: 18.2, color: "#F43F5E" },
@@ -39,35 +36,6 @@
     { name: "Samarinda (ID)", x: 120, y: 160, type: "Coal / Flux" },
     { name: "Tubarão (BR)", x: 40, y: 90, type: "Iron Ore" }
   ];
-
-  const HISTORY_DAYS = 540;
-  const FORECAST_HORIZON = 60;
-  const LAGS = [1, 3, 7, 14, 30];
-  const DEMURRAGE_PER_DAY = 25000;
-  const LATE_PENALTY_PER_DAY = 0.004;
-
-  let seed = 42;
-  function rand() {
-    seed |= 0;
-    seed = (seed + 0x6D2B79F5) | 0;
-    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  }
-
-  function randn(mu = 0, sigma = 1) {
-    const u1 = Math.max(rand(), 1e-9), u2 = rand();
-    return mu + sigma * Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2);
-  }
-
-  function mean(a) {
-    return a.length ? a.reduce((s, v) => s + v, 0) / a.length : 0;
-  }
-
-  function std(a) {
-    const m = mean(a);
-    return Math.sqrt(mean(a.map(v => (v - m) ** 2))) || 1;
-  }
 
   function usd(n) {
     return "$" + Math.round(n).toLocaleString("en-US");
@@ -96,257 +64,8 @@
     return r;
   }
 
-  function sameDay(a, b) {
-    if (!a || !b) return false;
-    return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
-  }
-
-  function dayOfYear(d) {
-    const start = new Date(d.getFullYear(), 0, 0);
-    return Math.floor((d - start) / 86400000);
-  }
-
   // ============================================================
-  // 1. SYNTHETIC MARKET DATA GENERATOR (Client Engine)
-  // ============================================================
-  function generateSyntheticMarketData() {
-    const today = new Date();
-    const start = new Date(today);
-    start.setDate(start.getDate() - HISTORY_DAYS);
-    const n = HISTORY_DAYS + 1;
-    const dates = [];
-    for (let i = 0; i < n; i++) {
-      const d = new Date(start);
-      d.setDate(d.getDate() + i);
-      dates.push(d);
-    }
-
-    const bdi = [], fuel = [], congestion = [];
-    let bdiWalk = 0;
-    for (let i = 0; i < n; i++) {
-      bdiWalk += randn(0, 60) * 0.02;
-      bdi.push(Math.max(400, 1200 + 300 * Math.sin((2 * Math.PI * i) / 365) + 0.15 * i + bdiWalk));
-      fuel.push(550 + 0.05 * i + 40 * Math.sin((2 * Math.PI * (i + 60)) / 365) + randn(0, 8));
-      const doy = dayOfYear(dates[i]);
-      const monsoon = Math.max(0, Math.sin((2 * Math.PI * (doy - 150)) / 365));
-      congestion.push(Math.min(0.95, Math.max(0.05, 0.15 + 0.5 * monsoon + randn(0, 0.05))));
-    }
-
-    const data = {};
-    const portBias = { Vizag: 1.0, Paradip: 1.05, Haldia: 1.12 };
-    const cargoBias = { "Iron Ore": 1.0, "Coking Coal": 1.08, "Limestone": 0.92 };
-
-    PORTS.forEach(port => {
-      data[port] = {};
-      CARGO_TYPES.forEach(cargo => {
-        data[port][cargo] = {};
-        Object.keys(VESSEL_CLASSES).forEach(vclass => {
-          const { mult } = VESSEL_CLASSES[vclass];
-          const bdiMean = mean(bdi), bdiStd = std(bdi);
-          const fuelMean = mean(fuel), fuelStd = std(fuel);
-          const series = [];
-          for (let i = 0; i < n; i++) {
-            let rate = 18.0 * mult * (portBias[port] || 1.0) * (cargoBias[cargo] || 1.0)
-              * (1 + 0.35 * (bdi[i] - bdiMean) / bdiStd)
-              * (1 + 0.20 * (fuel[i] - fuelMean) / fuelStd)
-              * (1 + 0.30 * congestion[i])
-              + randn(0, 0.6);
-            rate = Math.max(6.5, rate);
-            series.push({ date: new Date(dates[i]), bdi: bdi[i], fuel: fuel[i], congestion: congestion[i], rate });
-          }
-          data[port][cargo][vclass] = series;
-        });
-      });
-    });
-    return data;
-  }
-
-  // ============================================================
-  // 2. RIDGE LINEAR REGRESSION ML ENGINE
-  // ============================================================
-  function solveLinearSystem(A, b) {
-    const n = A.length;
-    const M = A.map((row, i) => [...row, b[i]]);
-    for (let col = 0; col < n; col++) {
-      let pivot = col;
-      for (let r = col + 1; r < n; r++) {
-        if (Math.abs(M[r][col]) > Math.abs(M[pivot][col])) pivot = r;
-      }
-      [M[col], M[pivot]] = [M[pivot], M[col]];
-      if (Math.abs(M[col][col]) < 1e-9) M[col][col] = 1e-9;
-      for (let r = 0; r < n; r++) {
-        if (r === col) continue;
-        const f = M[r][col] / M[col][col];
-        for (let c = col; c <= n; c++) M[r][c] -= f * M[col][c];
-      }
-    }
-    return M.map((row, i) => row[n] / row[i]);
-  }
-
-  function fitLinearRegression(X, y) {
-    const n = X.length, p = X[0].length + 1;
-    const Xb = X.map(row => [1, ...row]);
-    const XtX = Array.from({ length: p }, () => Array(p).fill(0));
-    const Xty = Array(p).fill(0);
-    for (let i = 0; i < n; i++) {
-      for (let j = 0; j < p; j++) {
-        Xty[j] += Xb[i][j] * y[i];
-        for (let k = 0; k < p; k++) XtX[j][k] += Xb[i][j] * Xb[i][k];
-      }
-    }
-    for (let j = 0; j < p; j++) XtX[j][j] += 2.0; // Ridge penalty lambda
-    return solveLinearSystem(XtX, Xty);
-  }
-
-  function predictOne(beta, row) {
-    let yhat = beta[0];
-    for (let j = 0; j < row.length; j++) yhat += beta[j + 1] * row[j];
-    return yhat;
-  }
-
-  function buildFeatureRows(series) {
-    const rows = [];
-    for (let i = 0; i < series.length; i++) {
-      if (i < Math.max(...LAGS)) continue;
-      const feats = LAGS.map(lag => series[i - lag].rate);
-      feats.push(
-        series[i].bdi,
-        series[i].fuel,
-        series[i].congestion,
-        dayOfYear(series[i].date),
-        series[i].date.getMonth() + 1,
-        series[i].date.getDay()
-      );
-      rows.push({ x: feats, y: series[i].rate });
-    }
-    return rows;
-  }
-
-  function trainAndForecast(series) {
-    const n = series.length;
-    const rates = series.map(s => s.rate);
-    const recentTail = rates.slice(-90);
-    const meanRate = mean(recentTail);
-    const stdRate = std(recentTail);
-    
-    // Fit momentum parameter and trend
-    let diffs = [];
-    for (let i = 1; i < recentTail.length; i++) {
-      diffs.push(recentTail[i] - recentTail[i - 1]);
-    }
-    const avgDiff = mean(diffs.slice(-14));
-    
-    const cur = series.slice();
-    const forecast = [];
-    let lastRate = cur[cur.length - 1].rate;
-    let lastDelta = diffs[diffs.length - 1] || 0;
-    
-    const baseDate = cur[cur.length - 1].date;
-
-    for (let step = 0; step < FORECAST_HORIZON; step++) {
-      const nextDate = addDays(baseDate, step + 1);
-      const doy = dayOfYear(nextDate);
-      
-      // Seasonal maritime demand component (monsoon + steel production cycle)
-      const seasonalCycle = Math.sin((2 * Math.PI * (doy - 45)) / 365) * 1.8;
-      const monsoonImpact = Math.sin((2 * Math.PI * (doy - 150)) / 365) * 1.2;
-      
-      // Mean reversion pull + momentum decay
-      const reversionPull = (meanRate - lastRate) * 0.045;
-      lastDelta = lastDelta * 0.6 + avgDiff * 0.2 + randn(0, 0.35);
-      
-      let nextRate = lastRate + lastDelta + reversionPull + (seasonalCycle + monsoonImpact) * 0.08;
-      
-      // Soft boundaries
-      nextRate = Math.max(meanRate * 0.65, Math.min(meanRate * 1.5, nextRate));
-      nextRate = Math.round(nextRate * 100) / 100;
-      
-      const point = {
-        date: nextDate,
-        bdi: 1400 + Math.sin(step / 10) * 150,
-        fuel: 580 + Math.cos(step / 8) * 30,
-        congestion: 0.35 + Math.sin(step / 12) * 0.15,
-        rate: nextRate
-      };
-      
-      forecast.push(point);
-      lastRate = nextRate;
-    }
-
-    return {
-      beta: [meanRate, 0.85],
-      mae: Math.max(0.35, Math.round(stdRate * 0.22 * 100) / 100),
-      r2: 0.89,
-      forecast,
-      history: series
-    };
-  }
-
-  // ============================================================
-  // 3. CHARTERING OPTIMIZATION SOLVER
-  // ============================================================
-  function optimizeCharteringPlan(marketData, req) {
-    const { port, cargo, tonnage, laycanStart, laycanEnd } = req;
-    const windowDays = Math.max(1, Math.round((laycanEnd - laycanStart) / 86400000) + 1);
-    const rowsOut = [];
-    const perClassForecast = {};
-    const allowedVessels = PORT_CONSTRAINTS[port] || Object.keys(VESSEL_CLASSES);
-
-    Object.keys(VESSEL_CLASSES).forEach(vclass => {
-      const { dwt } = VESSEL_CLASSES[vclass];
-      const series = marketData[port][cargo][vclass];
-      const result = trainAndForecast(series);
-      perClassForecast[vclass] = result;
-
-      // Restrict shallow ports (e.g. Haldia blocks Capesize)
-      const isAllowed = allowedVessels.includes(vclass);
-      if (!isAllowed) return;
-
-      const fullLoads = Math.max(1, Math.ceil(tonnage / dwt));
-      const leftover = tonnage % dwt;
-      const idleCapacity = leftover ? dwt - leftover : 0;
-      const idlePenaltyDays = leftover ? (idleCapacity / dwt) * 1.5 : 0;
-
-      for (let i = 0; i < windowDays; i++) {
-        const day = addDays(laycanStart, i);
-        let fc = result.forecast.find(f => sameDay(f.date, day));
-        if (!fc) {
-          fc = { rate: result.forecast[result.forecast.length - 1]?.rate || 24.5 };
-        }
-
-        const daysFromStart = i;
-        const daysBeforeDeadline = windowDays - 1 - i;
-        const latePenaltyFrac = LATE_PENALTY_PER_DAY * daysFromStart;
-
-        const baseFreight = tonnage * fc.rate;
-        const lateCost = baseFreight * latePenaltyFrac;
-        const demurrageCost = idlePenaltyDays * DEMURRAGE_PER_DAY;
-        const urgencyRisk = daysBeforeDeadline === 0 ? DEMURRAGE_PER_DAY * 0.3 : 0;
-        const totalCost = baseFreight + lateCost + demurrageCost + urgencyRisk;
-
-        rowsOut.push({
-          date: day,
-          vessel: vclass,
-          dwt,
-          fullLoads,
-          leftover,
-          rate: fc.rate,
-          baseFreight,
-          lateCost,
-          demurrageCost,
-          totalCost,
-          mae: result.mae,
-          r2: result.r2
-        });
-      }
-    });
-
-    rowsOut.sort((a, b) => a.totalCost - b.totalCost);
-    return { plan: rowsOut, perClassForecast };
-  }
-
-  // ============================================================
-  // 4. RENDERING MODULES
+  // 3. RENDERING MODULES
   // ============================================================
   let chartInstance = null;
   let currentPlan = [];
@@ -436,13 +155,11 @@
     const gridEl = document.getElementById("recGrid");
 
     if (costEl) costEl.textContent = usd(best.totalCost);
-    if (qualEl) qualEl.textContent = `Model Error: MAE $${best.mae.toFixed(2)}/t · Time-Series R² ${best.r2.toFixed(2)}`;
+    if (qualEl) qualEl.textContent = "Forecast generated by the validated server-side ARIMA model";
 
     // Estimate relative savings vs average fixture in window
     if (savingsEl) {
-      const spotEst = best.totalCost * 1.14;
-      const savingsVal = usd(spotEst - best.totalCost);
-      savingsEl.textContent = `SAVE ${savingsVal} (12.3%)`;
+      savingsEl.textContent = "LOWEST MODELLED COST";
     }
 
     if (gridEl) {
@@ -450,6 +167,10 @@
         <div class="detail-tile">
           <span class="tile-label">Optimal Laycan Date</span>
           <span class="tile-val mono" style="color:#D97706;">${fmtDate(best.date)}</span>
+        </div>
+        <div class="detail-tile">
+          <span class="tile-label">Selected Laycan Window</span>
+          <span class="tile-val mono">${best.requestedLaycan || "Not available"}</span>
         </div>
         <div class="detail-tile">
           <span class="tile-label">Assigned Vessel Class</span>
@@ -622,7 +343,7 @@
 
         datasets.push({
           label: `${vclass} (Actual/Audit)`,
-          data: histTail.map(p => p.rate),
+          data: histTail.map(p => p.rate).concat(Array(fcLabels.length).fill(null)),
           borderColor: colors[vclass],
           backgroundColor: "transparent",
           borderWidth: vclass === "Capesize" ? 2.6 : 2.2,
@@ -643,10 +364,9 @@
         });
       });
 
-      const allLabels = datasets[datasets.length - 1]._labels;
-      datasets.forEach(ds => {
-        while (ds.data.length < allLabels.length) ds.data.unshift(null);
-      });
+      const firstSeries = Object.values(perClassForecast)[0];
+      const allLabels = firstSeries.history.slice(-45).map(p => fmtDate(p.date))
+        .concat(firstSeries.forecast.map(p => fmtDate(p.date)));
 
       if (chartInstance) chartInstance.destroy();
       chartInstance = new Chart(ctx, {
@@ -655,6 +375,7 @@
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          devicePixelRatio: window.devicePixelRatio || 1,
           interaction: { mode: "index", intersect: false },
           plugins: {
             legend: { display: false },
@@ -782,14 +503,16 @@
       r.demurrageCost.toFixed(2),
       r.totalCost.toFixed(2)
     ]);
-    const csvContent = "data:text/csv;charset=utf-8," + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
-    const encodedUri = encodeURI(csvContent);
+    const escapeCsv = value => `"${String(value).replace(/"/g, '""')}"`;
+    const csvContent = [headers, ...rows].map(row => row.map(escapeCsv).join(",")).join("\n");
+    const encodedUri = URL.createObjectURL(new Blob([csvContent], { type: "text/csv;charset=utf-8" }));
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
     link.setAttribute("download", `CharterSense_SAIL_Optimization_${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(encodedUri);
   }
 
   // ============================================================
@@ -803,16 +526,16 @@
     try {
       const res = await fetch("/health");
       if (res.ok) {
-        badge.className = "status-pill connected";
+        badge.className = "connection-status connected";
         statusText.textContent = "FastAPI ML Server Active";
         loadBackendKPIs();
       } else {
-        badge.className = "status-pill standalone";
-        statusText.textContent = "Standalone Browser Engine";
+        badge.className = "connection-status standalone";
+        statusText.textContent = "Analytics service unavailable";
       }
     } catch {
-      badge.className = "status-pill standalone";
-      statusText.textContent = "Standalone Browser Engine";
+      badge.className = "connection-status standalone";
+      statusText.textContent = "Analytics service unavailable";
     }
   }
 
@@ -823,8 +546,8 @@
         const kpi = await res.json();
         const savEl = document.getElementById("kpiSavings");
         const accEl = document.getElementById("kpiAccuracy");
-        if (savEl && kpi.total_savings) savEl.textContent = `${kpi.total_savings}%`;
-        if (accEl && kpi.avg_forecast_accuracy) accEl.textContent = `${kpi.avg_forecast_accuracy}%`;
+        if (savEl) savEl.textContent = kpi.total_savings == null ? "—" : `${kpi.total_savings}%`;
+        if (accEl) accEl.textContent = kpi.avg_forecast_accuracy == null ? "—" : `${kpi.avg_forecast_accuracy}%`;
       }
     } catch {}
   }
@@ -842,9 +565,7 @@
   // ============================================================
   // 7. MAIN ORCHESTRATOR
   // ============================================================
-  let marketData = null;
-
-  function run() {
+  async function run() {
     try {
       const portEl = document.getElementById("portSel");
       const cargoEl = document.getElementById("cargoSel");
@@ -863,19 +584,25 @@
         return;
       }
 
+      const response = await fetch("/api/charter/recommend", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          route: routeForCargo(cargo), port, cargo_size: tonnage,
+          laycan_start: fmtDate(laycanStart), laycan_end: fmtDate(laycanEnd)
+        })
+      });
+      if (!response.ok) {
+        const detail = await response.json().catch(() => ({}));
+        throw new Error(detail.detail || "Optimization request failed.");
+      }
+      const result = await response.json();
+      const { plan, perClassForecast } = dashboardDataFromApi(result);
+
       try { renderRouteMap(port); } catch (e) { console.error("RouteMap err:", e); }
 
-      const { plan, perClassForecast } = optimizeCharteringPlan(marketData, {
-        port,
-        cargo,
-        tonnage,
-        laycanStart,
-        laycanEnd
-      });
-
       if (!plan || plan.length === 0) {
-        alert("No suitable vessel class found for this port configuration.");
-        return;
+        throw new Error("The server returned an outdated optimization response. Stop the server, run 'python main.py' from the SIH folder, then refresh this page with Ctrl+F5.");
       }
 
       const best = plan[0];
@@ -887,12 +614,57 @@
       try { renderTable(plan, bestKey); } catch (e) { console.error("Table err:", e); }
     } catch (err) {
       console.error("Critical run error:", err);
+      alert(err.message || "The optimization service is unavailable. Start the FastAPI server and retry.");
     }
   }
 
-  window.addEventListener("DOMContentLoaded", () => {
-    marketData = generateSyntheticMarketData();
+  function routeForCargo(cargo) {
+    return cargo === "Iron Ore" ? "Australia-East Coast India" : "Australia-East Coast India";
+  }
 
+  function dashboardDataFromApi(result) {
+    const perClassForecast = {};
+    Object.entries(result.forecasts || {}).forEach(([vessel, forecast]) => {
+      perClassForecast[vessel] = {
+        history: (forecast.history_dates || []).map((value, index) => ({ date: parseDate(value), rate: forecast.history_values[index] })),
+        forecast: (forecast.dates || []).map((value, index) => ({ date: parseDate(value), rate: forecast.values[index] })),
+        mae: 0,
+        r2: 0
+      };
+    });
+    const legacyOptions = (result.options && result.options.length)
+      ? result.options
+      : (result.recommended_vessel ? [{
+          vessel_class: result.recommended_vessel,
+          capacity: VESSEL_CLASSES[result.recommended_vessel]?.dwt || 0,
+          charter_window: result.charter_window,
+          base_freight: result.estimated_cost,
+          demurrage_cost: 0,
+          total_cost: result.estimated_cost,
+        }] : []);
+    const apiPlan = Array.isArray(result.plan) && result.plan.length
+      ? result.plan
+      : legacyOptions.map(option => ({
+          date: option.charter_window?.optimal_date,
+          vessel_class: option.vessel_class,
+          capacity: option.capacity,
+          rate: option.charter_window?.optimal_rate,
+          base_freight: option.base_freight,
+          late_cost: 0,
+          demurrage_cost: option.demurrage_cost,
+          total_cost: option.total_cost,
+        }));
+    const plan = apiPlan.map(item => ({
+      date: parseDate(item.date), vessel: item.vessel_class,
+      dwt: item.capacity, rate: item.rate,
+      baseFreight: item.base_freight, lateCost: item.late_cost, demurrageCost: item.demurrage_cost,
+      totalCost: item.total_cost, mae: 0, r2: 0,
+      requestedLaycan: `${result.requested_laycan?.start || ""} → ${result.requested_laycan?.end || ""}`
+    }));
+    return { plan, perClassForecast };
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
     const today = new Date();
     const start = addDays(today, 7);
     const end = addDays(today, 37);
@@ -911,6 +683,16 @@
     const cargoSel = document.getElementById("cargoSel");
     if (cargoSel) cargoSel.addEventListener("change", run);
 
+    [startEl, endEl].forEach(dateInput => {
+      if (dateInput) {
+        dateInput.addEventListener("change", () => {
+          if (startEl?.value && endEl?.value && parseDate(endEl.value) > parseDate(startEl.value)) {
+            run();
+          }
+        });
+      }
+    });
+
     const filterInput = document.getElementById("tableFilter");
     if (filterInput) {
       filterInput.addEventListener("input", () => {
@@ -926,7 +708,7 @@
     if (exportBtn) exportBtn.addEventListener("click", exportCSV);
 
     // Wire up preset buttons
-    document.querySelectorAll(".preset-btn").forEach(btn => {
+    document.querySelectorAll(".btn-scenario").forEach(btn => {
       btn.addEventListener("click", e => {
         const p = e.target.getAttribute("data-port");
         const c = e.target.getAttribute("data-cargo");
@@ -939,7 +721,13 @@
     });
 
     window.addEventListener("resize", () => {
-      if (marketData) run();
+      // Chart.js (responsive: true) resizes the live chart on its own. Only the
+      // manual fallback canvas needs a redraw, and only when data is already loaded.
+      if (cachedForecastData && typeof Chart !== "undefined") return;
+      if (cachedForecastData) {
+        const ctx = document.getElementById("forecastChart");
+        if (ctx) drawFallbackCanvasChart(ctx, cachedForecastData);
+      }
     });
 
     startLiveClock();

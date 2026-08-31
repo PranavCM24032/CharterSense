@@ -1,0 +1,2501 @@
+week,port,region,shipping_mode,avg_wait_days,disruption_index,freight_rate_usd,fuel_price_usd,backlog_teu,on_time_pct
+2018-09-09,New York/New Jersey,Europe,container,5.98,30.02,1874.72,2.09,24469,69.03
+2023-05-14,Hamburg,Middle East,ro-ro,4.03,31.82,2360.95,2.67,27475,72.39
+2016-12-18,Manzanillo,Europe,container,5.67,17.86,2532.33,2.47,19174,73.3
+2016-12-18,Jebel Ali,Middle East,container,1.78,41.45,2175.53,2.62,22020,74.0
+2017-02-26,Los Angeles,Africa,container,4.61,49.69,2238.41,1.75,21911,65.87
+2017-08-06,Hamburg,North America,tanker,5.17,47.12,2817.36,3.45,21000,65.52
+2017-10-22,Tanjung Priok,North America,container,0.42,15.46,3142.13,2.42,9794,84.52
+2017-01-29,Durban,Africa,tanker,2.51,53.02,1573.33,2.71,16803,69.07
+2016-09-04,Antwerp,Europe,ro-ro,6.81,58.85,2507.23,2.16,25772,58.72
+2023-09-17,Rotterdam,Asia,tanker,6.36,21.96,2608.78,3.64,13746,70.69
+2024-05-26,Houston,Europe,container,3.13,13.44,2116.08,2.11,16185,79.71
+2020-03-29,Durban,North America,container,1.37,17.34,949.85,2.48,16542,82.06
+2015-11-15,Savannah,South America,tanker,2.72,61.98,2575.76,3.06,24235,65.97
+2017-01-08,Manzanillo,Middle East,bulk,4.08,26.54,1907.35,1.04,9363,73.88
+2015-01-11,Hamburg,North America,bulk,2.29,70.51,3514.07,0.82,25287,64.27
+2023-05-21,Jebel Ali,Europe,tanker,3.63,29.49,1785.97,1.78,13835,73.89
+2020-08-16,Hamburg,Africa,ro-ro,4.94,40.55,2366.34,2.51,24805,67.96
+2017-03-19,Santos,Europe,container,4.74,62.19,2864.17,3.33,31868,61.86
+2019-05-26,Savannah,Asia,tanker,0.2,30.08,2169.0,2.82,16176,80.58
+2016-07-03,Tanjung Priok,Asia,container,1.48,53.36,2594.02,2.73,18173,71.03
+2022-01-30,New York/New Jersey,North America,bulk,2.27,5.28,2189.27,2.53,12491,83.88
+2018-07-01,Felixstowe,South America,tanker,3.89,23.38,2363.71,3.14,9984,75.21
+2018-07-22,Felixstowe,Europe,tanker,6.57,21.84,2299.96,2.17,8993,70.31
+2020-08-16,Busan,North America,tanker,1.5,23.83,1809.86,3.11,23433,79.85
+2024-10-20,Busan,Asia,container,3.75,27.61,2522.15,2.63,20358,74.22
+2015-01-18,Houston,Africa,bulk,6.88,24.16,1016.97,2.7,15204,68.99
+2021-04-11,Houston,Middle East,ro-ro,6.12,9.81,2240.62,1.15,9986,74.82
+2024-05-19,New York/New Jersey,North America,ro-ro,5.59,32.12,2598.54,1.82,17888,69.18
+2020-06-21,Houston,North America,tanker,2.17,6.59,1537.3,3.13,16919,83.68
+2017-07-02,Rotterdam,Middle East,tanker,4.17,5.68,2778.98,3.14,7976,79.96
+2021-04-04,Santos,Middle East,ro-ro,2.85,30.1,2345.92,2.35,21455,75.27
+2023-02-12,Tanjung Priok,Africa,tanker,1.25,34.37,1943.77,2.75,22629,77.19
+2017-09-17,Hamburg,Middle East,ro-ro,3.58,15.38,1876.85,2.61,18193,78.23
+2024-10-06,Durban,South America,ro-ro,6.67,50.41,2189.74,3.61,24714,61.54
+2019-07-07,Jebel Ali,North America,ro-ro,1.61,12.01,3081.42,3.25,16836,83.18
+2019-04-21,New York/New Jersey,Europe,tanker,3.74,36.72,2957.32,2.51,19338,71.5
+2015-01-18,Antwerp,North America,tanker,0.46,20.95,2538.18,2.95,12582,82.8
+2024-04-21,Houston,North America,container,4.24,27.1,1254.95,1.44,17571,73.39
+2021-11-07,Busan,Europe,tanker,1.07,21.12,2097.29,2.17,17059,81.52
+2024-01-14,Houston,South America,ro-ro,4.07,33.08,2527.86,2.05,20594,71.94
+2019-10-06,Antwerp,Europe,container,2.04,36.21,2389.73,1.95,28725,75.06
+2017-09-17,Savannah,Africa,bulk,3.41,13.79,2373.03,2.01,9670,79.04
+2022-05-29,Los Angeles,Africa,ro-ro,3.27,6.69,1941.87,2.16,15835,81.45
+2022-04-17,Long Beach,Africa,container,4.49,29.37,2113.1,2.7,9339,72.21
+2016-06-12,Santos,South America,bulk,2.96,0.93,1098.13,2.07,15832,83.8
+2015-08-02,Houston,Asia,bulk,5.28,28.13,1893.83,2.62,19025,71.0
+2016-07-17,Hamburg,North America,container,4.39,32.21,2595.27,2.52,16453,71.56
+2023-03-05,Houston,Europe,ro-ro,2.33,61.28,2226.67,2.56,16807,66.96
+2017-10-01,Manzanillo,Africa,tanker,1.87,8.67,845.51,1.19,16455,83.66
+2024-03-24,Felixstowe,Africa,tanker,5.22,37.32,1944.23,1.67,18890,68.36
+2023-09-17,Los Angeles,Asia,container,0.49,22.93,1808.5,1.99,18038,82.14
+2018-01-21,Long Beach,Africa,container,5.66,39.94,2160.57,1.41,15077,66.7
+2018-05-27,Manzanillo,Europe,container,3.76,19.52,2530.72,2.6,16872,76.62
+2022-10-09,Felixstowe,Africa,ro-ro,3.61,36.22,2073.39,1.08,13848,71.91
+2020-01-26,Colombo,South America,tanker,3.05,36.62,2797.16,2.88,24296,72.91
+2019-06-16,Felixstowe,Europe,tanker,2.11,25.33,1672.78,2.66,17724,78.18
+2016-10-23,Manzanillo,Middle East,bulk,4.48,35.95,3183.68,2.26,19076,70.26
+2019-02-24,Jebel Ali,South America,container,2.16,39.36,3113.27,2.45,24119,73.87
+2019-04-21,Jebel Ali,Europe,container,0.2,29.03,2991.17,2.36,13262,80.89
+2024-03-10,Santos,Asia,ro-ro,7.69,19.2,1332.95,2.69,11482,68.86
+2022-06-19,Rotterdam,North America,tanker,6.48,33.29,2542.84,2.89,14292,67.05
+2023-04-30,Antwerp,Asia,container,2.52,55.05,2621.09,1.98,24434,68.44
+2017-01-15,New York/New Jersey,Asia,tanker,5.78,27.03,1848.46,3.24,7020,70.33
+2015-07-19,Hamburg,Asia,bulk,5.09,5.52,2582.82,2.62,8108,78.16
+2017-02-05,New York/New Jersey,Europe,container,0.99,29.67,1960.94,2.66,25384,79.12
+2021-01-24,Antwerp,South America,bulk,3.2,16.94,2597.86,2.91,21846,78.52
+2015-08-23,Hamburg,Asia,container,4.06,16.93,3188.15,1.97,16342,76.8
+2015-11-15,Colombo,Middle East,container,5.38,38.18,1750.48,1.93,23562,67.79
+2015-12-13,Singapore,North America,tanker,1.2,52.47,2604.89,2.81,19542,71.86
+2015-03-01,Busan,Asia,ro-ro,5.0,23.58,1649.33,2.14,23556,72.93
+2024-10-27,Antwerp,Asia,ro-ro,5.3,19.49,1395.55,1.7,9740,73.55
+2021-12-26,Houston,Africa,container,3.01,57.46,2585.51,2.76,22036,66.74
+2021-07-04,Felixstowe,Africa,container,3.95,8.91,1088.91,3.25,15562,79.43
+2024-11-10,Houston,North America,ro-ro,5.42,26.77,3390.27,2.71,10775,71.13
+2024-05-12,Colombo,North America,tanker,1.56,8.14,1253.63,1.7,14098,84.44
+2018-03-04,Houston,Africa,ro-ro,4.47,8.81,2851.13,2.82,18542,78.42
+2016-07-17,New York/New Jersey,Africa,bulk,1.46,29.62,1764.51,2.87,17233,78.19
+2019-03-24,Houston,Africa,bulk,2.26,22.05,1883.04,1.92,18374,78.87
+2024-11-03,Manzanillo,Africa,tanker,4.62,48.57,3421.5,2.47,20312,66.19
+2023-10-15,Houston,Asia,tanker,2.38,18.89,928.74,2.54,13255,79.57
+2022-01-23,Tanjung Priok,Middle East,container,4.36,46.85,3134.44,2.9,19481,67.22
+2022-08-07,Hamburg,Europe,container,2.23,30.42,1932.76,2.1,14592,76.41
+2017-12-31,Colombo,Africa,ro-ro,2.6,16.96,1500.31,2.49,18622,79.71
+2016-11-27,Los Angeles,Europe,tanker,1.62,19.2,520.06,2.59,16372,81.0
+2016-09-18,Santos,North America,ro-ro,3.88,52.62,2872.96,2.25,15362,66.45
+2021-02-28,Rotterdam,Asia,bulk,4.18,38.81,1895.25,2.51,20509,70.0
+2016-05-01,Shanghai,South America,tanker,1.21,42.67,2310.1,3.36,20739,74.78
+2021-12-05,New York/New Jersey,North America,bulk,7.07,42.4,3016.02,1.27,19296,63.14
+2024-01-14,Shanghai,Middle East,tanker,2.11,47.72,2355.87,2.17,20620,71.46
+2023-09-03,Houston,North America,ro-ro,4.04,29.78,3355.87,2.12,22200,72.99
+2015-10-11,Busan,Asia,ro-ro,1.84,32.23,2592.03,2.93,14097,76.65
+2023-01-08,Tanjung Priok,Africa,bulk,2.85,36.85,2283.86,1.92,26018,73.24
+2023-08-27,Busan,South America,tanker,5.38,38.02,1835.2,2.25,24892,67.83
+2022-05-01,New York/New Jersey,Africa,ro-ro,0.55,20.9,1262.39,2.52,14470,82.63
+2024-12-08,Valencia,Asia,container,5.72,18.91,1165.83,2.63,17471,72.89
+2016-02-14,Hamburg,Africa,container,3.36,40.83,3330.45,2.04,20290,71.03
+2018-01-14,Savannah,Asia,ro-ro,5.87,3.63,2448.85,2.03,17294,77.17
+2018-02-11,Colombo,Middle East,container,4.85,23.75,2861.78,2.76,21395,73.18
+2019-05-19,Jebel Ali,Middle East,container,1.74,30.41,2809.09,1.87,29785,77.4
+2021-11-07,Valencia,Middle East,ro-ro,1.72,12.27,2576.26,2.61,22851,82.88
+2017-02-19,New York/New Jersey,Europe,container,2.9,25.45,1716.11,1.67,20684,76.56
+2022-10-16,Felixstowe,Europe,ro-ro,6.46,36.98,2852.67,1.83,15015,65.99
+2021-06-13,New York/New Jersey,Asia,tanker,4.95,19.06,2356.61,1.48,15794,74.38
+2024-07-14,Antwerp,Africa,ro-ro,0.2,64.96,2002.24,3.51,21533,70.11
+2017-04-02,Shanghai,Middle East,container,2.96,21.82,2157.92,1.94,16332,77.53
+2018-01-21,Santos,Europe,bulk,0.77,50.35,2100.18,3.41,25127,73.35
+2021-04-11,Colombo,North America,ro-ro,5.72,64.87,3115.82,2.38,21115,59.1
+2016-03-20,Busan,Middle East,ro-ro,3.3,17.65,1953.62,1.81,18364,78.1
+2019-03-10,Long Beach,Europe,container,2.02,25.69,2127.54,3.05,17616,78.25
+2023-04-23,Shanghai,Asia,bulk,2.17,18.83,2362.14,3.3,7637,80.01
+2016-08-21,Houston,North America,tanker,4.03,29.77,1557.95,2.53,21200,73.01
+2022-12-11,New York/New Jersey,Asia,ro-ro,3.41,45.21,3687.98,2.26,18601,69.62
+2023-03-26,Manzanillo,Europe,tanker,2.97,21.82,2196.17,2.38,15948,77.51
+2018-08-12,Long Beach,North America,ro-ro,1.09,18.14,1936.55,2.31,16664,82.38
+2021-09-19,Ningbo,Europe,bulk,4.47,20.97,1401.32,2.24,12379,74.77
+2021-11-07,Felixstowe,Middle East,ro-ro,4.28,39.29,1184.38,1.54,25344,69.65
+2018-02-25,Felixstowe,Asia,ro-ro,5.24,33.88,2312.45,3.18,15369,69.36
+2015-03-15,Durban,South America,bulk,3.54,38.13,2002.66,1.79,15887,71.48
+2016-07-10,Colombo,South America,bulk,1.33,3.07,1520.17,2.23,5039,86.42
+2021-05-09,Singapore,North America,bulk,4.27,21.98,1591.49,2.69,12276,74.87
+2023-12-31,Houston,Middle East,tanker,3.66,21.45,2540.94,2.45,16250,76.24
+2017-03-26,Felixstowe,Asia,container,4.13,46.96,2637.31,2.72,18034,67.65
+2023-11-05,Houston,Africa,ro-ro,0.42,57.93,4363.11,3.04,23946,71.78
+2016-11-27,Long Beach,Europe,bulk,6.16,51.64,1843.36,2.64,25701,62.19
+2023-04-02,Durban,Europe,ro-ro,2.98,21.82,2054.07,2.75,6256,77.49
+2019-03-31,Busan,Europe,bulk,6.45,31.58,1593.1,2.44,18502,67.63
+2015-04-12,Busan,Asia,container,3.44,50.76,1914.22,2.64,19802,67.89
+2020-12-06,Ningbo,South America,container,3.12,28.72,2225.62,2.48,20867,75.14
+2024-10-20,Valencia,Middle East,ro-ro,8.78,49.25,3120.3,1.77,19018,57.66
+2021-11-28,Busan,South America,ro-ro,4.91,30.72,1814.46,2.05,18799,70.96
+2021-08-01,Savannah,Europe,ro-ro,3.0,43.07,2842.04,2.59,9183,71.08
+2023-05-28,Busan,Europe,bulk,4.39,15.49,3023.31,3.34,14169,76.57
+2023-07-23,Jebel Ali,Asia,ro-ro,4.25,37.95,3019.52,2.82,21025,70.11
+2020-07-26,Tanjung Priok,North America,container,3.42,48.37,3277.45,2.33,22386,68.65
+2017-01-15,New York/New Jersey,Africa,container,4.03,20.54,2034.94,1.01,13333,75.78
+2023-01-29,Savannah,Middle East,container,2.52,60.14,2484.04,2.96,36611,66.92
+2023-09-17,Manzanillo,South America,container,2.13,7.28,1424.56,1.94,17993,83.56
+2020-09-06,Felixstowe,Europe,bulk,4.19,6.56,3014.54,1.38,19200,79.65
+2023-12-03,Durban,Middle East,container,3.16,24.92,2187.54,3.69,14444,76.2
+2018-11-04,Santos,North America,tanker,0.69,14.88,2080.56,2.44,22912,84.16
+2024-02-11,Felixstowe,Africa,ro-ro,1.56,18.02,2442.32,2.35,14625,81.47
+2015-02-22,Busan,Europe,tanker,4.16,65.77,3808.72,1.76,25104,61.95
+2020-04-05,Shanghai,Asia,ro-ro,1.75,60.22,2528.23,1.95,23814,68.43
+2019-09-29,Los Angeles,Middle East,container,3.37,63.05,2934.25,2.4,31812,64.35
+2015-04-19,Los Angeles,Europe,tanker,5.16,21.63,2002.15,1.81,5821,73.19
+2021-03-28,Singapore,Europe,ro-ro,0.2,29.18,2025.99,2.05,23691,80.85
+2019-09-29,Durban,Middle East,bulk,5.58,21.41,1978.31,1.69,19409,72.42
+2022-09-18,Long Beach,South America,ro-ro,3.62,28.31,1924.23,2.21,15671,74.27
+2017-07-09,Jebel Ali,Africa,bulk,3.42,30.56,2122.86,1.78,21014,73.99
+2022-11-27,Singapore,South America,bulk,2.87,38.17,1954.27,2.77,25863,72.81
+2023-07-30,Hamburg,North America,bulk,2.45,1.36,1863.91,2.59,12546,84.69
+2024-11-24,Savannah,Africa,ro-ro,5.82,12.21,1950.46,2.59,5993,74.7
+2020-02-09,Durban,Europe,tanker,2.35,43.49,1646.95,1.99,17236,72.25
+2018-12-30,New York/New Jersey,North America,container,3.42,8.68,2825.84,2.37,16265,80.56
+2023-07-30,Los Angeles,Africa,bulk,4.11,36.37,2453.7,2.29,17823,70.87
+2015-07-19,Tanjung Priok,Africa,container,0.58,24.31,1656.91,1.79,18199,81.55
+2022-07-03,Los Angeles,Africa,bulk,2.01,24.27,897.34,3.18,15833,78.7
+2023-11-26,Busan,Europe,bulk,2.23,42.23,2724.03,2.86,18380,72.87
+2019-05-12,Ningbo,Europe,bulk,6.14,17.35,1700.01,2.16,21225,72.52
+2022-06-05,Shanghai,Africa,container,4.09,15.59,1939.23,2.29,11289,77.14
+2020-05-24,New York/New Jersey,Europe,container,1.95,34.37,1559.8,2.06,24010,75.79
+2017-01-08,Savannah,Middle East,container,0.3,61.9,2185.7,1.17,33648,70.83
+2017-02-05,Houston,Asia,tanker,4.65,41.64,1577.81,2.3,14074,68.21
+2018-07-15,New York/New Jersey,North America,ro-ro,3.75,9.11,1590.53,2.99,21325,79.77
+2022-02-06,Antwerp,Middle East,container,2.88,5.27,842.6,2.98,15914,82.66
+2024-08-18,Los Angeles,Middle East,container,6.74,27.2,2983.59,4.43,13820,68.36
+2024-07-21,New York/New Jersey,Europe,ro-ro,4.69,20.58,1759.81,3.12,18660,74.45
+2022-05-15,Singapore,Africa,ro-ro,4.15,28.34,2109.64,2.61,17330,73.2
+2018-02-25,Rotterdam,Asia,container,2.01,26.57,2685.52,2.73,21737,78.01
+2018-07-01,Colombo,Africa,container,3.15,13.39,2229.56,2.65,19328,79.68
+2017-04-23,Singapore,Asia,ro-ro,0.2,37.02,2757.42,3.2,21926,78.49
+2015-02-08,Rotterdam,South America,tanker,2.38,18.59,1572.56,1.57,17621,79.66
+2017-05-21,Antwerp,South America,container,4.42,56.69,3036.93,3.09,30694,64.15
+2015-06-14,Manzanillo,South America,bulk,6.47,7.28,1690.54,2.88,14753,74.88
+2019-03-31,Busan,North America,bulk,1.55,49.39,1790.01,2.0,29354,72.08
+2015-08-02,Singapore,Europe,bulk,0.37,24.2,1988.77,2.16,17239,82.0
+2016-08-21,Houston,Asia,tanker,1.26,55.93,1738.85,1.92,24081,70.7
+2024-06-16,Antwerp,North America,tanker,0.91,6.68,1844.32,2.24,13594,86.18
+2020-10-11,Valencia,Africa,ro-ro,5.48,13.91,1934.24,2.39,18152,74.87
+2023-07-23,Manzanillo,Middle East,bulk,0.2,9.07,1884.19,2.48,15394,86.88
+2019-12-01,Rotterdam,Europe,tanker,6.63,27.6,2055.12,3.28,17878,68.46
+2022-09-18,Savannah,South America,tanker,0.2,60.43,3843.43,1.92,22159,71.47
+2018-04-01,Antwerp,Africa,ro-ro,0.44,34.83,2274.84,2.25,9861,78.67
+2023-07-02,Valencia,Middle East,tanker,4.08,6.88,1891.01,2.44,19757,79.78
+2021-04-04,Tanjung Priok,North America,ro-ro,1.87,9.33,964.46,3.09,8852,83.46
+2023-06-04,Antwerp,South America,tanker,2.19,11.29,1849.71,2.9,7648,82.23
+2022-05-01,New York/New Jersey,Middle East,bulk,2.3,36.87,3423.26,1.68,9767,74.34
+2015-08-30,Manzanillo,Asia,ro-ro,2.43,33.21,2784.67,2.53,15619,75.18
+2020-10-04,Tanjung Priok,Africa,tanker,2.42,11.58,2516.1,2.23,7516,81.69
+2022-10-23,Los Angeles,North America,bulk,6.93,35.16,2041.48,2.24,16083,65.59
+2021-05-02,Felixstowe,Europe,tanker,3.29,16.18,1942.07,2.73,3953,78.57
+2019-10-27,New York/New Jersey,Europe,tanker,4.66,12.44,1505.14,2.1,14941,76.95
+2022-04-17,Houston,Asia,container,0.2,21.96,2088.21,2.35,20184,83.01
+2015-03-08,Singapore,Africa,container,6.01,18.67,2300.11,2.3,18329,72.38
+2021-06-13,Antwerp,Middle East,tanker,3.51,34.77,2739.05,1.89,20298,72.55
+2019-07-28,Durban,North America,ro-ro,2.98,30.94,1680.48,3.06,13752,74.76
+2020-07-26,Tanjung Priok,Europe,bulk,4.79,6.76,1939.0,3.36,12637,78.39
+2017-01-08,Durban,Asia,container,4.02,53.09,1479.57,3.22,26400,66.03
+2023-04-09,Felixstowe,Asia,tanker,4.71,38.53,1853.63,2.01,22799,69.02
+2018-11-18,Antwerp,North America,ro-ro,3.66,4.93,1181.2,2.59,7954,81.2
+2024-10-13,Long Beach,Asia,ro-ro,7.38,30.37,1831.91,2.6,20652,66.13
+2017-05-07,Savannah,Middle East,bulk,0.2,42.16,2246.27,2.91,17553,76.95
+2021-05-30,Colombo,Middle East,bulk,2.56,58.8,2623.48,1.86,20481,67.24
+2015-05-31,Ningbo,North America,container,2.49,42.41,2329.71,2.17,22943,72.3
+2024-01-21,Ningbo,Europe,ro-ro,8.31,1.65,1909.7,2.81,1550,72.88
+2015-09-20,Durban,South America,container,4.03,7.3,2395.58,2.69,17939,79.75
+2021-08-15,Los Angeles,North America,ro-ro,7.32,9.74,3043.35,1.94,10589,72.44
+2016-11-13,Felixstowe,Africa,tanker,3.59,13.12,1498.15,2.47,25332,78.88
+2020-05-24,Singapore,Asia,ro-ro,7.15,26.35,3266.13,3.19,18441,67.8
+2016-07-24,Durban,Asia,ro-ro,3.07,21.37,2343.86,1.83,10540,77.45
+2015-12-06,Jebel Ali,Asia,ro-ro,5.48,12.7,2138.52,2.33,11350,75.23
+2024-09-08,Savannah,Asia,container,7.67,2.75,3187.74,3.75,9127,73.83
+2015-07-26,Hamburg,North America,container,6.04,21.71,2902.05,3.15,17100,71.41
+2017-09-24,Savannah,Asia,ro-ro,1.61,33.62,2377.0,2.38,13007,76.69
+2019-06-09,Rotterdam,North America,bulk,4.13,45.95,2222.07,1.72,19849,67.96
+2022-03-27,Durban,North America,container,6.75,24.73,3172.15,3.24,16228,69.08
+2020-02-02,Long Beach,North America,container,2.21,8.36,2701.65,2.17,15591,83.07
+2020-12-20,New York/New Jersey,Asia,tanker,1.32,4.15,3087.71,2.23,17390,86.12
+2022-06-12,Shanghai,Africa,bulk,4.13,26.69,3114.25,2.53,26047,73.73
+2017-09-17,Colombo,Middle East,container,1.7,0.86,2590.71,1.6,15085,86.34
+2017-06-25,Singapore,Europe,ro-ro,7.53,12.16,2145.35,2.78,15299,71.29
+2023-10-08,Savannah,South America,bulk,2.6,24.05,2806.19,3.35,11025,77.58
+2024-05-19,Santos,Asia,tanker,4.98,66.24,3171.17,1.95,34773,60.17
+2024-06-23,Hamburg,North America,tanker,2.16,36.8,1505.18,2.57,17523,74.64
+2020-10-25,New York/New Jersey,Asia,bulk,2.7,53.79,2903.18,2.72,25670,68.46
+2019-01-13,New York/New Jersey,North America,ro-ro,1.1,40.98,2509.04,2.51,23182,75.51
+2016-03-06,Antwerp,North America,bulk,6.81,9.17,2885.43,2.52,16938,73.63
+2024-03-10,Jebel Ali,Europe,ro-ro,5.93,29.45,1471.7,2.28,17469,69.31
+2017-01-22,Singapore,Europe,tanker,3.21,28.87,2107.18,2.61,21907,74.92
+2021-02-14,Valencia,Africa,bulk,1.9,47.88,2413.02,1.33,24865,71.84
+2024-11-24,Savannah,Europe,bulk,3.69,29.85,2448.61,3.19,14373,73.67
+2022-02-20,Jebel Ali,Middle East,bulk,2.31,26.47,1396.13,2.29,8347,77.44
+2022-11-06,Antwerp,North America,tanker,4.02,34.71,1320.41,2.04,17625,71.55
+2023-04-23,Rotterdam,Africa,tanker,2.9,13.96,2536.65,2.01,9606,80.01
+2017-01-01,Houston,Middle East,container,2.67,72.9,3393.82,2.99,19239,62.79
+2017-02-26,Hamburg,North America,ro-ro,5.89,1.68,1956.57,2.0,7294,77.72
+2018-09-02,Shanghai,North America,ro-ro,6.42,56.85,2943.64,2.29,19571,60.1
+2023-11-19,Busan,Asia,container,1.82,45.15,2097.83,2.77,21433,72.82
+2016-08-28,Busan,Middle East,bulk,4.28,24.65,2146.83,2.58,11831,74.04
+2017-12-17,Jebel Ali,South America,ro-ro,4.89,24.65,2302.88,2.57,7829,72.82
+2024-12-22,Singapore,North America,ro-ro,5.78,6.15,1822.12,1.5,18769,76.6
+2020-05-10,Busan,North America,container,2.47,9.45,1887.99,2.71,13320,82.22
+2022-07-03,Felixstowe,Europe,tanker,5.81,37.24,1852.2,3.17,13594,67.21
+2018-09-16,Jebel Ali,Europe,tanker,5.54,12.6,2349.84,3.14,14265,75.14
+2024-09-08,Manzanillo,Middle East,container,0.2,47.71,2144.04,2.85,25349,75.29
+2015-12-27,Hamburg,North America,bulk,4.35,28.78,1739.11,1.49,28073,72.67
+2017-04-02,Long Beach,North America,tanker,1.45,17.21,2009.65,2.05,14699,81.94
+2019-09-08,New York/New Jersey,South America,container,2.28,19.64,2079.29,2.05,14349,79.55
+2020-05-31,Hamburg,South America,ro-ro,5.83,36.27,2243.74,3.45,19066,67.46
+2022-09-11,Jebel Ali,North America,bulk,6.87,41.11,1107.29,1.16,33920,63.93
+2020-04-05,Santos,Europe,bulk,7.75,24.7,2971.7,3.2,10784,67.09
+2018-12-30,Busan,Africa,tanker,4.15,27.14,1809.57,3.04,17289,73.56
+2020-08-23,Los Angeles,North America,bulk,2.11,27.23,1960.78,2.06,10645,77.61
+2024-11-17,Tanjung Priok,Middle East,tanker,3.48,46.62,2058.36,1.95,12704,69.05
+2019-09-08,Rotterdam,Asia,container,5.85,26.65,1929.69,2.1,15245,70.3
+2018-04-08,Rotterdam,Asia,ro-ro,2.68,53.91,2345.39,2.6,23068,68.47
+2017-10-15,Los Angeles,Africa,ro-ro,4.72,27.78,413.86,2.97,15827,72.23
+2023-05-28,Singapore,North America,bulk,3.38,35.27,2656.33,3.58,18237,72.66
+2020-03-08,New York/New Jersey,Europe,container,4.99,49.0,2014.26,3.1,21009,65.32
+2021-11-28,Santos,South America,container,4.54,52.95,2847.05,1.9,24735,65.04
+2024-08-04,Hamburg,Middle East,container,5.87,42.58,2033.54,2.67,23622,65.49
+2015-11-22,Los Angeles,South America,tanker,1.74,44.26,3168.38,1.78,20157,73.24
+2019-06-23,Manzanillo,South America,bulk,0.2,33.05,2100.49,2.25,18719,79.68
+2017-11-19,Savannah,North America,tanker,0.2,17.6,1920.72,2.91,17756,84.32
+2021-08-01,Valencia,Middle East,tanker,2.31,26.61,1510.34,2.43,18122,77.4
+2020-01-19,Santos,Asia,tanker,1.54,11.17,2578.07,2.6,14742,83.57
+2023-12-31,Los Angeles,Asia,tanker,0.2,32.16,1701.76,2.12,16387,79.95
+2021-07-18,Manzanillo,Africa,ro-ro,2.1,5.66,1473.12,2.74,8359,84.1
+2017-03-19,Shanghai,Africa,container,1.11,19.06,2575.8,2.66,25665,82.06
+2017-11-26,Felixstowe,Europe,bulk,6.04,59.31,2011.49,3.3,22393,60.13
+2022-01-02,Santos,North America,bulk,1.39,15.75,1472.08,2.0,23446,82.5
+2023-06-18,Busan,Europe,container,5.2,30.12,3057.72,2.87,16578,70.56
+2018-10-21,Jebel Ali,Africa,container,3.75,12.6,1791.82,1.48,17865,78.72
+2020-05-17,Durban,Middle East,bulk,0.2,16.2,1429.43,1.64,20902,84.74
+2020-03-15,Busan,Asia,ro-ro,2.26,29.09,2153.35,2.61,20148,76.75
+2023-03-12,Shanghai,Asia,bulk,1.97,28.95,3040.08,1.84,13741,77.38
+2015-10-25,Colombo,South America,tanker,4.14,31.4,1945.99,4.07,23189,72.3
+2017-05-28,Felixstowe,Middle East,tanker,1.16,15.74,1403.16,2.43,10345,82.96
+2020-08-30,Savannah,North America,ro-ro,6.63,28.44,1105.16,2.9,20422,68.21
+2017-11-19,Valencia,Africa,bulk,2.97,17.69,1993.37,2.32,15620,78.75
+2020-09-06,Tanjung Priok,South America,bulk,1.7,25.52,1687.74,2.45,19214,78.94
+2020-12-13,Santos,Asia,container,5.3,58.68,2660.5,3.42,33673,61.8
+2020-10-11,Los Angeles,Middle East,container,4.8,40.37,1275.97,1.87,21480,68.29
+2019-04-07,Ningbo,South America,container,3.38,50.85,2742.58,2.38,23828,67.98
+2016-01-17,Santos,Asia,container,3.58,7.75,1999.01,3.34,15291,80.52
+2023-06-11,Busan,Africa,container,2.06,6.42,2362.51,2.69,13452,83.95
+2015-12-27,Shanghai,Europe,tanker,4.27,25.31,948.38,3.31,20712,73.87
+2020-07-26,Manzanillo,Africa,bulk,3.96,17.7,2551.81,1.95,11303,76.77
+2016-09-11,Shanghai,Europe,bulk,0.54,12.88,3680.03,1.39,17522,85.06
+2023-06-25,Colombo,North America,tanker,3.56,50.9,2880.75,1.51,23134,67.61
+2019-04-21,Long Beach,Middle East,tanker,3.24,19.72,2426.37,2.65,16410,77.6
+2019-11-17,Jebel Ali,Middle East,ro-ro,2.18,34.25,1492.66,2.42,23431,75.36
+2016-12-04,Shanghai,Asia,tanker,2.5,21.64,2185.38,2.51,17460,78.51
+2018-05-27,Colombo,Middle East,tanker,2.09,72.09,1394.89,2.22,23690,64.19
+2017-09-24,Antwerp,Asia,bulk,7.24,49.72,2569.84,2.92,24427,60.6
+2023-03-05,Durban,Europe,tanker,3.72,55.3,1852.03,3.82,27446,65.97
+2020-12-27,New York/New Jersey,Asia,ro-ro,0.2,21.94,882.93,2.33,12699,83.02
+2018-08-05,Jebel Ali,Middle East,container,1.75,49.49,1495.76,2.43,27715,71.65
+2017-09-17,Manzanillo,Middle East,tanker,2.09,14.34,1644.03,3.18,7888,81.52
+2024-11-17,Busan,Middle East,tanker,5.51,32.97,2441.06,2.82,29818,69.09
+2023-05-21,Valencia,Middle East,ro-ro,5.42,30.75,1307.16,2.96,18131,69.94
+2024-01-21,Los Angeles,South America,container,5.54,29.39,2659.29,2.68,18574,70.1
+2023-04-09,New York/New Jersey,Europe,tanker,3.8,37.89,2044.51,0.98,19958,71.03
+2019-10-06,Colombo,South America,tanker,5.29,18.37,2664.75,2.3,19454,73.91
+2017-07-02,Tanjung Priok,South America,tanker,2.44,21.41,2441.08,2.78,16034,78.7
+2016-01-17,Jebel Ali,Europe,ro-ro,5.25,13.21,2945.07,3.59,26603,75.54
+2015-02-15,Valencia,South America,ro-ro,5.03,25.04,2013.7,3.44,12885,72.43
+2016-01-24,New York/New Jersey,North America,tanker,1.65,18.77,2496.79,1.68,11565,81.07
+2017-02-05,Singapore,South America,container,3.27,19.36,2858.65,2.33,21923,77.65
+2020-09-13,Colombo,Middle East,tanker,3.32,29.69,2335.37,2.97,8383,74.45
+2016-03-13,Savannah,Africa,container,2.17,20.56,2007.76,2.73,18958,79.49
+2019-01-06,Manzanillo,Europe,ro-ro,0.2,16.23,1089.99,1.15,13696,84.73
+2017-09-03,Hamburg,Africa,bulk,5.73,55.23,2581.22,3.16,26666,61.97
+2020-11-29,Ningbo,Africa,container,3.27,21.74,2048.37,2.67,19938,76.94
+2024-07-07,Tanjung Priok,Africa,bulk,4.97,48.25,2763.5,2.34,33083,65.59
+2017-04-02,New York/New Jersey,North America,bulk,3.53,11.66,1433.15,2.29,11102,79.44
+2017-05-14,Manzanillo,North America,bulk,0.8,6.56,1836.41,2.51,7785,86.43
+2019-01-06,Savannah,Middle East,container,5.22,24.91,2506.9,3.86,11859,72.09
+2024-12-01,Valencia,Middle East,container,1.71,44.16,2190.79,2.27,13357,73.33
+2017-05-21,Ningbo,Middle East,ro-ro,5.45,5.71,1808.04,2.59,8754,77.39
+2018-08-12,Hamburg,South America,tanker,5.24,61.08,2949.18,1.81,20437,61.2
+2023-08-13,Tanjung Priok,North America,ro-ro,5.36,20.15,1268.43,2.68,19801,73.24
+2017-11-12,Los Angeles,Europe,bulk,2.34,26.87,2681.37,2.35,20956,77.26
+2019-09-22,Rotterdam,South America,bulk,1.84,44.84,2825.3,2.74,23049,72.87
+2024-05-05,Santos,Asia,tanker,2.03,22.04,1782.34,2.23,12541,79.33
+2016-12-18,Colombo,Middle East,tanker,3.55,37.42,2168.22,2.44,16809,71.67
+2020-05-24,Jebel Ali,Middle East,container,3.32,11.3,2817.54,2.23,18127,79.97
+2024-02-11,Felixstowe,Middle East,bulk,6.57,19.3,1731.72,2.82,20835,71.07
+2015-07-19,Ningbo,Middle East,container,1.14,22.27,2262.65,2.84,17300,81.04
+2022-08-21,Los Angeles,South America,tanker,6.05,3.36,1191.66,3.34,15833,76.89
+2015-08-30,Tanjung Priok,Middle East,container,5.1,58.39,2259.12,3.22,20614,62.28
+2021-12-19,Houston,Middle East,ro-ro,3.75,25.6,1934.56,3.01,19260,74.82
+2020-06-07,Los Angeles,Europe,tanker,0.22,64.9,2372.45,2.64,21486,70.09
+2024-10-27,Manzanillo,Europe,tanker,0.2,21.68,2408.29,2.34,16501,83.1
+2022-08-28,Manzanillo,North America,bulk,5.44,17.78,1281.19,2.03,14837,73.79
+2017-12-24,Busan,Africa,tanker,5.13,21.95,2947.3,1.44,14426,73.16
+2024-01-07,Houston,Asia,tanker,0.77,21.93,1966.43,2.12,9587,81.88
+2022-09-25,New York/New Jersey,Africa,ro-ro,6.86,30.36,1618.1,1.97,13785,67.17
+2022-05-22,Santos,South America,bulk,1.37,7.1,2052.02,2.35,16720,85.13
+2024-12-15,Manzanillo,Asia,bulk,2.39,7.72,2306.82,2.89,12027,82.9
+2021-05-09,Colombo,South America,tanker,1.0,54.14,3367.68,2.62,20408,71.76
+2022-12-04,New York/New Jersey,North America,container,4.29,42.88,2060.01,2.88,15524,68.56
+2018-02-11,Hamburg,North America,container,4.86,20.84,1772.52,3.52,12396,74.03
+2024-10-20,Santos,Asia,bulk,3.25,52.58,3138.35,3.2,25023,67.73
+2019-08-25,Savannah,Europe,ro-ro,3.33,56.01,2304.96,3.19,28689,66.54
+2023-04-02,New York/New Jersey,North America,tanker,0.26,10.4,881.16,3.25,14669,86.36
+2017-04-02,Long Beach,Africa,container,6.33,20.58,1302.41,2.74,8154,71.17
+2023-09-03,Busan,South America,container,6.38,39.0,2270.24,3.77,31061,65.54
+2018-06-03,Singapore,North America,ro-ro,4.15,29.89,1749.58,1.91,18586,72.73
+2022-05-29,Houston,Africa,bulk,3.89,5.74,1718.31,3.24,18961,80.5
+2018-11-04,Shanghai,Middle East,ro-ro,1.79,40.32,1595.25,1.67,10928,74.32
+2020-08-09,Hamburg,Europe,bulk,3.54,5.33,1174.91,2.77,11517,81.32
+2023-07-09,Manzanillo,Europe,container,2.47,35.6,2176.69,2.44,24922,74.38
+2015-06-21,Savannah,Europe,container,6.25,19.69,2464.88,2.94,21033,71.59
+2017-10-01,Los Angeles,Asia,ro-ro,3.68,11.68,2855.44,3.33,18763,79.14
+2016-05-29,Singapore,Europe,ro-ro,1.63,42.72,2180.01,1.23,15642,73.92
+2018-09-23,Antwerp,South America,ro-ro,3.37,36.05,1371.14,3.98,13137,72.45
+2024-10-27,Busan,Asia,bulk,2.58,36.96,1690.49,2.77,4894,73.75
+2016-04-24,Valencia,Middle East,ro-ro,4.57,76.0,2469.6,1.41,27265,58.06
+2016-05-22,Colombo,North America,bulk,7.99,31.99,2104.07,2.46,20113,64.42
+2020-11-08,Savannah,North America,ro-ro,5.04,13.62,1440.32,2.72,1902,75.83
+2019-07-14,Long Beach,South America,tanker,0.2,74.8,3578.92,2.36,24152,67.16
+2015-06-14,Hamburg,Asia,tanker,4.81,29.24,1737.96,2.11,12960,71.61
+2022-08-28,Busan,North America,bulk,1.09,64.42,3172.2,2.19,27586,68.49
+2020-08-23,New York/New Jersey,South America,bulk,3.5,5.19,3255.31,2.89,17142,81.44
+2024-10-27,Ningbo,Middle East,container,5.35,1.62,1661.76,1.73,6264,78.81
+2017-03-05,Colombo,Middle East,tanker,0.84,30.65,1135.89,1.94,15234,79.12
+2015-08-02,Long Beach,Asia,ro-ro,2.29,25.48,2093.39,3.27,9818,77.78
+2020-02-16,Antwerp,Asia,container,5.76,5.54,2076.94,1.77,18959,76.82
+2017-09-24,Antwerp,South America,tanker,0.3,13.29,2386.36,2.46,17133,85.41
+2016-03-20,Hamburg,Middle East,container,2.4,6.7,888.15,3.13,19661,83.19
+2015-09-13,Busan,North America,ro-ro,3.07,18.72,1341.92,2.05,14825,78.24
+2016-07-31,Durban,Middle East,bulk,4.02,36.25,3286.26,1.81,26558,71.09
+2020-04-26,Long Beach,North America,container,1.59,17.85,2249.71,2.21,4092,81.46
+2024-09-29,Manzanillo,Europe,tanker,3.42,6.14,1279.86,2.02,15889,81.32
+2023-06-18,Santos,Asia,bulk,4.57,19.65,1382.95,2.84,17715,74.96
+2015-05-31,Long Beach,North America,bulk,1.03,7.92,1424.89,2.58,21514,85.56
+2022-06-12,Los Angeles,South America,ro-ro,3.42,11.36,2069.55,1.75,9507,79.75
+2016-01-10,Jebel Ali,Middle East,bulk,7.51,24.01,1464.84,2.21,24640,67.78
+2023-06-11,Felixstowe,South America,bulk,1.47,37.03,2276.43,3.35,19829,75.95
+2017-04-09,Valencia,North America,tanker,2.87,38.77,1765.87,3.33,20982,72.63
+2021-11-28,Antwerp,Asia,ro-ro,1.17,2.52,1713.24,2.03,10229,86.9
+2016-02-21,Hamburg,Europe,container,4.48,16.11,1985.6,1.91,18234,76.21
+2015-03-15,Hamburg,Middle East,container,2.14,29.86,3076.97,2.08,18972,76.76
+2015-04-19,Hamburg,North America,container,7.53,25.05,1876.34,3.4,18091,67.42
+2016-02-14,Houston,Middle East,bulk,5.44,25.66,1590.62,1.86,18869,71.42
+2020-07-19,Long Beach,Asia,tanker,4.54,29.96,1426.45,2.69,12131,71.93
+2019-10-20,Ningbo,Europe,ro-ro,5.44,43.44,1859.74,1.72,11239,66.09
+2024-05-26,Savannah,Africa,container,3.94,36.91,2049.68,2.32,28206,71.05
+2016-07-03,Shanghai,South America,bulk,4.8,10.19,1211.62,2.72,15642,77.34
+2024-09-15,Busan,Europe,ro-ro,4.4,18.13,1842.92,2.1,10522,75.76
+2020-12-06,Busan,South America,tanker,1.23,9.22,1939.99,1.32,8948,84.77
+2019-10-20,Manzanillo,Asia,tanker,3.66,25.11,2460.14,1.81,11704,75.15
+2024-11-17,Savannah,North America,tanker,4.97,29.64,2986.51,1.79,13847,71.17
+2023-01-22,Tanjung Priok,Middle East,tanker,2.66,36.95,2159.9,2.88,23382,73.6
+2016-07-17,Antwerp,Europe,bulk,0.2,25.25,1707.78,2.5,11365,82.02
+2020-12-27,Durban,Europe,container,1.3,37.13,2774.66,3.15,28140,76.26
+2022-04-24,Houston,North America,bulk,2.87,5.61,2392.39,1.87,13413,82.58
+2023-08-20,Valencia,North America,container,6.12,26.49,1732.38,1.94,15247,69.81
+2024-10-13,Long Beach,Asia,tanker,5.14,8.95,3222.68,2.48,5551,77.04
+2022-07-17,Ningbo,North America,container,3.39,25.58,1658.08,2.28,14241,75.55
+2020-06-21,Tanjung Priok,Middle East,ro-ro,7.66,15.01,1177.09,2.53,15294,70.18
+2015-05-17,Jebel Ali,Middle East,ro-ro,3.22,8.12,1471.96,2.64,14525,81.12
+2015-11-15,Hamburg,Europe,ro-ro,3.03,22.83,2409.94,2.27,17468,77.09
+2018-08-12,Felixstowe,South America,container,5.5,16.45,2357.04,2.82,15366,74.06
+2020-12-27,Long Beach,South America,tanker,0.72,18.85,2734.86,1.74,16429,82.9
+2015-07-05,Tanjung Priok,Asia,tanker,6.6,39.75,2713.35,2.31,14727,64.88
+2019-03-31,Los Angeles,Asia,ro-ro,2.13,9.91,707.69,3.15,16480,82.77
+2023-05-21,Long Beach,North America,ro-ro,1.27,8.19,1726.05,3.09,22059,85.0
+2020-08-23,Durban,Middle East,ro-ro,3.05,21.64,1588.0,2.1,14956,77.41
+2020-02-09,Rotterdam,Middle East,ro-ro,2.61,18.93,2048.91,2.06,13389,79.1
+2019-09-01,Houston,North America,tanker,2.6,7.79,2724.81,2.23,23222,82.46
+2020-05-17,New York/New Jersey,Europe,tanker,1.12,17.74,968.29,2.75,10807,82.44
+2021-08-15,Colombo,Middle East,container,6.24,17.84,1213.02,3.16,23951,72.17
+2020-05-17,Busan,Asia,tanker,1.66,34.06,1917.31,3.1,21660,76.46
+2015-03-29,Savannah,Asia,tanker,4.1,30.71,2782.2,2.32,19330,72.59
+2020-03-08,Rotterdam,Middle East,ro-ro,3.66,3.0,1345.04,3.1,14607,81.78
+2015-05-03,Valencia,North America,ro-ro,4.62,31.2,1830.96,2.03,23545,71.4
+2015-09-20,Busan,Middle East,bulk,0.75,7.11,2332.19,3.15,18025,86.37
+2023-01-08,Long Beach,South America,container,2.36,14.91,2788.11,2.56,21415,80.81
+2020-06-07,Tanjung Priok,South America,tanker,5.01,8.9,2066.78,2.74,18395,77.31
+2016-04-03,Valencia,Europe,tanker,3.7,34.47,2612.11,1.17,25229,72.26
+2020-05-31,Shanghai,Middle East,bulk,4.49,26.28,3314.68,2.58,8599,73.14
+2019-06-16,Rotterdam,Europe,container,4.22,22.64,1654.5,0.94,13571,74.77
+2019-07-28,Savannah,Africa,container,2.09,41.35,864.06,2.73,18725,73.41
+2018-08-12,Manzanillo,Middle East,tanker,5.19,3.96,2253.69,3.1,17965,78.43
+2015-10-25,Durban,Africa,bulk,7.58,42.8,1958.49,3.06,19615,62.0
+2016-03-13,Shanghai,Asia,container,5.26,9.39,1937.25,1.39,17800,76.66
+2021-12-05,Durban,Africa,container,5.32,58.86,2203.99,2.26,29152,61.7
+2019-08-11,Busan,North America,container,5.62,6.03,935.48,2.25,12640,76.95
+2024-12-15,Valencia,North America,container,6.19,23.17,1230.04,2.81,15906,70.67
+2019-08-25,Antwerp,Asia,tanker,3.34,33.0,1887.95,3.23,28639,73.42
+2023-02-26,New York/New Jersey,Africa,ro-ro,6.68,9.62,1721.82,2.48,0,73.75
+2020-07-19,Houston,North America,tanker,2.32,44.09,2499.8,2.96,18152,72.13
+2022-01-23,Singapore,Middle East,tanker,3.03,21.84,1783.07,2.79,18784,77.39
+2024-03-24,Ningbo,South America,container,4.89,24.0,1713.19,1.65,15423,73.02
+2018-02-25,Busan,North America,tanker,6.65,24.22,1413.13,2.8,27486,69.43
+2017-12-10,Colombo,North America,container,0.2,5.79,483.26,3.24,17310,87.86
+2019-02-24,Singapore,South America,tanker,6.9,45.01,2091.95,2.44,20577,62.7
+2019-03-24,Jebel Ali,South America,container,6.18,29.53,1649.27,2.28,24543,68.78
+2017-12-10,Jebel Ali,Africa,container,4.09,60.54,2301.16,2.56,28848,63.66
+2016-07-10,Hamburg,South America,ro-ro,3.69,40.7,2451.6,3.13,15186,70.41
+2017-05-21,Manzanillo,North America,ro-ro,1.2,35.23,2604.35,2.86,26112,77.03
+2023-08-27,Singapore,Asia,bulk,2.99,21.01,3507.75,2.38,16644,77.72
+2020-10-04,Hamburg,Asia,bulk,1.83,11.07,1780.21,2.88,12901,83.02
+2022-02-06,Hamburg,Middle East,tanker,1.88,37.78,2746.11,2.25,17556,74.91
+2017-04-09,Hamburg,Middle East,ro-ro,0.38,49.1,1018.33,1.0,24225,74.51
+2022-02-06,New York/New Jersey,Asia,container,3.83,23.68,2999.94,3.29,13127,75.24
+2022-02-06,Santos,South America,bulk,3.63,36.29,2113.04,2.44,11307,71.85
+2023-10-22,Felixstowe,Europe,bulk,4.88,12.15,2604.03,3.39,18507,76.6
+2019-10-20,Felixstowe,Africa,bulk,3.84,20.35,2041.11,3.29,14903,76.22
+2020-02-09,Ningbo,Asia,tanker,1.91,53.75,2634.44,0.95,26652,70.06
+2017-04-23,New York/New Jersey,Middle East,ro-ro,3.38,30.79,1937.79,2.37,19015,74.0
+2024-12-01,Houston,South America,ro-ro,2.65,44.52,1746.33,2.76,30309,71.34
+2018-11-18,Rotterdam,Middle East,container,1.16,17.02,2022.53,0.81,16693,82.57
+2018-04-08,Savannah,Middle East,tanker,4.25,52.63,2141.98,1.97,27757,65.71
+2024-03-24,Savannah,Europe,container,1.31,45.59,2320.59,1.49,25044,73.7
+2023-06-18,Los Angeles,Africa,bulk,3.2,36.77,2685.62,2.72,20335,72.57
+2016-06-05,Houston,South America,ro-ro,1.7,26.73,2143.41,2.06,13397,78.58
+2023-04-16,Busan,Europe,ro-ro,3.74,53.38,3161.71,2.57,25488,66.51
+2019-09-29,Ningbo,North America,tanker,2.55,31.55,2394.53,1.81,20588,75.44
+2021-08-08,Colombo,South America,container,3.84,24.97,1957.08,4.68,19336,74.83
+2015-11-22,New York/New Jersey,Africa,tanker,3.71,43.73,2858.25,3.12,13620,69.46
+2023-10-22,Felixstowe,Africa,ro-ro,3.25,24.96,2408.37,2.59,18584,76.01
+2023-07-23,Ningbo,Middle East,bulk,1.31,6.93,1855.63,3.73,13612,85.3
+2018-08-05,Colombo,South America,container,3.27,16.7,2755.96,3.16,11827,78.45
+2017-12-24,Los Angeles,South America,tanker,0.2,20.86,1087.84,2.18,17959,83.34
+2023-11-26,Jebel Ali,Asia,ro-ro,1.82,8.04,2539.41,3.33,13755,83.95
+2018-06-17,Manzanillo,Africa,tanker,4.96,8.27,400.0,2.22,16796,77.6
+2016-11-27,Hamburg,Asia,ro-ro,3.98,45.35,2799.69,3.34,21441,68.44
+2021-09-12,Long Beach,South America,ro-ro,4.33,80.09,2888.63,2.44,20600,57.31
+2020-08-09,Singapore,Middle East,tanker,6.43,30.15,2157.78,3.42,16728,68.1
+2018-07-01,Houston,North America,bulk,6.46,32.74,2653.75,1.71,25932,67.26
+2023-06-11,Manzanillo,Asia,tanker,0.74,29.79,2797.6,2.31,16256,79.58
+2016-12-11,Busan,Asia,bulk,5.15,67.58,2895.95,2.51,20587,59.43
+2017-04-30,Ningbo,Asia,ro-ro,4.38,24.49,3206.81,1.53,25893,73.89
+2023-08-13,Hamburg,Europe,tanker,3.9,32.95,1623.59,2.67,24153,72.32
+2020-02-02,Tanjung Priok,North America,bulk,1.4,14.94,1817.47,1.42,17346,82.72
+2020-06-21,Houston,North America,bulk,2.38,44.19,1903.49,2.38,27047,71.98
+2024-12-22,Rotterdam,North America,container,7.18,42.16,2325.48,2.34,19680,62.99
+2018-10-28,Los Angeles,Middle East,container,2.99,9.03,2663.61,2.75,8223,81.31
+2022-04-03,Antwerp,Asia,ro-ro,2.79,52.83,2265.83,2.74,22385,68.57
+2023-09-24,Manzanillo,Europe,ro-ro,1.91,32.8,2917.06,2.03,11685,76.34
+2020-10-18,Savannah,Africa,container,5.78,36.44,2568.23,2.94,20042,67.51
+2023-09-24,Felixstowe,Middle East,tanker,2.0,13.46,2985.4,3.09,23004,81.96
+2016-09-11,Houston,Asia,container,5.77,11.91,1239.49,2.85,18495,74.89
+2021-12-12,New York/New Jersey,Africa,bulk,8.24,41.67,2081.58,2.46,17123,61.02
+2016-06-19,Singapore,Europe,tanker,5.89,47.6,1255.43,1.94,12655,63.94
+2020-05-31,Valencia,Africa,container,5.37,45.24,2465.7,3.04,24966,65.69
+2021-03-07,Long Beach,Middle East,container,7.51,19.13,2436.77,2.73,12786,69.24
+2021-03-28,Antwerp,South America,container,1.85,51.55,2072.79,1.93,26149,70.83
+2015-03-01,Hamburg,Europe,ro-ro,4.39,30.88,2791.38,2.94,17620,71.96
+2019-04-28,Antwerp,Asia,ro-ro,6.21,21.87,1686.23,2.81,18255,71.02
+2017-12-24,Santos,Europe,ro-ro,1.39,20.54,2051.32,3.23,13916,81.06
+2020-07-19,Houston,Europe,container,7.18,11.19,1806.24,2.56,20441,72.28
+2019-03-17,Los Angeles,Middle East,container,2.1,49.35,3014.71,3.02,21413,70.99
+2024-08-18,Durban,South America,bulk,4.05,25.26,2353.8,2.99,19012,74.32
+2018-07-01,Long Beach,Middle East,tanker,5.26,9.4,1679.11,2.75,14291,76.66
+2022-06-19,Colombo,Europe,tanker,0.2,28.38,2060.26,1.23,21151,81.09
+2024-06-30,Manzanillo,Africa,bulk,3.85,59.62,2375.61,3.04,19345,64.41
+2020-11-22,Hamburg,Asia,ro-ro,5.56,38.99,1835.23,2.59,5410,67.18
+2024-08-11,Jebel Ali,South America,tanker,2.39,24.48,2205.19,1.52,22910,77.88
+2024-06-09,Ningbo,North America,bulk,5.33,53.18,2359.68,2.06,23234,63.39
+2017-03-19,Ningbo,Middle East,ro-ro,3.09,34.82,1695.85,3.25,9721,73.37
+2021-05-23,Hamburg,Africa,ro-ro,4.4,65.19,3397.17,2.56,22734,61.64
+2017-04-09,Rotterdam,Middle East,tanker,0.2,8.73,1868.96,2.13,15835,86.98
+2017-03-26,Busan,Africa,ro-ro,3.68,16.6,2461.26,1.96,13525,77.66
+2017-07-09,Santos,Middle East,ro-ro,2.38,29.82,470.6,2.9,22442,76.29
+2019-08-11,Los Angeles,Asia,tanker,2.49,16.71,2185.23,2.89,16931,80.01
+2024-12-15,Antwerp,Middle East,container,9.27,37.43,2551.95,2.52,24740,60.23
+2021-05-02,Shanghai,Africa,tanker,2.94,14.18,1521.28,2.85,28195,79.87
+2023-01-29,Jebel Ali,Middle East,ro-ro,1.72,34.58,2929.07,2.58,14742,76.19
+2022-10-30,Shanghai,North America,tanker,2.14,25.38,2669.29,1.15,16461,78.11
+2024-07-14,Hamburg,Asia,container,1.44,45.42,2538.7,2.02,22017,73.49
+2021-01-17,Valencia,Middle East,bulk,3.95,11.23,2778.31,3.38,9039,78.73
+2018-04-08,Durban,Europe,container,1.33,44.14,2989.48,2.55,4763,74.1
+2021-06-20,Houston,South America,container,5.09,48.48,2247.69,2.44,17773,65.28
+2015-05-31,Jebel Ali,North America,tanker,4.36,25.53,2467.7,1.28,23668,73.62
+2021-12-05,Durban,North America,container,2.58,40.14,3267.8,2.42,29465,72.8
+2019-02-17,Busan,South America,bulk,6.63,36.14,1984.16,2.58,17720,65.9
+2018-01-28,Durban,Middle East,bulk,0.92,24.07,2083.56,2.08,15725,80.94
+2020-09-13,Rotterdam,Asia,tanker,3.29,19.44,1542.06,2.31,18981,77.59
+2023-02-12,Antwerp,South America,bulk,0.21,28.06,1490.75,2.34,16805,81.16
+2015-04-05,Long Beach,North America,container,0.2,38.06,1946.82,1.75,17379,78.18
+2024-11-03,Jebel Ali,Middle East,container,6.26,35.25,1971.98,2.09,25821,66.9
+2018-01-28,Ningbo,Asia,container,3.62,36.94,2392.99,3.17,20449,71.68
+2019-07-07,Hamburg,North America,tanker,5.42,8.76,2173.03,2.57,9717,76.53
+2017-06-04,Jebel Ali,Africa,ro-ro,3.41,30.19,2712.82,2.54,21043,74.12
+2017-07-30,Shanghai,North America,container,5.52,10.75,1310.55,3.21,14151,75.74
+2016-06-12,Manzanillo,Africa,ro-ro,3.62,13.12,1535.98,3.27,14264,78.82
+2015-05-24,Los Angeles,Africa,bulk,0.86,28.34,2563.34,1.77,14910,79.78
+2016-11-13,Colombo,Middle East,bulk,3.95,3.05,2056.65,2.7,9230,81.18
+2021-02-14,Singapore,Middle East,container,3.84,17.46,3061.44,3.27,19320,77.08
+2020-12-06,Shanghai,Middle East,bulk,4.82,8.06,1843.86,2.29,10145,77.94
+2016-12-18,Shanghai,Africa,ro-ro,2.74,41.02,3582.13,2.98,27735,72.21
+2022-05-22,Ningbo,Middle East,container,0.4,22.41,2283.04,1.83,8037,82.48
+2019-05-12,Felixstowe,South America,tanker,3.62,40.07,1489.78,1.43,21945,70.74
+2024-06-23,Ningbo,Africa,bulk,3.39,23.04,1788.13,2.47,24163,76.31
+2022-07-03,Los Angeles,Middle East,ro-ro,4.22,49.15,2659.87,1.88,22379,66.82
+2022-04-24,Durban,Africa,container,5.89,50.99,2088.62,2.64,18058,62.92
+2023-11-19,Hamburg,South America,container,3.16,15.54,2719.88,2.5,24378,79.02
+2022-10-16,Hamburg,Middle East,tanker,0.45,53.45,2363.37,2.69,27900,73.06
+2024-05-12,Colombo,North America,tanker,4.45,45.07,2465.69,2.02,19614,67.58
+2021-07-11,Houston,Africa,container,5.66,13.35,1913.1,1.75,21859,74.68
+2016-11-13,Durban,Europe,bulk,4.21,11.81,2923.71,2.84,17337,78.04
+2024-08-11,Colombo,Europe,container,5.76,3.29,2610.71,3.81,15704,77.49
+2017-10-08,Jebel Ali,South America,ro-ro,5.59,33.1,1968.56,1.34,13491,68.89
+2019-07-28,Long Beach,Middle East,tanker,2.86,35.25,747.63,3.19,19827,73.7
+2023-01-29,Ningbo,Africa,tanker,0.49,21.21,1822.07,2.29,11985,82.66
+2017-12-17,Long Beach,Asia,ro-ro,5.34,32.05,2401.26,3.44,24796,69.71
+2015-02-08,Shanghai,Africa,bulk,0.2,12.4,2019.48,2.29,17174,85.88
+2024-08-04,Durban,Middle East,tanker,2.11,2.79,2914.31,2.85,2714,84.94
+2019-08-18,Singapore,Middle East,ro-ro,7.01,26.82,1678.26,2.07,18866,67.93
+2016-08-07,Savannah,Middle East,container,3.91,45.99,1561.55,1.55,17716,68.38
+2022-05-15,Houston,North America,bulk,8.17,31.11,2808.43,2.24,10755,64.33
+2017-05-21,Rotterdam,Europe,ro-ro,1.49,33.52,1022.26,2.54,20269,76.96
+2017-03-26,Long Beach,Middle East,ro-ro,5.79,10.16,2036.44,2.99,6967,75.37
+2018-05-06,Manzanillo,Middle East,bulk,4.01,68.91,2340.18,2.87,20654,61.31
+2023-03-19,Jebel Ali,North America,tanker,7.17,20.39,2374.66,3.37,14521,69.54
+2017-04-23,Felixstowe,Asia,tanker,1.52,18.96,1966.8,3.17,22430,81.27
+2021-05-02,Tanjung Priok,Asia,bulk,3.11,27.68,1082.92,2.33,19707,75.48
+2017-10-08,Ningbo,South America,bulk,6.95,23.74,1779.27,1.54,9514,68.98
+2022-04-17,Manzanillo,South America,tanker,1.88,49.83,1536.91,3.42,21210,71.29
+2024-04-07,Valencia,Europe,tanker,1.93,29.29,2228.69,1.69,15353,77.35
+2017-08-27,Rotterdam,South America,ro-ro,3.76,47.65,3249.29,2.81,15229,68.18
+2015-03-15,Singapore,Middle East,bulk,2.29,14.53,2470.84,2.22,8968,81.06
+2017-12-10,Santos,North America,container,1.14,4.86,1143.67,2.11,12392,86.26
+2021-02-14,Antwerp,Europe,container,1.42,30.42,1608.66,1.37,22359,78.03
+2023-12-31,Singapore,North America,container,2.02,22.7,2112.96,2.67,16290,79.15
+2024-03-10,Tanjung Priok,Europe,container,2.65,49.6,2357.4,2.11,22160,69.82
+2021-11-14,Durban,Europe,tanker,6.1,36.94,1170.86,3.78,22083,66.72
+2015-04-12,Antwerp,Asia,tanker,0.31,17.13,1815.19,2.03,11315,84.24
+2023-05-14,Colombo,Africa,tanker,2.72,46.23,3071.4,1.77,20455,70.69
+2022-03-20,Tanjung Priok,Middle East,tanker,3.79,44.69,2115.52,2.45,26567,69.01
+2018-12-23,New York/New Jersey,South America,bulk,3.33,12.53,1869.98,1.69,11234,79.58
+2017-01-08,Antwerp,Asia,bulk,4.99,40.14,1920.95,3.15,18787,67.98
+2020-03-01,Colombo,North America,bulk,0.2,24.93,2852.73,1.83,26348,82.12
+2022-07-10,Singapore,South America,tanker,6.53,23.02,2297.57,2.92,17622,70.03
+2024-04-14,Antwerp,Europe,container,5.35,25.29,2370.19,2.5,15787,71.71
+2019-07-21,Antwerp,North America,bulk,2.4,26.46,1412.52,3.34,16504,77.26
+2017-10-22,Rotterdam,Middle East,container,3.98,41.04,2896.35,3.08,26928,69.73
+2021-05-09,New York/New Jersey,North America,bulk,4.45,41.0,2896.43,1.96,25187,68.8
+2023-08-20,Felixstowe,Africa,ro-ro,3.08,13.7,1292.9,3.21,9957,79.73
+2021-05-30,Ningbo,South America,container,4.4,12.34,1482.72,2.19,25516,77.5
+2019-09-22,Durban,Middle East,ro-ro,5.71,35.12,2372.75,1.8,19997,68.04
+2022-07-24,Santos,Asia,tanker,4.27,30.97,3400.83,1.91,9259,72.17
+2021-03-21,Manzanillo,North America,bulk,5.06,23.21,1314.65,2.43,9168,72.92
+2018-04-08,Shanghai,Africa,bulk,4.11,33.14,1958.06,2.29,16079,71.84
+2023-07-30,Durban,Middle East,ro-ro,2.96,53.87,1684.66,1.82,21393,67.92
+2019-12-01,Savannah,South America,ro-ro,1.91,59.11,2131.26,2.66,23620,68.45
+2021-10-31,Rotterdam,North America,tanker,3.44,58.83,3227.98,1.26,29445,65.47
+2024-02-25,Busan,Africa,ro-ro,4.37,20.57,1870.12,2.18,20321,75.09
+2019-03-10,Tanjung Priok,South America,bulk,4.41,31.46,2563.65,2.29,17058,71.74
+2022-07-03,Busan,Europe,container,0.2,43.78,2363.33,2.34,17122,76.47
+2018-11-04,Valencia,Asia,bulk,2.4,41.55,2447.0,2.66,20188,72.74
+2015-02-08,Colombo,Asia,tanker,0.2,26.68,2505.46,1.99,20731,81.6
+2016-11-06,Busan,Asia,container,0.2,35.28,2051.17,2.37,18911,79.02
+2020-05-10,Long Beach,Africa,tanker,2.55,46.65,2383.62,2.77,24743,70.9
+2024-05-26,Jebel Ali,North America,tanker,5.05,8.53,1593.95,2.51,7238,77.34
+2020-05-17,Long Beach,South America,container,6.0,36.33,2808.67,2.1,12901,67.1
+2024-03-31,Tanjung Priok,Africa,ro-ro,2.75,30.53,1877.43,3.19,23173,75.34
+2024-08-18,Rotterdam,Middle East,container,2.81,3.39,2052.48,3.26,6991,83.36
+2015-10-04,Busan,North America,bulk,4.44,33.53,1127.96,2.25,21816,71.06
+2018-06-24,Houston,North America,ro-ro,5.34,17.84,1987.57,1.93,9871,73.97
+2017-05-07,Long Beach,Middle East,container,4.87,23.44,3009.15,1.88,24454,73.23
+2021-02-28,Savannah,South America,tanker,6.1,58.77,3477.08,1.88,20746,60.17
+2018-10-21,Tanjung Priok,Africa,container,4.55,30.71,2070.48,1.84,24227,71.69
+2021-07-11,Singapore,Africa,bulk,5.86,43.7,3034.89,1.49,22002,65.17
+2022-03-13,Manzanillo,North America,ro-ro,3.6,19.84,2566.69,2.4,19104,76.85
+2023-03-05,Long Beach,North America,bulk,3.81,57.61,2336.33,2.78,17198,65.1
+2024-11-03,Houston,Africa,tanker,5.35,10.78,2063.1,2.69,18692,76.07
+2016-08-21,Rotterdam,Middle East,container,3.81,8.97,1048.0,2.47,8116,79.69
+2020-05-31,Tanjung Priok,Europe,ro-ro,6.41,25.13,3312.05,2.13,21517,69.64
+2018-05-27,Los Angeles,Asia,tanker,4.19,46.77,1960.05,3.08,27591,67.59
+2021-11-21,Savannah,Asia,ro-ro,5.81,17.62,1073.46,2.42,10219,73.09
+2016-09-11,Colombo,Middle East,container,1.04,8.17,1189.32,2.37,11741,85.47
+2017-04-16,New York/New Jersey,Europe,container,0.92,25.28,2147.06,2.11,7753,80.58
+2018-08-26,Singapore,South America,container,5.48,19.78,2510.69,3.25,15942,73.11
+2018-04-29,Los Angeles,Europe,tanker,1.56,11.54,1316.27,1.89,12188,83.42
+2024-01-14,New York/New Jersey,Africa,bulk,4.97,14.78,1631.46,2.93,13991,75.63
+2021-01-17,Antwerp,Africa,bulk,2.68,8.18,3351.76,2.37,9036,82.19
+2021-01-31,Long Beach,Middle East,tanker,0.2,16.38,3024.38,2.62,3157,84.69
+2018-07-01,Shanghai,Europe,tanker,5.03,18.3,2009.25,2.46,8224,74.45
+2023-02-12,Hamburg,Europe,tanker,3.07,12.36,1567.02,2.74,7406,80.15
+2018-12-02,Rotterdam,Asia,tanker,7.06,56.01,2065.13,1.2,20905,59.08
+2023-08-20,Shanghai,North America,ro-ro,3.23,25.23,1862.77,1.5,11354,75.97
+2021-12-19,Colombo,Asia,tanker,4.47,12.29,1770.04,1.77,13792,77.37
+2023-10-29,Rotterdam,North America,ro-ro,2.1,17.95,814.8,2.09,14557,80.41
+2018-01-21,Durban,South America,bulk,3.2,32.98,907.05,2.9,20979,73.71
+2023-07-09,Busan,Africa,tanker,1.55,12.28,1258.12,2.56,26297,83.22
+2019-01-27,Singapore,Africa,tanker,4.13,19.25,1315.83,1.97,17336,75.96
+2016-10-09,Manzanillo,Europe,tanker,2.44,31.58,1630.62,1.46,19888,75.65
+2019-04-14,Valencia,Asia,container,2.16,5.13,1192.98,1.71,9404,84.14
+2017-04-09,Manzanillo,Africa,bulk,2.74,14.91,2999.53,2.13,22756,80.05
+2024-04-28,Houston,Middle East,tanker,3.89,40.53,2684.53,2.03,19260,70.06
+2022-04-24,Colombo,Middle East,container,1.75,20.77,2676.84,2.54,11133,80.27
+2021-05-02,Savannah,Africa,tanker,7.38,30.17,2125.45,2.87,17317,66.19
+2015-03-01,Rotterdam,Middle East,ro-ro,1.11,46.54,2261.89,1.54,22096,73.82
+2021-07-25,Singapore,Africa,container,2.6,38.8,2034.31,3.4,25914,73.16
+2018-09-02,Busan,Asia,bulk,0.2,67.29,2377.73,1.99,19822,69.41
+2024-03-03,Durban,Europe,container,0.79,11.67,2366.24,2.73,14002,84.92
+2023-08-13,Tanjung Priok,Middle East,ro-ro,0.89,40.74,1622.96,2.18,23520,76.0
+2022-10-30,Santos,Europe,tanker,3.85,27.91,1590.82,1.78,12176,73.93
+2022-05-01,Tanjung Priok,Asia,ro-ro,0.2,13.6,2214.22,2.2,6107,85.52
+2022-11-13,Ningbo,North America,bulk,1.91,12.67,2132.79,2.13,3956,82.38
+2024-12-15,Savannah,Middle East,ro-ro,6.06,61.14,3365.89,2.09,20714,59.54
+2020-04-12,Colombo,Middle East,container,5.39,54.43,1759.72,2.65,24769,62.89
+2018-03-18,Manzanillo,Europe,tanker,5.81,35.72,1994.58,3.46,18818,67.66
+2018-11-25,Colombo,Europe,bulk,1.37,22.23,1235.29,1.43,21554,80.59
+2021-07-18,Long Beach,North America,tanker,0.2,8.47,1049.55,3.46,14019,87.06
+2017-10-08,Busan,Middle East,ro-ro,5.57,39.92,1498.75,2.0,20836,66.88
+2018-04-01,Valencia,North America,bulk,2.56,25.29,1893.3,1.49,28092,77.29
+2018-12-09,Rotterdam,Asia,tanker,3.05,35.6,1688.37,2.68,12091,73.22
+2016-07-31,Rotterdam,Europe,bulk,7.55,30.64,2190.66,2.09,15833,65.71
+2023-07-30,New York/New Jersey,Africa,bulk,0.2,36.39,1985.26,2.4,11216,78.68
+2018-01-07,Durban,Asia,container,3.79,3.51,2418.0,2.47,7656,81.37
+2024-05-12,Rotterdam,Asia,container,0.2,13.16,2199.99,0.8,12200,85.65
+2024-03-31,Durban,Africa,ro-ro,0.73,18.01,1907.44,2.56,20991,83.14
+2019-03-03,Santos,Africa,ro-ro,4.77,51.26,2536.3,1.26,27532,65.08
+2024-02-04,Hamburg,North America,ro-ro,3.35,74.78,3068.0,2.62,27129,60.87
+2017-07-09,Singapore,Europe,ro-ro,2.89,47.29,1821.69,2.22,33184,70.03
+2021-05-30,Ningbo,Africa,ro-ro,4.45,16.33,2701.45,1.74,27524,76.2
+2022-09-25,Durban,North America,tanker,2.52,47.73,2076.12,2.98,19057,70.64
+2024-08-04,Colombo,North America,bulk,0.88,19.8,2284.27,1.85,17934,82.3
+2018-07-01,Hamburg,Asia,tanker,2.97,13.98,2868.13,3.22,15759,79.87
+2021-09-05,Manzanillo,North America,ro-ro,4.56,24.36,2796.69,1.38,30585,73.57
+2016-07-10,Hamburg,Europe,ro-ro,2.85,43.18,1850.34,2.28,22069,71.35
+2018-09-09,Long Beach,Europe,tanker,0.95,49.79,2801.55,2.97,23568,73.16
+2023-07-16,New York/New Jersey,Asia,ro-ro,2.7,30.95,2020.61,2.33,18547,75.32
+2018-07-15,Felixstowe,Europe,tanker,5.95,52.22,2570.37,2.75,19909,62.43
+2021-02-07,Jebel Ali,Africa,ro-ro,4.09,13.65,2825.19,2.65,14311,77.72
+2015-09-06,Shanghai,Middle East,bulk,4.22,6.84,1435.61,2.4,15067,79.51
+2018-03-18,Jebel Ali,Africa,container,2.41,25.27,1329.46,3.48,11728,77.6
+2024-02-18,New York/New Jersey,Asia,container,1.62,36.01,3084.98,1.78,15857,75.96
+2022-12-11,Los Angeles,Europe,tanker,2.89,12.67,1533.95,2.53,7414,80.42
+2017-07-09,Colombo,South America,ro-ro,4.29,16.09,2336.22,1.9,21836,76.59
+2023-12-03,Los Angeles,Middle East,ro-ro,1.9,53.89,2104.61,1.38,8367,70.03
+2023-04-16,Long Beach,Asia,ro-ro,1.75,38.81,2690.61,2.18,17437,74.86
+2020-01-26,Savannah,South America,ro-ro,0.83,15.98,2275.86,2.46,3676,83.55
+2024-11-10,Busan,Middle East,tanker,5.19,28.13,1699.58,1.32,20277,71.18
+2022-02-27,Savannah,Europe,ro-ro,4.61,52.12,1724.56,2.03,25645,65.14
+2022-07-10,New York/New Jersey,Europe,container,3.63,33.61,1706.23,2.04,19094,72.66
+2021-08-15,Colombo,Asia,bulk,2.35,18.85,2686.01,2.56,17413,79.64
+2023-12-03,Felixstowe,North America,ro-ro,4.75,65.79,2605.54,2.98,25870,60.76
+2020-07-12,Long Beach,North America,ro-ro,5.02,20.74,2854.36,1.67,19301,73.74
+2024-01-14,Busan,North America,tanker,3.41,11.33,1573.05,2.27,18350,79.78
+2019-12-15,Felixstowe,Asia,tanker,5.39,25.52,2308.06,2.92,10293,71.56
+2015-06-21,Durban,Asia,bulk,2.48,4.81,1988.32,3.24,6990,83.6
+2020-10-04,Busan,Middle East,container,5.05,22.3,1625.75,2.41,10113,73.21
+2023-10-08,Singapore,Asia,container,2.73,27.42,2956.72,2.92,10640,76.31
+2017-03-12,Busan,Africa,container,4.51,14.39,1937.47,2.83,8977,76.66
+2022-10-09,Hamburg,Europe,container,0.2,59.43,2052.93,1.94,33757,71.77
+2016-11-06,Houston,Africa,bulk,0.2,10.9,1692.35,3.31,15494,86.33
+2024-09-08,Felixstowe,Asia,tanker,4.67,15.11,2980.17,2.82,22745,76.13
+2023-12-31,Tanjung Priok,Europe,ro-ro,7.4,60.8,2872.79,2.26,26365,56.96
+2015-10-18,New York/New Jersey,Asia,tanker,3.19,23.1,2858.57,2.72,26231,76.69
+2015-10-04,Houston,South America,container,5.23,26.19,2766.61,3.72,18429,71.68
+2022-07-03,Manzanillo,Africa,container,3.15,54.08,2271.74,1.95,11547,67.48
+2021-08-15,Ningbo,Middle East,ro-ro,1.63,20.11,3326.37,3.24,17120,80.71
+2015-06-07,Rotterdam,Africa,tanker,5.11,32.04,2070.09,2.24,12743,70.17
+2016-07-24,Felixstowe,North America,bulk,4.42,44.41,753.03,2.2,17853,67.84
+2020-02-16,Ningbo,South America,bulk,4.88,34.19,3409.15,3.37,22906,69.98
+2015-12-20,Busan,South America,ro-ro,6.71,30.47,1914.31,2.98,23334,67.44
+2019-03-24,Felixstowe,Asia,bulk,4.52,21.53,2449.56,3.18,24710,74.5
+2020-06-07,Manzanillo,Africa,container,6.54,18.59,1844.24,2.37,18114,71.34
+2022-10-30,Rotterdam,Africa,tanker,0.6,39.69,2119.81,2.53,18756,76.89
+2020-05-10,Los Angeles,Middle East,bulk,2.27,44.23,1611.07,3.26,31279,72.19
+2015-05-17,Felixstowe,Africa,bulk,1.93,47.14,2611.19,2.06,15773,72.0
+2020-05-24,Shanghai,Middle East,tanker,1.93,31.05,1527.26,3.19,26415,76.82
+2016-11-27,Hamburg,Europe,container,2.45,40.48,2851.94,3.73,18144,72.96
+2021-05-16,Hamburg,North America,tanker,0.88,46.91,1999.28,1.73,24390,74.17
+2024-01-14,Colombo,Middle East,tanker,0.9,56.48,2636.71,1.63,22323,71.26
+2022-08-21,Santos,South America,container,6.25,35.35,915.16,2.29,19570,66.9
+2021-09-26,Singapore,Asia,tanker,4.9,27.69,1627.38,2.21,25831,71.89
+2023-09-24,Houston,Middle East,ro-ro,2.72,21.45,1527.15,2.15,18990,78.12
+2019-02-17,Durban,Africa,bulk,2.91,27.9,2065.66,2.81,10768,75.81
+2022-08-28,Shanghai,Middle East,container,3.58,49.63,3032.37,2.52,34268,67.95
+2016-07-17,Santos,South America,tanker,3.96,11.75,1227.94,2.69,12062,78.55
+2016-08-21,Antwerp,Africa,tanker,1.95,20.91,1964.2,2.74,15650,79.83
+2020-12-20,Ningbo,Asia,ro-ro,3.91,21.83,2152.77,2.49,21421,75.63
+2024-03-03,Los Angeles,Europe,bulk,4.5,31.5,2759.53,2.68,27324,71.55
+2021-11-28,Colombo,Middle East,ro-ro,3.07,20.7,1093.74,1.34,14210,77.65
+2015-06-14,Ningbo,South America,ro-ro,3.54,20.75,2013.48,2.84,24425,76.7
+2019-08-11,Jebel Ali,South America,bulk,1.8,11.41,2581.25,2.08,3543,82.98
+2022-06-05,Tanjung Priok,North America,container,6.25,41.52,2135.12,1.66,22375,65.04
+2022-10-09,Antwerp,Europe,container,1.29,28.63,1520.37,1.82,19636,78.83
+2020-09-06,Rotterdam,Europe,ro-ro,1.05,58.91,3146.27,2.22,25699,70.23
+2023-01-08,Busan,Europe,ro-ro,5.58,15.38,2290.23,2.47,9778,74.23
+2020-06-21,Singapore,Asia,container,5.55,11.82,1538.68,2.06,13849,75.35
+2021-03-28,Manzanillo,South America,ro-ro,5.66,12.0,1863.43,1.34,9124,75.08
+2019-06-02,Jebel Ali,Middle East,ro-ro,6.78,15.63,1168.16,1.7,16394,71.75
+2020-08-16,Valencia,Europe,bulk,0.2,32.59,1341.54,2.75,26032,79.82
+2022-11-06,Ningbo,North America,tanker,0.42,59.06,3377.76,2.83,18850,71.44
+2024-02-11,Rotterdam,Africa,container,2.23,41.01,3183.57,2.42,19038,73.24
+2022-07-10,Colombo,Africa,ro-ro,4.17,12.89,2770.44,1.85,10010,77.79
+2023-03-19,Felixstowe,Europe,container,4.32,6.27,1114.67,2.5,10199,79.48
+2019-05-26,Houston,South America,container,3.6,26.72,1570.84,2.33,6046,74.78
+2023-01-08,Los Angeles,Asia,bulk,5.04,2.37,2054.41,3.72,13056,79.21
+2018-04-08,Colombo,Africa,ro-ro,0.2,41.75,2131.36,2.4,18301,77.07
+2016-10-16,Busan,North America,ro-ro,5.94,54.14,2020.03,2.43,28002,61.88
+2018-10-14,Rotterdam,Middle East,tanker,1.07,36.64,1614.76,2.11,13513,76.87
+2019-09-15,Rotterdam,Middle East,bulk,4.39,26.81,3121.96,3.05,21332,73.18
+2021-05-02,Houston,Asia,container,4.54,9.36,1617.14,2.73,5450,78.11
+2015-08-09,Antwerp,South America,ro-ro,3.32,15.54,2148.03,2.14,15715,78.7
+2024-01-07,Hamburg,Africa,ro-ro,0.46,21.25,2264.96,3.15,21121,82.7
+2019-09-29,Rotterdam,Middle East,container,2.96,63.35,3633.98,1.93,19320,65.08
+2021-07-04,Rotterdam,Europe,ro-ro,5.49,44.07,1494.37,2.63,7872,65.8
+2016-05-15,Los Angeles,Africa,container,3.53,15.66,2230.09,2.18,6520,78.24
+2022-12-25,Manzanillo,Middle East,ro-ro,3.73,42.9,2657.87,2.81,21905,69.67
+2016-05-22,Felixstowe,Asia,container,3.98,12.8,1772.26,1.92,16146,78.2
+2015-06-21,Valencia,Middle East,container,0.2,65.65,1649.37,1.97,30802,69.9
+2020-09-27,Jebel Ali,Africa,container,7.21,5.16,1171.72,1.75,20105,74.03
+2022-02-20,Jebel Ali,Africa,ro-ro,2.08,42.16,2048.04,1.87,22621,73.19
+2023-05-28,Savannah,North America,bulk,6.18,35.88,2728.98,1.93,15725,66.88
+2020-02-23,Colombo,North America,bulk,7.36,31.1,2793.11,2.69,21835,65.95
+2022-03-13,Felixstowe,Africa,tanker,0.2,60.0,2141.14,1.63,24302,71.6
+2017-10-15,Hamburg,Middle East,bulk,2.73,32.44,3196.8,3.12,18058,74.81
+2020-03-08,Savannah,Asia,container,6.56,26.36,1842.47,3.49,21810,68.97
+2023-12-31,Santos,Europe,tanker,4.38,32.71,2176.44,1.68,25175,71.43
+2021-09-19,Ningbo,Africa,ro-ro,5.51,6.78,2317.33,2.37,22851,76.95
+2021-06-27,Valencia,Africa,tanker,1.79,10.96,1388.38,2.54,6873,83.13
+2020-05-24,Tanjung Priok,North America,bulk,4.11,30.66,2321.13,3.18,17216,72.58
+2017-11-26,Manzanillo,Asia,container,5.03,37.75,1852.97,1.54,12699,68.61
+2019-05-05,Busan,South America,tanker,7.43,39.59,2346.04,2.39,16187,63.26
+2020-09-20,Ningbo,Africa,bulk,1.71,33.47,2629.94,2.64,18218,76.54
+2020-12-27,Santos,Africa,ro-ro,5.37,28.01,1922.26,2.05,19719,70.86
+2020-10-11,Houston,Africa,bulk,1.88,18.74,2663.42,3.18,19436,80.62
+2017-11-19,Tanjung Priok,Asia,ro-ro,6.63,77.69,3519.44,2.62,19047,53.43
+2020-01-19,Hamburg,North America,bulk,4.73,1.52,2854.91,3.2,10546,80.08
+2020-12-13,Houston,South America,container,4.82,13.47,2360.34,2.71,14834,76.32
+2020-02-02,Busan,Africa,ro-ro,1.98,30.64,2427.46,3.06,16722,76.85
+2024-05-12,Tanjung Priok,Europe,tanker,1.86,11.93,922.98,3.35,8070,82.7
+2018-01-21,Colombo,South America,tanker,2.34,31.41,2999.23,2.6,15047,75.9
+2022-05-08,Jebel Ali,Middle East,bulk,4.36,31.34,1144.11,2.27,21557,71.88
+2024-06-16,Rotterdam,Middle East,ro-ro,4.96,28.69,1799.65,2.46,23822,71.47
+2015-04-12,New York/New Jersey,Asia,bulk,2.79,10.35,2997.84,2.6,15088,81.32
+2021-01-24,Antwerp,Europe,bulk,7.13,17.61,2689.88,2.72,7728,70.46
+2020-06-14,Tanjung Priok,Africa,container,2.52,54.06,3581.09,3.08,21160,68.74
+2018-11-11,Busan,Middle East,ro-ro,5.37,22.05,1662.97,2.59,22100,72.65
+2015-03-29,Manzanillo,Europe,bulk,4.4,59.14,1878.74,2.54,25234,63.46
+2022-02-20,Long Beach,Middle East,container,3.63,29.1,1378.64,3.08,24603,74.01
+2021-06-20,Manzanillo,North America,tanker,3.35,6.36,1830.57,2.98,20974,81.39
+2016-07-24,Long Beach,Middle East,bulk,1.19,12.56,2225.16,2.36,17984,83.85
+2019-10-20,Shanghai,Africa,bulk,5.89,35.75,3376.09,1.96,22065,67.5
+2019-10-20,Hamburg,Africa,ro-ro,3.43,2.24,2000.16,1.5,13291,82.47
+2018-06-24,Long Beach,South America,tanker,4.26,34.62,2221.87,3.04,20820,71.09
+2020-06-14,New York/New Jersey,Africa,bulk,2.94,40.73,1799.75,2.45,20728,71.9
+2016-04-03,Houston,South America,tanker,3.22,22.01,2586.64,2.92,14211,76.96
+2016-03-13,Antwerp,Europe,bulk,0.74,26.87,2888.0,2.14,11485,80.46
+2024-05-12,Valencia,North America,container,0.82,27.62,2701.4,1.33,18595,80.07
+2021-04-04,New York/New Jersey,Europe,ro-ro,2.04,51.54,2464.91,1.58,19197,70.46
+2017-04-16,Valencia,North America,ro-ro,2.1,9.53,2571.85,1.35,14196,82.94
+2018-11-18,Savannah,South America,bulk,3.06,24.72,1279.29,2.23,14933,76.46
+2024-07-21,Ningbo,South America,container,3.11,23.04,1824.57,1.92,14753,76.87
+2023-06-11,Savannah,Africa,ro-ro,2.05,28.33,2545.91,1.97,19674,77.4
+2018-10-28,Colombo,Africa,ro-ro,7.61,18.49,2756.24,2.52,15498,69.23
+2015-01-04,Shanghai,Middle East,tanker,2.63,9.2,1838.5,2.46,18303,81.98
+2024-09-01,Rotterdam,Asia,ro-ro,6.44,30.79,2637.56,2.91,19201,67.88
+2020-07-26,Ningbo,Asia,bulk,7.19,33.63,1879.5,2.11,13463,65.53
+2021-09-12,Shanghai,Africa,tanker,1.91,12.93,1347.52,1.6,20903,82.3
+2023-08-20,Savannah,Europe,ro-ro,2.54,29.51,1093.49,2.55,18857,76.07
+2015-02-15,Singapore,South America,ro-ro,2.03,36.0,2713.78,2.72,18570,75.14
+2024-09-22,Rotterdam,Europe,container,3.93,27.66,2016.45,2.16,11362,73.84
+2023-06-25,Ningbo,North America,ro-ro,4.05,53.39,2415.48,3.06,20025,65.88
+2021-09-19,Durban,Europe,bulk,5.28,43.52,2350.85,2.42,19694,66.38
+2017-02-19,Hamburg,Europe,tanker,2.51,32.27,1340.6,1.66,10586,75.3
+2024-11-03,Ningbo,Asia,ro-ro,4.23,26.32,2471.45,2.66,20508,73.64
+2017-01-08,Ningbo,South America,bulk,4.18,12.11,1415.41,3.31,13522,78.01
+2018-01-14,Singapore,Europe,bulk,0.52,14.48,1946.08,3.4,18550,84.62
+2022-10-09,Rotterdam,Europe,bulk,2.81,51.61,1348.81,3.08,20085,68.9
+2021-05-23,Manzanillo,Middle East,ro-ro,0.97,66.66,1563.03,2.31,33180,68.06
+2020-04-12,Hamburg,Asia,ro-ro,4.84,13.85,1303.44,2.45,16166,76.16
+2020-12-13,Busan,Europe,tanker,1.82,38.28,1511.43,2.69,16600,74.88
+2021-07-18,Busan,Africa,tanker,5.11,28.27,2319.0,3.2,19391,71.3
+2023-10-29,Ningbo,Middle East,ro-ro,2.09,21.21,1223.45,3.04,14167,79.46
+2023-03-12,Los Angeles,Middle East,container,0.2,26.41,1217.48,2.18,25001,81.68
+2023-01-08,Busan,Africa,bulk,1.35,19.97,2161.3,2.87,21463,81.31
+2023-12-17,Shanghai,North America,bulk,5.23,9.51,2166.5,2.62,18145,76.69
+2019-02-03,Shanghai,Asia,tanker,1.59,21.15,572.07,2.06,17446,80.47
+2015-06-21,Singapore,Middle East,ro-ro,1.21,38.3,2124.06,1.6,13774,76.09
+2021-05-23,Durban,South America,bulk,3.09,23.38,2481.5,2.13,18926,76.81
+2019-03-24,Tanjung Priok,South America,ro-ro,3.17,27.75,1979.52,2.4,21619,75.33
+2020-05-17,Savannah,North America,bulk,1.86,3.53,1351.81,1.77,13033,85.22
+2018-02-25,Singapore,Africa,ro-ro,1.45,11.56,1622.62,1.45,14278,83.63
+2024-03-24,Long Beach,Africa,ro-ro,3.11,5.65,1893.59,2.71,13536,82.08
+2024-07-21,Hamburg,Asia,ro-ro,2.4,40.53,2710.17,1.34,15545,73.04
+2016-02-28,Savannah,North America,tanker,4.55,14.52,1923.72,1.58,23156,76.54
+2020-05-31,Durban,Asia,ro-ro,3.16,34.4,2994.61,2.91,20319,73.36
+2020-08-02,Savannah,Middle East,bulk,5.7,28.87,2329.74,2.31,22014,69.94
+2016-06-12,Singapore,Africa,ro-ro,3.97,37.23,2061.94,2.7,14394,70.89
+2017-12-24,Houston,South America,tanker,2.4,31.8,3791.38,1.87,14247,75.66
+2018-12-02,Durban,North America,ro-ro,4.45,50.25,1938.53,2.68,25951,66.02
+2019-10-27,Singapore,South America,tanker,4.14,25.3,2436.58,1.67,21564,74.13
+2020-09-20,Los Angeles,Europe,container,3.26,40.54,2005.27,1.84,19969,71.32
+2021-02-28,Busan,Middle East,bulk,4.82,40.18,3429.21,2.76,19787,68.31
+2018-08-12,Singapore,Middle East,bulk,3.17,24.45,1778.48,1.98,10899,76.32
+2024-01-14,Busan,Asia,bulk,3.53,53.4,2291.19,2.58,22401,66.92
+2020-02-02,Shanghai,South America,container,5.51,36.44,2776.54,2.06,22864,68.05
+2017-10-01,Savannah,Africa,ro-ro,5.2,22.88,2741.43,3.13,14710,72.74
+2023-05-21,Jebel Ali,Middle East,container,1.07,23.67,1207.21,1.61,20068,80.76
+2016-03-06,Manzanillo,Asia,container,0.77,19.74,1842.14,1.26,16924,82.54
+2023-07-30,Long Beach,South America,tanker,4.29,24.7,2251.27,2.84,12210,74.01
+2024-08-25,Ningbo,South America,tanker,0.71,15.48,1672.7,2.26,13312,83.94
+2016-04-24,New York/New Jersey,South America,container,7.13,2.48,1841.98,2.89,7774,75.0
+2017-03-19,Durban,Europe,container,0.79,43.34,3014.81,2.8,19626,75.42
+2024-03-10,Tanjung Priok,Africa,bulk,7.55,48.11,2145.19,1.76,21085,60.47
+2016-06-05,Felixstowe,Asia,ro-ro,3.22,30.58,2792.92,2.26,6150,74.39
+2023-11-12,Houston,Africa,tanker,7.72,10.53,1349.35,1.97,11617,71.4
+2016-06-05,Rotterdam,Africa,tanker,4.61,24.74,2666.16,3.31,18666,73.36
+2023-11-26,Manzanillo,Africa,ro-ro,4.18,39.88,2589.8,1.56,11557,69.68
+2015-05-31,Jebel Ali,South America,tanker,4.73,44.85,2550.54,1.85,23830,67.09
+2015-02-15,Tanjung Priok,Middle East,container,4.7,31.98,2879.22,2.65,20836,71.01
+2015-03-01,Hamburg,Asia,ro-ro,3.67,27.34,1751.3,2.76,16337,74.46
+2017-12-17,Shanghai,Europe,tanker,4.13,57.86,1844.03,2.0,19920,64.38
+2023-12-24,Antwerp,South America,tanker,3.18,39.1,2243.27,2.61,14915,71.91
+2017-12-31,Antwerp,Europe,bulk,0.86,37.16,2102.64,2.26,28275,77.13
+2021-01-17,Rotterdam,North America,container,3.53,11.41,1990.73,2.9,8486,79.52
+2015-10-11,Houston,South America,tanker,1.14,36.95,1477.76,2.4,24920,76.63
+2016-05-08,Singapore,Asia,bulk,5.08,16.04,1772.77,3.34,22800,75.03
+2019-02-03,Antwerp,Asia,bulk,4.01,54.46,2577.46,2.36,27701,65.64
+2023-04-30,Shanghai,Europe,bulk,0.53,5.78,1884.1,2.01,16045,87.21
+2021-12-19,Los Angeles,Europe,ro-ro,0.2,57.18,1670.22,1.77,30458,72.45
+2017-06-04,Jebel Ali,North America,ro-ro,0.39,40.76,2622.87,2.4,30497,76.99
+2019-02-03,Jebel Ali,North America,ro-ro,1.96,36.08,1402.16,1.99,18897,75.26
+2023-08-13,Jebel Ali,Europe,bulk,4.86,24.71,3131.86,2.39,14280,72.87
+2022-06-19,Colombo,North America,container,4.38,13.46,1596.58,2.96,17323,77.2
+2018-06-10,Manzanillo,South America,container,3.35,31.8,2776.16,2.97,18630,73.76
+2018-03-11,Antwerp,North America,ro-ro,2.1,22.87,1670.02,3.38,24748,78.94
+2022-01-09,Singapore,Middle East,bulk,3.26,36.12,1768.89,1.87,21608,72.64
+2019-02-17,New York/New Jersey,South America,tanker,4.48,65.19,2567.25,2.01,22108,61.48
+2024-05-19,Shanghai,South America,container,3.14,37.74,1708.45,1.96,25383,72.4
+2023-12-17,Los Angeles,North America,ro-ro,6.5,47.47,2427.78,1.58,33917,62.76
+2023-04-02,Jebel Ali,North America,tanker,4.07,42.83,1798.67,2.58,24966,69.01
+2022-01-30,Ningbo,North America,ro-ro,7.76,37.94,1728.57,2.31,10021,63.1
+2020-11-22,Hamburg,Africa,container,6.23,20.32,2430.41,1.82,18571,71.44
+2022-08-28,Santos,North America,tanker,5.35,24.3,1839.39,2.44,9944,72.01
+2021-05-09,Long Beach,Europe,bulk,2.22,28.38,2883.63,2.06,9001,77.05
+2018-06-24,Colombo,North America,bulk,1.97,9.73,2923.7,2.5,14923,83.14
+2018-01-21,Houston,Africa,ro-ro,3.3,36.92,3355.17,3.58,20952,72.32
+2015-10-04,Long Beach,South America,bulk,3.43,34.73,1789.52,2.87,21636,72.72
+2020-10-04,Busan,South America,ro-ro,3.25,20.61,2423.64,2.72,19920,77.32
+2018-02-04,Felixstowe,Europe,bulk,1.11,6.79,2749.53,2.39,19513,85.74
+2017-12-24,Rotterdam,Asia,container,5.26,17.09,2063.94,3.21,18393,74.35
+2018-03-11,Los Angeles,Middle East,bulk,0.9,44.31,2410.21,2.52,20775,74.91
+2021-01-03,Jebel Ali,Africa,tanker,4.21,19.37,1256.95,2.38,10344,75.77
+2020-03-15,Tanjung Priok,Asia,container,6.41,42.63,2702.97,2.61,16414,64.39
+2015-07-05,Singapore,North America,ro-ro,2.36,13.38,1564.88,2.09,14718,81.27
+2015-09-06,Houston,Middle East,container,6.18,32.55,1941.88,3.42,22633,67.88
+2022-05-29,Tanjung Priok,Africa,bulk,5.46,38.29,3190.04,2.85,22087,67.59
+2018-02-04,Savannah,North America,tanker,1.99,29.49,1533.71,2.73,17407,77.17
+2019-05-19,New York/New Jersey,Middle East,container,7.74,10.81,2301.57,2.45,15923,71.28
+2017-03-19,Santos,Middle East,ro-ro,3.74,48.97,3331.04,2.02,22999,67.83
+2023-08-20,Houston,South America,container,2.74,56.17,2268.63,0.88,33356,67.67
+2021-02-07,Santos,Middle East,tanker,0.2,49.66,2810.67,1.75,16391,74.7
+2017-07-09,Singapore,Africa,tanker,0.91,41.6,2624.28,3.33,20664,75.7
+2016-11-20,Santos,Middle East,bulk,0.2,35.01,2251.06,2.71,15691,79.1
+2017-06-18,Hamburg,South America,bulk,2.94,41.87,3280.56,1.71,17916,71.56
+2017-10-22,Hamburg,Africa,container,6.42,58.4,2641.37,2.55,30504,59.64
+2016-11-13,Jebel Ali,Asia,container,0.2,13.38,2612.5,3.36,16063,85.59
+2019-11-24,Hamburg,Asia,bulk,6.48,31.48,2180.59,2.42,19443,67.6
+2020-11-29,Singapore,Africa,ro-ro,7.17,29.97,3256.43,2.19,15449,66.67
+2020-03-29,Houston,Asia,ro-ro,5.94,34.2,2149.8,2.4,17352,67.86
+2022-05-08,Houston,South America,container,4.61,44.34,2634.33,2.73,20449,67.48
+2022-07-24,Long Beach,Europe,bulk,3.61,27.46,2813.24,1.14,16819,74.54
+2015-04-12,Houston,Africa,container,0.2,15.27,2026.86,2.44,20241,85.02
+2019-09-01,Rotterdam,Middle East,tanker,5.76,14.09,2325.6,2.01,13043,74.25
+2015-03-22,Colombo,Middle East,ro-ro,0.2,43.53,1909.96,2.85,26202,76.54
+2021-10-03,Antwerp,Africa,ro-ro,5.33,26.41,1568.93,1.34,21143,71.42
+2023-11-12,Antwerp,Middle East,tanker,4.85,74.02,3460.17,2.58,27773,58.09
+2023-08-20,Savannah,Africa,tanker,2.14,34.57,1777.22,1.71,14185,75.35
+2021-08-15,Singapore,Europe,tanker,4.15,9.78,2702.05,1.54,16202,78.77
+2021-09-12,Santos,South America,ro-ro,4.59,17.67,1371.19,3.53,22720,75.52
+2016-11-20,Singapore,South America,tanker,0.2,51.09,1760.78,2.75,18713,74.27
+2016-03-27,Busan,Middle East,container,4.58,34.62,2493.88,2.31,15053,70.45
+2017-06-25,Savannah,Europe,ro-ro,2.53,8.7,1858.84,2.71,16838,82.33
+2017-03-05,Savannah,South America,tanker,3.73,13.93,1293.16,2.2,21942,78.36
+2017-06-25,Busan,Asia,ro-ro,7.96,45.3,2855.95,2.38,15749,60.49
+2023-07-23,Durban,North America,bulk,3.94,8.65,1351.65,1.22,5421,79.53
+2022-10-23,Manzanillo,Europe,bulk,2.28,23.24,2935.42,1.49,15525,78.47
+2019-05-12,Los Angeles,Europe,tanker,2.28,15.4,3311.68,1.46,12705,80.82
+2017-12-24,Colombo,South America,container,4.64,21.76,1607.39,3.04,16562,74.19
+2022-02-13,Durban,Europe,bulk,6.31,63.72,2470.71,2.9,22204,58.26
+2022-05-08,Rotterdam,North America,bulk,6.22,20.77,2580.81,2.58,18960,71.33
+2019-06-09,Houston,South America,ro-ro,1.98,39.38,2149.78,1.35,20008,74.23
+2018-12-23,Shanghai,North America,ro-ro,3.28,6.46,2348.93,2.08,12228,81.5
+2020-10-25,Jebel Ali,South America,ro-ro,3.65,60.64,2058.28,2.25,23867,64.51
+2024-05-05,Valencia,Asia,bulk,0.82,50.29,2225.45,2.44,29102,73.27
+2020-11-22,Los Angeles,North America,tanker,2.42,47.72,2165.87,1.79,23809,70.84
+2021-02-14,Antwerp,Africa,container,5.74,30.06,2375.61,2.92,18505,69.5
+2016-02-28,Felixstowe,Europe,bulk,4.69,14.99,1561.47,4.5,18258,76.12
+2024-06-09,Rotterdam,Europe,ro-ro,1.33,19.86,1453.11,2.12,20144,81.38
+2018-02-18,Felixstowe,Middle East,bulk,3.1,50.4,2670.43,2.29,30945,68.68
+2019-11-17,Busan,North America,bulk,2.16,10.89,1893.68,2.32,10838,82.41
+2020-05-31,Houston,Middle East,container,2.96,4.54,2616.29,2.96,10618,82.72
+2017-12-24,Antwerp,Middle East,bulk,2.24,45.28,2072.2,1.76,27290,71.94
+2020-05-31,Singapore,North America,container,5.65,19.81,1079.17,2.21,16512,72.76
+2021-02-07,Manzanillo,North America,ro-ro,1.67,56.18,2001.75,2.85,30555,69.81
+2019-07-21,Valencia,Asia,container,5.28,11.62,2072.11,1.52,13113,75.95
+2023-12-03,Houston,North America,tanker,1.85,17.55,1695.35,3.13,6997,81.04
+2020-05-03,Long Beach,Middle East,tanker,1.82,69.55,2592.08,2.96,29885,65.5
+2017-03-19,Valencia,Middle East,bulk,6.17,21.54,1908.36,1.73,17161,71.2
+2024-07-21,Ningbo,Europe,container,3.17,2.98,2035.22,2.09,13603,82.77
+2016-09-25,Tanjung Priok,South America,tanker,6.27,37.72,2739.86,2.37,22342,66.14
+2019-09-29,Santos,Africa,ro-ro,2.94,10.7,1194.05,1.84,18618,80.91
+2023-04-09,Long Beach,Africa,container,5.6,32.01,2815.85,1.88,19370,69.2
+2020-06-28,Shanghai,Asia,tanker,3.24,4.08,1391.55,2.6,13376,82.3
+2023-03-26,Shanghai,Asia,container,0.2,19.01,2642.22,2.41,20332,83.9
+2015-04-05,Savannah,Africa,ro-ro,4.57,29.12,3091.29,2.86,17481,72.12
+2019-10-06,Colombo,Middle East,bulk,4.73,42.25,2104.31,3.2,20423,67.87
+2023-07-09,Shanghai,North America,ro-ro,4.25,45.49,2010.87,1.57,25113,67.85
+2022-05-15,Tanjung Priok,South America,ro-ro,2.99,27.69,3302.75,1.48,17497,75.71
+2015-11-01,Tanjung Priok,North America,container,2.26,48.63,2073.62,1.5,21621,70.89
+2016-11-13,Savannah,Europe,tanker,0.2,10.44,2305.22,1.79,12597,86.47
+2023-04-09,Jebel Ali,Africa,container,5.49,38.85,1644.52,2.49,13229,67.36
+2021-10-24,Valencia,Middle East,container,1.99,46.32,2239.77,2.54,27835,72.12
+2022-10-30,Felixstowe,Africa,container,0.2,23.68,3313.99,2.08,11600,82.5
+2019-03-31,Colombo,Europe,container,1.31,37.53,2481.26,2.98,24269,76.12
+2021-06-13,Savannah,Asia,ro-ro,1.37,40.46,1828.15,2.15,20139,75.12
+2015-07-26,Valencia,Asia,tanker,3.97,23.14,1380.74,2.14,15956,75.12
+2021-10-03,Busan,Europe,tanker,2.38,5.18,696.82,3.41,7051,83.69
+2023-10-01,Long Beach,Asia,ro-ro,2.68,26.82,1521.67,1.97,25583,76.59
+2020-03-01,Rotterdam,Europe,tanker,2.27,55.04,2905.94,2.72,12660,68.95
+2022-11-13,Busan,Europe,ro-ro,6.33,65.6,2965.78,2.88,14736,57.66
+2016-10-02,Singapore,Asia,bulk,5.08,32.68,3136.19,2.13,19304,70.04
+2021-03-21,Ningbo,North America,container,2.81,6.16,1492.22,2.36,13997,82.53
+2022-12-18,Singapore,South America,ro-ro,3.54,37.7,2205.77,3.24,20227,71.61
+2018-08-26,Jebel Ali,Europe,tanker,5.06,47.93,2300.35,3.07,24429,65.5
+2024-07-14,Busan,Asia,ro-ro,4.05,29.67,1227.47,2.06,16546,73.0
+2022-02-06,Rotterdam,Europe,tanker,5.61,17.37,2454.57,1.36,8979,73.57
+2015-04-26,Savannah,Europe,tanker,1.14,65.99,2396.18,1.53,24482,67.92
+2024-12-08,Durban,Asia,bulk,0.2,20.74,2189.23,2.27,19638,83.38
+2022-10-23,Tanjung Priok,Africa,container,2.46,12.79,1499.48,2.22,17877,81.24
+2018-11-25,New York/New Jersey,North America,ro-ro,4.67,25.64,1319.58,3.21,23002,72.97
+2020-03-01,Houston,Africa,tanker,7.04,32.38,2166.76,2.2,14408,66.21
+2021-12-12,Jebel Ali,Europe,ro-ro,3.12,10.91,2126.02,2.77,14259,80.49
+2017-01-15,Ningbo,South America,container,3.84,26.58,2800.21,2.69,16685,74.35
+2021-05-09,Hamburg,Middle East,container,4.34,10.88,1502.41,2.84,8791,78.06
+2019-10-27,Durban,Europe,tanker,4.37,37.28,1750.39,2.37,14724,70.08
+2015-07-05,Santos,Europe,bulk,5.05,24.47,2310.58,2.32,16390,72.56
+2019-10-27,Hamburg,Middle East,bulk,4.11,56.61,2016.92,2.83,21792,64.8
+2017-11-05,Los Angeles,Asia,bulk,2.17,10.9,1763.76,2.93,11394,82.39
+2015-05-31,Tanjung Priok,Middle East,ro-ro,4.3,18.98,2615.41,3.5,24745,75.71
+2023-02-19,Durban,South America,bulk,4.47,33.57,2144.55,1.68,16413,70.99
+2023-02-05,Rotterdam,South America,ro-ro,5.1,28.3,2814.4,1.79,12228,71.31
+2022-08-07,Shanghai,Africa,tanker,5.91,15.52,1398.88,2.89,13246,73.52
+2020-03-01,Felixstowe,Asia,tanker,4.36,20.21,1395.42,3.01,20598,75.22
+2019-08-11,Singapore,South America,tanker,2.4,41.16,2462.86,2.22,30652,72.85
+2016-07-03,Houston,Asia,bulk,1.7,39.22,1492.89,2.1,20549,74.83
+2017-07-09,Savannah,South America,ro-ro,4.03,57.82,2236.38,2.34,28915,64.59
+2021-02-28,Savannah,South America,bulk,0.2,15.12,642.48,2.97,14621,85.06
+2021-10-31,Durban,Europe,ro-ro,5.02,6.53,2033.96,2.08,15831,78.0
+2020-04-12,Colombo,North America,ro-ro,4.13,33.43,1605.51,3.19,14322,71.71
+2023-08-06,Santos,South America,ro-ro,3.51,47.3,1171.82,2.08,17596,68.79
+2016-04-10,Rotterdam,North America,ro-ro,6.11,46.65,3226.7,1.87,26950,63.78
+2016-02-14,Busan,Middle East,bulk,6.77,12.18,1149.9,2.97,8766,72.81
+2016-04-03,Busan,North America,tanker,3.95,16.6,2067.31,2.86,14528,77.12
+2019-12-15,Los Angeles,Africa,ro-ro,1.63,40.88,1718.29,0.86,8479,74.48
+2023-06-18,Houston,Middle East,bulk,6.15,23.7,2249.46,2.42,14385,70.59
+2023-11-12,Ningbo,South America,tanker,4.09,51.57,1534.59,2.57,16268,66.35
+2021-06-27,Hamburg,South America,ro-ro,4.76,13.12,2488.74,2.56,13700,76.54
+2017-10-29,Durban,Africa,tanker,1.64,37.48,2569.72,2.36,22938,75.48
+2015-02-15,Tanjung Priok,North America,tanker,0.33,20.52,2711.3,1.62,15016,83.18
+2017-05-07,New York/New Jersey,South America,container,2.88,20.02,1840.25,2.45,11962,78.23
+2023-02-12,Rotterdam,Africa,bulk,2.3,40.63,2708.73,3.24,23563,73.21
+2019-11-17,Tanjung Priok,Europe,bulk,4.8,6.31,1297.97,3.27,23571,78.51
+2015-08-02,Santos,Africa,container,1.41,34.07,2793.91,3.08,18717,76.96
+2021-07-04,New York/New Jersey,North America,ro-ro,2.04,25.99,2515.87,2.32,25294,78.12
+2022-08-07,Felixstowe,Middle East,ro-ro,4.63,22.27,1981.79,2.47,11793,74.06
+2017-09-17,Singapore,Europe,container,1.57,30.73,1677.19,1.97,25195,77.64
+2021-02-07,Busan,Europe,ro-ro,4.6,40.94,3086.02,2.91,28689,68.52
+2019-12-15,Santos,North America,bulk,0.57,32.57,2314.59,2.2,16063,79.09
+2020-02-09,Jebel Ali,Europe,bulk,4.84,11.38,717.61,2.48,11694,76.91
+2021-11-21,New York/New Jersey,Asia,ro-ro,1.48,36.15,1942.71,2.65,18847,76.2
+2016-11-06,Manzanillo,Asia,container,1.09,65.66,2043.86,1.8,23624,68.12
+2016-03-13,Durban,North America,tanker,1.77,35.51,1811.58,2.42,25287,75.81
+2016-11-13,Rotterdam,North America,container,1.85,57.03,1522.62,2.46,20972,69.19
+2015-02-01,Singapore,Middle East,tanker,3.14,5.11,1909.27,3.19,6922,82.19
+2015-07-19,Colombo,South America,tanker,2.78,21.4,2754.0,2.53,9766,78.02
+2016-05-15,Rotterdam,Europe,ro-ro,0.2,65.4,3565.6,2.02,29776,69.98
+2018-07-29,Durban,Europe,tanker,6.3,8.62,2062.03,1.7,15634,74.81
+2016-11-27,Houston,South America,tanker,7.85,24.09,1718.49,2.81,2054,67.07
+2018-06-24,Valencia,Africa,bulk,1.49,48.7,1733.56,0.9,19924,72.41
+2024-12-15,Houston,Middle East,container,4.43,39.36,1414.92,2.18,13227,69.33
+2015-10-04,Durban,North America,tanker,1.96,37.8,3025.39,1.77,16536,74.74
+2020-09-20,Savannah,Asia,bulk,5.2,31.7,1797.57,2.75,22300,70.09
+2018-04-15,Savannah,Middle East,bulk,4.38,21.24,2099.65,1.49,13329,74.87
+2018-01-14,Tanjung Priok,Asia,ro-ro,7.66,2.29,819.23,2.4,8726,73.99
+2022-08-21,Valencia,North America,container,5.88,18.76,2600.27,2.22,6347,72.61
+2021-08-22,Hamburg,Asia,bulk,3.8,25.68,2402.58,1.82,13229,74.7
+2019-09-15,Santos,Europe,ro-ro,0.2,18.39,1959.0,1.86,7763,84.08
+2015-10-25,Busan,North America,ro-ro,6.82,49.06,2946.13,2.27,18789,61.64
+2016-12-11,Manzanillo,North America,tanker,2.19,26.41,3483.92,1.68,19579,77.7
+2022-09-25,Durban,Africa,bulk,3.92,39.45,2599.86,1.57,36801,70.32
+2020-07-19,Singapore,Europe,ro-ro,4.08,51.42,3290.81,1.73,21339,66.41
+2018-11-18,Ningbo,Africa,ro-ro,3.21,49.59,1999.05,2.38,25050,68.7
+2022-12-04,Felixstowe,Middle East,container,4.01,9.68,2823.78,3.31,16812,79.08
+2024-08-18,Los Angeles,Middle East,container,5.03,29.12,1830.84,2.66,19712,71.2
+2021-04-25,Durban,Middle East,ro-ro,2.75,32.86,2438.58,2.45,15139,74.64
+2021-01-03,Santos,Asia,container,2.17,33.65,1540.03,2.12,20538,75.56
+2015-10-25,Antwerp,North America,tanker,3.23,12.19,2787.85,2.45,9366,79.88
+2018-05-27,Singapore,Africa,container,5.12,47.59,1931.29,1.84,27193,65.48
+2015-07-19,Long Beach,Asia,ro-ro,5.73,47.65,3193.86,2.32,16060,64.24
+2018-09-09,Busan,South America,container,0.2,20.47,1776.5,3.22,8667,83.46
+2023-07-09,Manzanillo,South America,bulk,2.05,21.03,2211.43,2.92,16690,79.59
+2024-12-22,Busan,Africa,container,4.11,42.53,2899.31,2.26,30342,69.02
+2019-03-17,Savannah,Middle East,bulk,1.86,36.12,2720.66,2.52,14928,75.44
+2019-05-05,Singapore,North America,bulk,2.18,42.67,2258.75,1.95,16670,72.84
+2024-09-22,Antwerp,South America,container,8.84,21.31,2574.65,2.29,18104,65.93
+2015-11-22,Jebel Ali,Europe,container,3.7,4.89,1253.63,2.15,22435,81.13
+2020-09-13,Los Angeles,Europe,tanker,3.03,33.67,2571.66,2.75,18181,73.84
+2018-06-24,Jebel Ali,Europe,tanker,0.49,11.27,1961.46,2.53,17167,85.64
+2022-11-20,Long Beach,Europe,bulk,7.14,42.25,1688.84,0.96,24867,63.04
+2019-11-03,Tanjung Priok,Africa,tanker,0.96,36.95,2412.81,2.1,23357,76.99
+2023-04-16,Colombo,Africa,tanker,5.83,58.66,2031.59,2.62,24119,60.74
+2019-01-06,Shanghai,Middle East,container,5.79,28.44,1611.08,3.07,14943,69.89
+2023-02-26,Felixstowe,Middle East,tanker,5.86,45.61,1898.12,2.71,23236,64.6
+2018-09-23,Santos,Asia,container,3.22,10.8,2518.69,1.95,9414,80.32
+2022-10-02,Long Beach,Africa,ro-ro,2.75,13.24,1660.24,1.89,6010,80.53
+2017-07-09,Hamburg,North America,container,3.8,51.37,3341.85,2.6,23451,66.99
+2017-04-09,Rotterdam,Middle East,container,0.2,46.8,2929.75,2.29,31808,75.56
+2018-08-05,Durban,Asia,bulk,2.76,34.91,2060.92,1.24,20198,74.01
+2020-01-12,Jebel Ali,Asia,tanker,2.88,15.93,1464.41,3.09,18147,79.46
+2020-08-02,Colombo,Asia,container,1.22,50.24,2170.81,2.74,20046,72.49
+2017-05-07,Jebel Ali,Europe,container,2.29,46.04,1582.44,2.52,21126,71.61
+2024-10-06,Antwerp,Europe,container,4.26,50.01,2695.71,2.06,19374,66.48
+2024-03-17,Santos,North America,container,0.58,31.29,2195.39,2.68,16009,79.45
+2019-06-30,Long Beach,Middle East,bulk,0.78,15.02,1880.11,1.82,10723,83.93
+2016-08-21,New York/New Jersey,Europe,ro-ro,2.28,85.89,2559.48,2.05,35728,59.67
+2022-04-10,Valencia,Africa,bulk,4.33,13.76,1496.52,1.86,14787,77.21
+2023-09-03,Tanjung Priok,North America,bulk,3.88,30.94,2391.0,2.58,24590,72.96
+2019-02-17,Singapore,North America,container,3.17,12.67,2098.52,2.65,14677,79.86
+2017-12-31,Singapore,Asia,bulk,5.93,9.53,1687.26,1.84,16209,75.28
+2021-11-14,Valencia,Europe,container,4.07,29.03,2660.11,2.03,20320,73.15
+2022-09-04,Jebel Ali,Europe,tanker,3.08,5.69,784.42,2.43,11295,82.13
+2024-12-01,New York/New Jersey,Europe,bulk,7.41,29.97,2725.0,3.28,23434,66.19
+2018-10-28,Singapore,Africa,ro-ro,7.4,25.84,1562.4,2.05,1891,67.45
+2015-06-28,Valencia,North America,bulk,8.43,30.36,1974.36,1.68,23755,64.03
+2020-08-23,Durban,Europe,bulk,2.33,5.86,2689.53,2.76,7011,83.58
+2021-03-28,Long Beach,North America,container,3.72,16.67,1208.51,2.27,9643,77.56
+2023-01-15,Manzanillo,South America,container,3.51,43.45,2636.13,2.88,24749,69.95
+2018-04-29,Singapore,Asia,container,3.16,22.4,2798.85,1.77,24541,76.96
+2017-10-22,Savannah,Africa,bulk,3.74,9.95,1279.46,2.05,21227,79.54
+2015-02-15,Jebel Ali,North America,container,3.24,13.7,2319.79,1.89,10311,79.41
+2022-08-07,Colombo,North America,bulk,0.2,58.63,2655.95,0.8,38509,72.01
+2015-09-13,Colombo,South America,container,3.88,9.76,976.37,2.85,8376,79.31
+2015-05-24,Santos,South America,ro-ro,6.52,37.03,2854.76,2.09,22624,65.85
+2020-07-19,Tanjung Priok,Middle East,ro-ro,0.74,38.55,2002.36,3.27,13893,76.96
+2019-09-01,Santos,South America,tanker,5.68,15.35,2226.88,2.52,18442,74.04
+2021-10-10,Valencia,Middle East,bulk,4.28,47.8,2500.13,1.73,20110,67.1
+2023-12-03,Durban,Asia,bulk,3.87,38.5,2441.35,2.6,22285,70.71
+2017-10-29,Ningbo,Africa,bulk,3.69,38.47,2562.73,3.27,12922,71.08
+2022-08-14,Shanghai,Europe,tanker,5.13,37.59,1431.41,2.63,20199,68.46
+2015-05-31,Felixstowe,Asia,bulk,1.31,64.17,1918.73,1.85,17595,68.13
+2015-11-01,Valencia,Middle East,bulk,5.68,21.72,1947.44,3.0,17854,72.12
+2022-11-20,Houston,Africa,tanker,2.36,42.48,2372.76,1.52,20140,72.54
+2019-02-03,Jebel Ali,Middle East,ro-ro,4.14,67.85,2462.27,1.89,32674,61.37
+2024-01-14,Valencia,Middle East,ro-ro,5.99,53.23,2806.79,2.91,29406,62.05
+2024-02-04,Busan,Asia,tanker,3.6,53.72,3156.73,1.95,18916,66.68
+2022-10-30,Houston,Africa,bulk,4.38,40.52,2071.35,2.34,25254,69.08
+2019-10-27,Antwerp,Africa,bulk,1.26,45.55,1624.28,3.49,23272,73.82
+2018-10-28,Tanjung Priok,Asia,ro-ro,4.56,17.07,1706.44,1.76,18733,75.76
+2023-01-08,Busan,Africa,tanker,5.23,30.52,1571.95,1.62,12501,70.38
+2019-03-10,Jebel Ali,Europe,ro-ro,3.73,32.05,1520.56,1.59,15837,72.93
+2017-02-19,Durban,Africa,ro-ro,8.44,49.98,3310.14,1.87,22543,58.13
+2020-11-22,Tanjung Priok,Middle East,container,7.67,11.27,1403.59,3.25,11775,71.28
+2018-12-02,Antwerp,Asia,bulk,7.31,20.72,2221.7,1.61,16695,69.16
+2022-07-17,Manzanillo,Middle East,bulk,4.24,57.57,2516.41,3.05,36005,64.25
+2023-09-10,Los Angeles,Africa,bulk,3.56,40.68,2802.63,2.82,25468,70.68
+2022-07-31,Colombo,Africa,bulk,5.5,30.67,2423.27,1.53,21227,69.8
+2020-05-10,Colombo,Europe,ro-ro,4.99,23.29,2635.55,2.87,17189,73.03
+2018-11-18,Houston,Middle East,tanker,3.47,20.98,2210.32,3.18,6032,76.77
+2024-03-10,Hamburg,Africa,bulk,4.14,48.13,2441.84,2.87,8641,67.28
+2024-07-21,Singapore,South America,container,5.64,60.51,1725.93,2.46,25092,60.57
+2016-11-27,New York/New Jersey,North America,container,0.2,13.18,1442.18,3.5,16478,85.65
+2015-03-01,Long Beach,Asia,container,1.92,44.35,2076.47,1.53,20465,72.85
+2021-02-21,Busan,Europe,bulk,3.91,5.72,1811.38,2.9,19992,80.46
+2019-03-10,Ningbo,North America,tanker,6.67,69.1,3283.79,2.3,32133,55.93
+2021-03-14,Colombo,Middle East,ro-ro,0.67,22.74,855.47,2.12,21345,81.84
+2021-08-22,Rotterdam,Asia,tanker,5.73,30.84,1451.93,1.43,19206,69.29
+2016-12-25,Durban,Europe,bulk,2.61,32.47,2825.54,1.89,22051,75.04
+2018-03-18,Felixstowe,North America,ro-ro,2.95,27.11,1652.27,2.81,15222,75.97
+2018-02-11,Durban,South America,ro-ro,1.9,78.03,3111.96,2.34,31288,62.79
+2020-07-05,Hamburg,North America,bulk,0.74,5.52,1812.41,1.62,7270,86.86
+2023-09-24,Savannah,North America,bulk,2.68,5.79,2673.56,2.97,24483,82.9
+2022-06-26,Santos,Middle East,ro-ro,4.69,51.03,2300.09,2.65,12736,65.31
+2018-05-06,Los Angeles,South America,tanker,4.59,20.79,2082.58,2.67,13506,74.58
+2023-08-27,Colombo,South America,bulk,3.57,20.53,1699.61,2.19,12101,76.7
+2023-10-15,Los Angeles,Middle East,tanker,3.88,27.62,1592.93,2.48,23965,73.95
+2021-08-29,New York/New Jersey,Asia,container,4.09,41.43,1452.8,2.07,19579,69.39
+2018-06-24,Houston,South America,tanker,4.81,36.72,2843.03,1.72,30368,69.36
+2022-09-25,Houston,North America,bulk,5.72,20.75,1843.73,2.15,20222,72.34
+2021-04-18,Ningbo,Africa,container,3.71,17.72,1877.87,2.85,31244,77.26
+2021-12-19,Tanjung Priok,Middle East,container,1.7,19.95,2357.59,3.93,19171,80.61
+2023-03-12,Rotterdam,Asia,tanker,1.81,19.57,2039.32,2.43,8664,80.51
+2018-10-07,Manzanillo,Asia,container,4.19,14.23,1559.64,3.21,15527,77.35
+2024-08-11,Singapore,Europe,container,4.34,36.75,2484.61,2.14,20938,70.29
+2019-09-08,Ningbo,Asia,ro-ro,4.71,49.03,2253.37,2.81,21184,65.87
+2023-07-02,Singapore,North America,tanker,2.67,9.04,1911.29,2.23,9490,81.95
+2023-12-31,New York/New Jersey,Asia,container,6.1,11.84,1451.15,3.3,14787,74.25
+2017-07-23,Tanjung Priok,North America,container,5.22,17.05,2801.99,2.62,12189,74.45
+2020-12-06,Jebel Ali,Europe,ro-ro,1.66,27.15,2826.83,2.78,13095,78.54
+2022-06-19,Jebel Ali,North America,tanker,2.65,20.45,2820.79,1.81,10648,78.56
+2022-05-15,Singapore,Asia,ro-ro,4.62,9.27,1833.08,2.04,14590,77.98
+2022-12-25,Singapore,Europe,tanker,2.8,30.94,2170.91,1.56,20134,75.12
+2020-02-16,Durban,Europe,ro-ro,4.96,33.71,2630.58,2.35,11605,69.97
+2020-07-12,Shanghai,North America,ro-ro,3.14,16.11,2045.24,2.99,18552,78.89
+2016-08-28,Singapore,South America,container,3.92,44.68,2457.59,2.17,15588,68.76
+2015-06-14,Houston,North America,bulk,4.61,10.71,1939.19,2.49,11340,77.57
+2016-06-19,Rotterdam,Asia,container,3.61,39.73,2604.7,1.18,29338,70.86
+2018-01-07,Colombo,Europe,container,4.57,35.0,2194.32,1.94,18877,70.36
+2016-06-26,Los Angeles,Africa,container,5.17,13.97,1452.44,3.41,8106,75.47
+2021-09-12,Tanjung Priok,North America,bulk,4.3,39.46,3186.39,3.4,20172,69.56
+2024-01-14,Singapore,Africa,container,4.45,25.03,2353.44,3.43,18464,73.59
+2017-05-21,Long Beach,Africa,bulk,1.59,28.48,2712.27,2.08,15628,78.28
+2018-12-02,New York/New Jersey,Europe,container,2.58,21.13,2856.4,2.92,21188,78.5
+2016-10-16,Los Angeles,Middle East,bulk,5.42,26.93,1920.11,2.99,11486,71.08
+2019-02-17,Long Beach,Africa,container,0.87,9.29,1220.6,2.8,14083,85.47
+2022-08-07,Singapore,Africa,bulk,0.2,24.81,1036.16,2.54,17834,82.16
+2024-05-05,Antwerp,Africa,ro-ro,4.71,68.73,3720.1,2.8,24032,59.96
+2018-08-26,Santos,Asia,container,5.47,62.03,2725.05,3.23,22062,60.45
+2023-09-10,Rotterdam,South America,container,4.3,33.8,2547.72,2.13,16307,71.26
+2016-07-24,Rotterdam,Europe,tanker,4.38,4.38,502.33,2.02,10857,79.93
+2017-10-29,Durban,South America,bulk,6.81,8.26,2232.52,2.85,12694,73.9
+2017-06-04,New York/New Jersey,Europe,bulk,2.86,34.38,1602.32,2.11,23353,73.97
+2021-04-25,Hamburg,Europe,ro-ro,0.49,15.65,1751.21,2.17,14890,84.32
+2020-10-25,Tanjung Priok,Middle East,tanker,4.8,35.84,2193.57,3.56,19864,69.65
+2019-04-14,Felixstowe,Asia,tanker,0.75,29.04,1631.62,2.58,13419,79.79
+2019-09-22,Manzanillo,North America,tanker,2.88,34.37,2606.88,3.42,14367,73.93
+2020-07-12,Rotterdam,North America,container,7.32,52.05,3043.44,2.0,26239,59.74
+2016-03-27,Santos,Asia,container,4.09,24.89,1195.26,1.7,19445,74.35
+2023-06-11,New York/New Jersey,Africa,ro-ro,3.12,8.44,2650.94,2.88,9833,81.23
+2015-03-29,New York/New Jersey,Asia,tanker,1.72,40.12,1046.01,2.91,21421,74.52
+2016-04-17,Colombo,Asia,tanker,5.38,40.54,2276.86,2.53,24853,67.08
+2023-11-05,Busan,Africa,ro-ro,2.28,63.64,2808.27,2.68,16242,66.35
+2022-04-10,Santos,Asia,ro-ro,2.83,47.65,2889.93,1.59,21959,70.04
+2021-02-21,Durban,Africa,bulk,3.71,6.33,2680.74,2.72,13872,80.68
+2019-06-23,Colombo,Europe,container,2.37,19.12,1450.01,2.33,7968,79.52
+2021-12-05,Felixstowe,Middle East,ro-ro,2.01,31.94,1037.67,1.39,18875,76.4
+2021-05-16,Jebel Ali,Middle East,ro-ro,2.2,32.93,2926.58,2.68,21120,75.72
+2023-11-19,Houston,Europe,ro-ro,6.04,12.6,2206.55,2.76,9908,74.14
+2023-03-26,Los Angeles,Europe,tanker,4.54,41.55,2672.93,1.71,19142,68.46
+2022-06-26,Houston,Middle East,tanker,6.98,26.3,2782.89,2.72,16477,68.15
+2015-04-12,Felixstowe,Africa,bulk,5.68,6.66,2404.72,1.3,9700,76.64
+2017-12-17,Colombo,Europe,bulk,4.6,21.74,2145.62,3.07,16253,74.28
+2016-11-13,Los Angeles,Middle East,ro-ro,3.57,38.51,1720.29,2.65,16974,71.31
+2017-12-10,Shanghai,Asia,bulk,4.8,28.96,1884.31,2.44,23392,71.71
+2015-06-07,Santos,Middle East,bulk,4.82,3.29,1418.81,3.08,12625,79.37
+2020-12-13,Durban,Asia,bulk,3.57,19.68,2387.77,3.98,15471,76.96
+2018-09-23,Santos,South America,ro-ro,2.13,52.58,2393.51,3.35,24988,69.97
+2023-07-02,Felixstowe,Europe,ro-ro,2.95,26.64,1665.93,3.67,23007,76.11
+2016-03-06,Busan,North America,container,4.48,8.12,1423.04,1.82,10437,78.6
+2021-05-09,Santos,South America,tanker,2.38,35.84,2213.56,3.05,16946,74.49
+2017-10-08,Hamburg,South America,ro-ro,1.36,16.25,2017.83,1.66,11536,82.4
+2019-03-31,Felixstowe,Middle East,container,0.9,60.53,2540.25,3.32,29395,70.04
+2021-01-17,Rotterdam,Asia,tanker,4.27,11.52,1457.08,2.14,20018,78.0
+2023-06-04,Tanjung Priok,North America,bulk,3.46,12.82,1964.65,0.8,10155,79.23
+2020-07-12,Singapore,Africa,tanker,2.44,15.6,2370.58,2.95,8737,80.44
+2017-07-09,Busan,South America,ro-ro,0.2,32.7,1997.78,3.03,19103,79.79
+2016-03-27,Los Angeles,Middle East,tanker,3.75,71.09,3185.84,3.19,32920,61.17
+2023-03-12,Hamburg,Europe,tanker,5.9,38.6,1563.35,2.11,21419,66.62
+2019-08-04,Singapore,Africa,ro-ro,4.01,11.82,1014.32,3.04,15488,78.43
+2020-07-05,Durban,Asia,tanker,5.02,46.21,2136.06,2.56,21661,66.1
+2018-10-28,Houston,Asia,bulk,5.33,21.25,1651.06,3.08,10184,72.96
+2019-08-25,Hamburg,Middle East,ro-ro,5.11,6.69,2501.51,1.68,15681,77.77
+2015-05-17,Singapore,South America,container,2.1,30.17,2382.22,3.46,10226,76.75
+2022-07-17,Houston,South America,tanker,2.89,26.17,1703.8,2.12,12509,76.37
+2016-08-07,Manzanillo,Middle East,ro-ro,5.5,11.04,2082.96,1.66,19366,75.69
+2020-03-22,New York/New Jersey,Middle East,ro-ro,4.61,34.4,2294.69,2.5,25162,70.46
+2018-10-14,Shanghai,Africa,bulk,5.65,9.18,1998.99,2.7,9586,75.95
+2022-02-20,Long Beach,Middle East,bulk,2.74,27.65,1760.73,3.18,23248,76.22
+2019-05-19,Los Angeles,Asia,tanker,7.46,15.55,447.78,1.57,10296,70.41
+2024-06-23,Durban,Europe,tanker,4.97,24.62,2574.78,1.23,18050,72.67
+2021-04-11,Santos,Asia,bulk,0.2,11.9,1588.5,1.56,22089,86.03
+2018-09-09,Tanjung Priok,South America,container,2.14,1.44,1389.9,2.13,6525,85.29
+2020-10-18,Long Beach,Africa,bulk,4.39,45.06,2041.52,1.73,21249,67.7
+2024-11-24,Ningbo,Europe,ro-ro,3.01,29.84,1515.23,3.6,18103,75.03
+2023-04-23,Los Angeles,Asia,tanker,4.78,32.43,2837.44,2.63,19425,70.71
+2019-01-06,Houston,Asia,container,5.38,27.14,1656.41,3.75,27647,71.1
+2015-07-26,Felixstowe,North America,tanker,4.88,29.75,2465.78,1.89,20913,71.32
+2024-02-18,Houston,Middle East,ro-ro,3.81,9.4,1925.08,2.6,16175,79.56
+2018-01-28,Tanjung Priok,Middle East,tanker,2.84,24.57,1580.72,2.5,16242,76.95
+2017-02-12,Shanghai,Middle East,tanker,4.88,51.86,1987.23,1.91,15037,64.68
+2018-11-18,Tanjung Priok,Middle East,tanker,3.78,14.03,1887.79,2.37,21133,78.23
+2018-03-11,Colombo,Europe,tanker,0.2,47.98,3412.73,1.87,19405,75.21
+2015-05-03,Savannah,North America,tanker,4.72,31.45,3057.95,2.86,18305,71.12
+2024-05-12,Busan,Europe,tanker,6.46,54.63,2451.86,1.73,21359,60.69
+2022-05-15,Durban,North America,ro-ro,9.82,13.45,789.41,3.1,8720,66.32
+2021-05-09,Jebel Ali,Europe,tanker,1.97,73.64,2710.94,2.4,29064,63.97
+2015-09-06,Ningbo,Asia,container,2.84,26.87,2452.47,3.93,15410,76.26
+2016-02-07,Houston,Middle East,container,4.46,47.69,2594.81,3.19,22546,66.77
+2016-05-01,Houston,Europe,container,2.73,17.44,1327.59,3.04,25381,79.31
+2018-03-18,Hamburg,North America,tanker,5.81,32.72,3360.71,1.78,14296,68.56
+2022-01-02,Singapore,North America,ro-ro,3.11,20.02,1901.39,2.3,14777,77.77
+2021-09-26,New York/New Jersey,Middle East,ro-ro,2.98,34.79,3054.74,1.69,20977,73.6
+2016-03-20,Manzanillo,Middle East,ro-ro,2.65,27.69,1579.08,2.48,21353,76.39
+2018-01-14,Durban,North America,bulk,3.22,21.8,1678.19,1.94,25119,77.02
+2023-10-22,Rotterdam,North America,tanker,3.32,12.58,1543.87,2.71,24201,79.59
+2019-06-16,Hamburg,North America,container,3.15,16.6,1914.57,1.16,15058,78.72
+2016-01-10,Hamburg,Middle East,container,5.05,28.51,1737.42,2.16,17100,71.35
+2015-11-01,Hamburg,Europe,bulk,4.92,18.63,2689.4,2.59,19459,74.57
+2017-09-10,Manzanillo,Asia,tanker,3.09,51.84,2379.94,2.25,17770,68.27
+2022-08-07,Jebel Ali,North America,tanker,5.11,47.03,2580.0,2.14,27784,65.67
+2024-09-01,Los Angeles,Africa,ro-ro,3.14,9.31,788.32,3.28,28831,80.93
+2016-05-01,Long Beach,Europe,container,2.55,29.67,1373.06,2.4,10038,76.0
+2019-02-03,Hamburg,South America,ro-ro,0.56,36.05,2121.26,2.87,16466,78.06
+2015-02-22,Busan,Africa,container,4.92,27.54,1386.23,1.34,12535,71.9
+2022-03-20,Manzanillo,Europe,ro-ro,5.14,29.92,2177.17,1.73,20301,70.74
+2019-03-03,Houston,South America,container,2.85,31.15,2166.93,2.18,21142,74.96
+2020-07-12,Shanghai,South America,tanker,1.19,5.51,2554.06,2.57,17130,85.97
+2022-08-14,Rotterdam,Europe,tanker,0.97,26.89,2741.37,2.03,11720,79.99
+2021-07-25,Antwerp,Asia,tanker,6.16,18.76,2731.92,2.3,15854,72.05
+2022-09-18,Savannah,Africa,tanker,3.55,13.71,1475.44,2.31,12911,78.79
+2023-11-12,Los Angeles,Middle East,ro-ro,3.65,36.96,2061.8,2.01,30157,71.61
+2019-01-06,Rotterdam,North America,container,2.45,10.67,2384.4,2.26,13269,81.9
+2022-08-07,Savannah,Africa,bulk,1.89,3.72,1936.7,3.05,6727,85.1
+2018-12-02,Colombo,Africa,tanker,7.07,51.07,2531.72,3.53,21739,60.54
+2019-03-17,Colombo,Asia,tanker,0.34,58.83,3378.24,2.78,23023,71.67
+2024-02-04,Long Beach,Africa,bulk,5.43,17.9,2343.45,2.72,7803,73.77
+2019-12-15,Antwerp,South America,container,2.43,17.02,1328.21,2.55,20976,80.03
+2021-01-31,Los Angeles,Europe,bulk,1.05,31.85,1757.68,1.91,17342,78.34
+2021-07-18,Antwerp,Middle East,ro-ro,2.65,25.52,1188.84,2.25,12354,77.04
+2021-06-06,Valencia,Middle East,bulk,1.33,15.31,2217.33,1.77,9292,82.75
+2024-08-25,Santos,South America,tanker,3.98,14.55,2342.09,1.27,7681,77.68
+2019-11-17,New York/New Jersey,South America,container,2.16,17.87,1104.78,2.18,19724,80.32
+2015-01-04,Los Angeles,South America,container,5.27,67.25,3888.09,2.45,23415,59.28
+2015-03-22,Shanghai,North America,tanker,5.9,41.3,2136.84,1.81,21004,65.81
+2023-09-24,Jebel Ali,Africa,bulk,5.31,50.62,3081.92,2.69,23602,64.19
+2016-11-27,Long Beach,Asia,bulk,5.52,29.41,1903.14,2.49,9992,70.14
+2018-09-30,Felixstowe,Africa,tanker,1.41,37.41,2182.04,2.15,16867,75.96
+2016-06-26,Shanghai,Middle East,container,4.21,45.47,1666.83,2.36,15015,67.94
+2020-11-01,Long Beach,North America,tanker,2.22,1.59,2025.92,1.92,13959,85.08
+2017-10-15,Shanghai,Middle East,bulk,1.42,8.29,1985.29,2.04,18994,84.67
+2017-05-14,Los Angeles,Middle East,bulk,4.21,5.48,1658.54,1.54,24500,79.94
+2015-04-12,Savannah,North America,bulk,2.36,36.72,1387.17,2.05,15057,74.26
+2023-12-10,Colombo,Africa,tanker,3.34,19.26,2710.33,1.35,22856,77.54
+2020-04-19,Los Angeles,Africa,ro-ro,3.87,40.9,1700.1,1.73,12857,69.99
+2016-03-27,Houston,Europe,container,4.66,22.02,2473.24,1.15,14869,74.07
+2022-10-23,Jebel Ali,North America,container,5.43,7.85,1990.53,2.67,15413,76.78
+2024-10-06,Felixstowe,Middle East,ro-ro,4.7,37.27,1833.44,3.23,22123,69.42
+2018-06-10,Los Angeles,South America,container,0.74,17.09,1839.17,3.08,20647,83.39
+2016-03-27,Shanghai,Africa,tanker,4.74,28.06,2422.01,1.97,23562,72.1
+2024-05-26,Antwerp,Asia,container,4.14,16.6,869.9,2.49,18926,76.74
+2020-05-03,Antwerp,Europe,ro-ro,1.07,31.88,2065.62,0.9,12500,78.3
+2015-01-11,Long Beach,South America,ro-ro,2.91,3.73,2425.95,2.88,2230,83.06
+2024-08-04,Hamburg,Africa,container,0.95,19.63,2363.19,2.82,8976,82.21
+2020-08-16,Busan,North America,tanker,3.79,20.97,2729.24,2.0,20456,76.13
+2023-12-17,Santos,South America,bulk,4.63,13.78,1247.8,2.84,12289,76.61
+2022-05-01,Busan,Africa,bulk,4.17,47.38,2126.19,2.2,16171,67.45
+2021-04-18,Busan,Middle East,bulk,6.14,14.35,1550.63,2.42,22300,73.41
+2022-11-20,Busan,Middle East,tanker,0.2,26.03,2086.96,1.68,17292,81.79
+2020-09-27,Houston,Africa,ro-ro,2.05,48.15,1625.23,2.15,17373,71.46
+2023-01-01,Busan,Middle East,container,5.48,19.31,1900.26,2.85,18550,73.25
+2019-12-22,Houston,Asia,tanker,3.86,20.19,1560.58,2.94,20419,76.22
+2024-02-25,Valencia,South America,bulk,2.74,45.14,1329.68,2.81,9713,70.98
+2015-11-01,Singapore,South America,bulk,0.98,17.9,1856.3,2.38,10563,82.67
+2021-09-12,Durban,Africa,bulk,2.46,30.01,1240.83,1.3,26575,76.08
+2017-09-24,Antwerp,Africa,ro-ro,3.07,66.1,2935.2,3.02,38054,64.03
+2016-08-07,Felixstowe,North America,container,0.2,13.28,427.49,3.69,15508,85.62
+2017-01-15,Colombo,North America,tanker,4.4,37.87,2717.83,2.23,16390,69.84
+2018-03-25,Hamburg,Africa,tanker,3.68,25.51,1284.7,3.0,12254,74.99
+2024-08-04,Savannah,Asia,tanker,4.3,24.36,2522.57,4.06,26362,74.09
+2022-10-02,Manzanillo,Africa,ro-ro,2.87,19.84,1707.13,2.37,16080,78.31
+2019-04-21,Colombo,Asia,ro-ro,3.5,5.8,1825.63,3.26,5880,81.26
+2017-01-29,Hamburg,Africa,ro-ro,3.62,33.81,2891.9,2.17,24173,72.62
+2018-01-21,Antwerp,Africa,container,3.44,19.3,1571.38,2.13,19962,77.33
+2024-11-24,Savannah,Middle East,bulk,4.07,25.07,1480.27,2.51,12812,74.34
+2016-05-29,Ningbo,Europe,ro-ro,0.2,24.66,2764.73,1.82,14991,82.2
+2020-12-13,Antwerp,South America,container,0.93,22.77,1611.63,2.79,5384,81.31
+2018-09-30,Los Angeles,North America,container,6.55,10.92,2986.77,3.66,17628,73.62
+2020-10-18,Savannah,Europe,bulk,3.53,19.29,1860.58,2.05,12210,77.15
+2016-05-29,New York/New Jersey,Asia,ro-ro,2.08,5.25,1510.61,2.31,11487,84.26
+2017-04-30,Felixstowe,Asia,ro-ro,2.4,36.01,2595.34,3.34,13701,74.4
+2015-03-15,Tanjung Priok,Asia,tanker,4.15,44.76,3284.7,3.0,20949,68.27
+2022-08-14,Busan,Europe,tanker,3.07,58.92,3223.96,3.16,26495,66.18
+2023-05-28,Tanjung Priok,South America,ro-ro,2.44,37.24,3590.18,2.07,24576,73.95
+2015-10-25,Santos,North America,ro-ro,6.56,44.93,3523.53,2.58,19294,63.4
+2021-04-11,Busan,North America,tanker,1.76,13.41,2680.01,2.94,13219,82.46
+2024-04-14,Jebel Ali,South America,container,5.5,32.76,1945.55,2.83,24497,69.17
+2023-04-16,Colombo,South America,tanker,5.41,45.08,2066.81,1.57,29193,65.66
+2024-08-18,Los Angeles,Middle East,container,2.57,14.62,2510.53,2.92,9767,80.47
+2024-07-28,New York/New Jersey,Middle East,tanker,3.45,17.99,3222.59,2.15,19792,77.7
+2016-10-23,New York/New Jersey,Europe,container,5.1,6.28,2147.21,2.6,2615,77.92
+2023-12-03,Jebel Ali,Africa,tanker,2.14,48.88,1882.25,2.08,12480,71.06
+2019-09-29,Tanjung Priok,Middle East,container,5.84,9.27,1171.81,1.93,7168,75.54
+2021-05-02,Ningbo,South America,ro-ro,0.2,33.76,2269.98,2.13,20050,79.47
+2019-03-31,Tanjung Priok,Middle East,container,2.49,47.51,3771.79,1.79,15410,70.77
+2015-03-15,Houston,South America,container,3.01,12.12,2395.12,3.51,10428,80.34
+2024-12-08,Valencia,North America,bulk,4.15,18.71,1939.71,1.17,22046,76.09
+2024-02-04,Shanghai,Africa,ro-ro,3.4,5.77,2201.93,3.01,12349,81.47
+2015-12-13,Shanghai,South America,container,2.67,13.93,1884.76,1.71,14242,80.48
+2024-08-18,Rotterdam,Middle East,tanker,2.63,10.08,1568.23,2.98,10415,81.72
+2018-03-11,Long Beach,Asia,tanker,3.4,46.66,2716.68,1.53,29752,69.2
+2023-05-14,Savannah,Africa,bulk,2.64,50.68,3277.47,2.29,20128,69.52
+2016-07-03,Antwerp,Middle East,ro-ro,0.2,15.05,1425.91,2.61,10745,85.08
+2019-11-24,Los Angeles,Middle East,bulk,3.91,23.09,1971.44,1.37,17482,75.25
+2022-05-22,Long Beach,Asia,bulk,3.19,26.43,1556.17,2.36,22857,75.69
+2019-05-19,Singapore,Africa,ro-ro,2.32,27.71,2450.82,1.59,20400,77.05
+2019-06-30,Valencia,Africa,container,2.19,13.09,2309.37,2.92,11426,81.69
+2016-12-25,Rotterdam,Europe,bulk,4.7,45.47,3199.54,2.71,16536,66.96
+2015-06-21,Valencia,Middle East,tanker,3.83,18.48,1962.59,1.64,11007,76.8
+2023-06-11,Los Angeles,Africa,tanker,4.95,49.52,2778.98,2.47,30203,65.24
+2017-01-29,Felixstowe,Middle East,container,9.03,27.44,2389.7,3.0,19259,63.71
+2020-06-21,Felixstowe,South America,ro-ro,2.86,10.0,1483.65,2.8,5993,81.28
+2016-04-24,New York/New Jersey,North America,tanker,4.1,35.57,2797.82,3.12,16250,71.13
+2022-01-09,Santos,Middle East,bulk,4.51,57.38,3071.25,1.62,27537,63.77
+2017-09-10,Savannah,North America,bulk,2.69,18.98,1381.51,3.48,21246,78.93
+2016-09-11,Colombo,Europe,bulk,4.43,7.13,1390.35,2.14,20996,79.0
+2023-10-01,Durban,Asia,tanker,3.61,37.59,1991.88,3.18,22789,71.5
+2024-05-19,New York/New Jersey,Africa,bulk,3.14,27.44,1842.97,1.86,15773,75.49
+2023-02-12,Savannah,South America,container,3.58,54.11,2679.86,3.06,25159,66.61
+2019-07-21,Antwerp,Europe,tanker,2.51,6.02,1892.61,3.16,18192,83.17
+2017-08-13,Jebel Ali,North America,tanker,3.8,30.76,2618.64,3.42,14677,73.17
+2016-03-06,Manzanillo,North America,container,0.2,24.28,1589.07,1.95,13077,82.32
+2020-03-22,Colombo,South America,container,3.67,36.21,2908.52,2.56,14067,71.8
+2020-12-13,Houston,Asia,bulk,4.73,19.45,2583.34,2.43,11016,74.71
+2024-06-02,Antwerp,Europe,ro-ro,2.86,16.06,1677.08,2.52,9047,79.46
+2024-05-19,Santos,Europe,container,4.18,26.8,2962.13,1.94,24190,73.6
+2018-05-20,Jebel Ali,South America,container,0.31,25.51,1887.96,2.67,18353,81.73
+2017-11-12,Houston,South America,bulk,7.93,8.01,1814.61,2.19,10986,71.74
+2016-05-01,Santos,South America,container,4.93,21.02,2417.81,1.82,18670,73.83
+2018-03-25,Hamburg,Africa,ro-ro,4.3,35.91,2234.96,1.78,18622,70.63
+2022-02-06,Hamburg,Asia,ro-ro,5.08,17.19,2183.33,2.86,19021,74.68
+2016-03-06,Felixstowe,North America,tanker,6.31,11.82,2042.86,2.4,19515,73.83
+2022-10-02,Los Angeles,Europe,tanker,2.82,17.15,3442.21,2.39,12199,79.22
+2022-09-04,Valencia,South America,bulk,2.37,13.17,1738.41,2.58,14174,81.31
+2017-07-02,Santos,South America,ro-ro,0.87,53.69,1936.92,2.07,16035,72.15
+2018-02-04,Hamburg,South America,tanker,0.2,5.76,3093.69,3.0,15847,87.87
+2024-10-06,New York/New Jersey,Middle East,container,2.53,36.87,1687.72,3.31,23726,73.88
+2023-03-12,New York/New Jersey,South America,container,3.09,34.85,2674.42,2.5,20958,73.37
+2017-11-12,Long Beach,Asia,tanker,5.36,47.96,2668.47,1.45,16561,64.89
+2022-09-18,Shanghai,Middle East,tanker,4.81,22.53,2296.16,1.77,7668,73.62
+2020-12-13,Durban,South America,tanker,5.38,22.64,2416.46,2.66,33255,72.45
+2021-01-17,Santos,South America,ro-ro,4.95,47.03,1818.12,2.27,23606,65.99
+2022-07-31,Colombo,Africa,bulk,2.58,20.55,2432.02,1.47,11957,78.68
+2024-03-17,Singapore,North America,ro-ro,5.36,18.69,1946.73,2.82,10829,73.67
+2021-09-19,Durban,South America,container,3.23,8.33,1497.31,2.14,18149,81.04
+2019-12-08,Shanghai,Asia,tanker,4.61,25.41,2221.12,3.19,16937,73.16
+2019-06-23,Singapore,Asia,bulk,5.18,12.53,2044.1,1.83,19156,75.88
+2018-09-30,Busan,Asia,bulk,5.18,4.54,2573.7,2.09,19442,78.28
+2021-08-01,Manzanillo,Africa,ro-ro,1.15,23.76,1793.01,2.08,14406,80.57
+2020-06-21,Shanghai,South America,ro-ro,6.37,33.84,1729.62,1.44,23712,67.11
+2018-09-09,Tanjung Priok,Europe,tanker,0.2,6.09,1486.59,2.86,12335,87.77
+2018-09-23,Busan,Africa,tanker,4.6,24.5,1440.87,2.45,19913,73.45
+2019-01-06,Valencia,South America,bulk,3.4,48.01,2005.23,1.93,23085,68.8
+2017-04-23,Ningbo,Africa,bulk,4.18,29.58,1656.21,2.26,12389,72.77
+2019-01-13,Tanjung Priok,Africa,tanker,2.81,10.43,1991.82,3.53,19638,81.25
+2018-08-05,Santos,Asia,bulk,5.92,20.45,2053.81,1.36,13557,72.02
+2022-09-11,Santos,Africa,tanker,5.09,25.47,1874.97,2.85,18898,72.18
+2024-01-07,Durban,Asia,bulk,3.05,19.96,2823.95,2.12,15579,77.91
+2019-12-29,Tanjung Priok,North America,tanker,5.99,52.05,2175.19,2.62,31836,62.4
+2017-06-11,Jebel Ali,South America,ro-ro,3.33,26.09,1664.91,1.53,14074,75.51
+2015-01-25,New York/New Jersey,Europe,tanker,3.84,30.95,2039.82,3.48,17016,73.04
+2024-09-15,Valencia,South America,tanker,5.09,24.12,1372.95,1.92,12771,72.58
+2023-04-02,Antwerp,Asia,container,3.67,3.97,1454.86,3.58,20153,81.47
+2023-05-21,Santos,South America,container,4.36,12.66,2223.23,2.11,4415,77.48
+2024-05-05,Felixstowe,Middle East,tanker,4.67,41.08,2380.77,2.01,15709,68.34
+2017-05-07,Houston,Europe,container,0.2,67.09,2623.72,2.33,26964,69.47
+2022-02-06,Long Beach,North America,container,4.37,48.13,1427.0,1.96,19075,66.82
+2020-06-14,Savannah,South America,tanker,2.78,32.62,2619.74,1.91,11684,74.65
+2017-07-02,Savannah,Africa,ro-ro,3.86,14.95,1599.4,2.71,13231,77.8
+2019-01-06,Long Beach,Africa,container,3.32,13.28,2500.07,2.75,20079,79.38
+2015-03-15,Savannah,Asia,tanker,2.44,13.89,2348.59,2.49,14140,80.95
+2020-08-02,Felixstowe,Europe,bulk,3.53,16.1,2619.68,1.72,24943,78.11
+2019-04-28,Tanjung Priok,South America,tanker,1.35,13.13,2156.24,3.47,7785,83.36
+2021-12-12,Hamburg,Europe,container,0.2,6.49,2482.53,2.95,17694,87.65
+2021-03-21,Hamburg,Europe,ro-ro,1.58,40.49,2816.84,3.83,19933,74.69
+2018-12-30,Durban,South America,container,1.29,9.77,2557.34,2.69,15105,84.49
+2018-02-25,New York/New Jersey,South America,tanker,4.26,57.59,3082.83,2.63,16314,64.2
+2024-07-14,Savannah,North America,bulk,4.17,7.68,2140.26,2.89,10668,79.36
+2022-12-25,Hamburg,Europe,ro-ro,5.06,16.34,1447.92,1.87,11328,74.98
+2018-04-01,Rotterdam,Europe,tanker,3.75,21.76,2823.51,2.62,19469,75.97
+2017-02-05,Los Angeles,Europe,tanker,2.99,35.87,2339.75,1.96,19180,73.26
+2023-07-16,Colombo,South America,ro-ro,2.57,50.87,1640.42,2.8,18775,69.6
+2023-10-01,Antwerp,Europe,container,0.97,32.95,2023.92,2.24,22020,78.18
+2016-08-07,Felixstowe,Africa,ro-ro,1.65,1.83,1953.85,1.18,12624,86.15
+2023-09-10,Houston,Africa,ro-ro,6.8,23.99,1877.2,1.84,16938,69.2
+2022-06-19,Los Angeles,South America,tanker,4.16,11.62,2938.1,2.35,14318,78.19
+2019-01-13,Santos,Middle East,tanker,1.97,20.87,2707.09,1.85,16960,79.8
+2021-04-25,Los Angeles,Middle East,ro-ro,2.24,16.29,1624.34,2.44,14133,80.63
+2023-09-03,Tanjung Priok,Europe,tanker,2.5,38.61,2025.08,2.77,17229,73.42
+2017-10-29,New York/New Jersey,South America,ro-ro,1.69,32.9,1509.73,1.76,22479,76.75
+2018-04-22,Jebel Ali,Europe,bulk,1.03,26.1,2336.84,2.49,12209,80.11
+2021-02-28,Busan,Middle East,tanker,1.48,12.99,1422.52,2.95,12925,83.14
+2019-11-17,Ningbo,Europe,ro-ro,3.05,8.72,2724.85,1.93,19874,81.28
+2024-03-17,Los Angeles,Africa,bulk,3.32,50.63,2726.79,2.41,23119,68.17
+2016-04-10,Valencia,Africa,container,1.07,23.13,2542.08,2.48,22815,80.92
+2022-08-21,Colombo,Asia,tanker,4.27,38.81,1002.86,3.16,16707,69.82
+2022-06-26,Los Angeles,Middle East,ro-ro,2.94,25.94,2288.62,1.91,11506,76.34
+2023-10-01,Felixstowe,North America,ro-ro,1.73,15.56,1935.26,2.48,9534,81.87
+2020-01-05,Busan,Europe,tanker,3.53,26.86,3301.74,2.61,16475,74.88
+2022-03-13,Shanghai,Middle East,bulk,3.56,65.67,2722.54,3.38,23643,63.18
+2018-04-22,Hamburg,South America,bulk,3.9,41.05,923.81,2.08,28345,69.89
+2015-09-20,Jebel Ali,Asia,container,5.09,18.59,2384.22,2.75,15861,74.24
+2019-06-30,New York/New Jersey,Africa,bulk,0.72,11.97,1059.97,3.5,21532,84.97
+2016-10-23,Tanjung Priok,Africa,container,0.2,9.78,667.92,2.82,18726,86.67
+2019-12-01,New York/New Jersey,South America,tanker,2.55,36.46,2506.1,2.61,18749,73.96
+2023-11-19,Houston,Asia,bulk,5.12,33.46,2278.69,3.3,15261,69.72
+2023-07-23,Shanghai,Europe,bulk,4.22,78.05,2283.5,2.08,25119,58.15
+2023-01-15,Ningbo,Europe,container,6.5,24.01,2633.7,3.08,10103,69.8
+2019-07-21,New York/New Jersey,South America,container,5.12,21.26,1738.32,3.32,17552,73.38
+2018-06-17,Ningbo,South America,ro-ro,2.32,14.09,2402.0,2.45,12883,81.13
+2023-04-23,Rotterdam,Europe,container,5.41,23.36,2030.99,2.13,15620,72.17
+2018-11-04,Tanjung Priok,Africa,container,6.0,46.72,2518.55,0.8,13638,63.98
+2016-04-24,Savannah,Asia,bulk,3.68,1.83,2112.24,0.9,11864,82.09
+2017-06-11,Valencia,South America,tanker,2.43,8.83,2416.38,2.54,22085,82.49
+2018-07-08,Houston,South America,bulk,4.31,81.37,3097.35,2.77,25868,56.97
+2019-10-27,Los Angeles,Asia,bulk,5.02,75.62,2311.7,1.67,29023,57.27
+2020-05-03,Manzanillo,North America,container,6.67,16.23,1887.16,2.0,10178,71.79
+2022-09-25,Houston,Europe,container,2.64,15.19,1996.43,1.56,21070,80.16
+2024-03-17,Houston,Europe,bulk,4.27,23.17,2285.98,2.77,18541,74.51
+2022-03-20,Colombo,Asia,ro-ro,5.12,38.88,2286.2,1.72,13666,68.1
+2019-10-27,Valencia,Europe,container,0.82,35.64,2609.46,3.59,14284,77.67
+2019-11-17,Rotterdam,Africa,container,0.5,37.42,2705.98,3.31,14943,77.77
+2016-04-24,Jebel Ali,Europe,container,5.29,8.44,1552.08,2.08,15714,76.89
+2020-08-23,Valencia,South America,ro-ro,7.0,45.92,3103.72,2.53,19247,62.22
+2022-10-02,Durban,South America,ro-ro,4.86,25.88,1977.04,2.38,17893,72.52
+2024-02-25,Manzanillo,Asia,ro-ro,2.74,31.63,1901.16,2.67,17895,75.03
+2019-12-08,Manzanillo,Middle East,bulk,0.94,20.82,1780.99,2.03,14911,81.87
+2024-11-17,Santos,Europe,container,1.61,21.62,2554.26,3.09,10694,80.29
+2019-01-20,New York/New Jersey,South America,tanker,0.89,21.68,2311.99,2.65,11933,81.72
+2020-11-08,Savannah,South America,ro-ro,3.0,22.98,2082.67,2.14,9585,77.11
+2022-07-03,Jebel Ali,Asia,tanker,2.06,4.99,1272.53,2.54,16473,84.38
+2015-06-21,Singapore,Middle East,bulk,1.67,17.11,2460.72,1.54,19826,81.53
+2015-04-26,Antwerp,Middle East,bulk,5.26,9.69,1361.33,1.8,18279,76.57
+2023-10-29,Colombo,Africa,bulk,4.88,30.44,2290.33,2.35,15642,71.11
+2020-12-06,Jebel Ali,Europe,bulk,5.42,44.78,2072.03,2.19,14456,65.73
+2015-04-26,Hamburg,Middle East,tanker,3.16,26.05,1215.88,1.25,17365,75.87
+2024-07-21,Jebel Ali,Middle East,ro-ro,0.2,15.61,1956.93,1.43,14830,84.92
+2022-04-17,Antwerp,Middle East,bulk,7.52,37.92,1990.71,2.17,13701,63.58
+2023-02-26,Long Beach,Europe,bulk,5.24,41.83,1822.83,1.55,14036,66.97
+2016-12-25,Ningbo,Asia,container,3.38,31.54,2994.75,2.85,20091,73.78
+2021-11-14,Valencia,Middle East,ro-ro,5.5,19.04,2931.93,1.65,14277,73.29
+2016-07-10,Tanjung Priok,Asia,tanker,4.36,57.86,2448.71,3.13,26607,63.92
+2024-05-12,Long Beach,Middle East,container,3.96,34.06,2386.81,0.8,20734,71.86
+2021-11-28,Singapore,Europe,tanker,1.53,26.89,1908.1,1.94,14003,78.87
+2024-12-08,Rotterdam,North America,container,5.05,27.25,1840.45,3.02,12435,71.73
+2017-11-12,Durban,Asia,container,5.48,34.74,3105.02,2.27,19782,68.62
+2015-06-28,Manzanillo,Europe,tanker,2.35,13.87,2376.35,2.59,22542,81.14
+2015-06-21,Valencia,Middle East,tanker,0.2,33.97,2405.51,1.62,16297,79.41
+2024-01-14,Busan,South America,tanker,1.51,13.57,1107.56,1.72,17698,82.91
+2020-08-02,Busan,North America,container,3.19,11.94,1035.1,2.11,9528,80.04
+2023-08-06,Santos,Middle East,container,4.12,73.33,2744.2,1.02,26697,59.76
+2024-12-08,New York/New Jersey,Europe,ro-ro,6.68,19.33,2474.39,2.86,20038,70.84
+2021-06-27,Valencia,Africa,tanker,4.37,12.31,2061.81,1.4,9146,77.57
+2017-10-29,Houston,Europe,container,2.06,12.42,1709.8,1.73,9870,82.15
+2022-07-17,Shanghai,Middle East,bulk,3.64,21.83,1914.02,3.43,20649,76.17
+2015-10-25,Long Beach,Asia,container,1.78,4.96,2242.59,2.39,18604,84.95
+2017-08-13,Antwerp,Middle East,bulk,3.35,36.66,2863.28,1.61,20435,72.3
+2023-03-12,Houston,Middle East,tanker,3.01,31.89,2942.74,1.91,24165,74.41
+2019-02-17,Los Angeles,North America,bulk,4.82,36.35,2399.68,2.09,24793,69.46
+2015-09-27,Shanghai,Africa,ro-ro,0.93,30.72,1635.69,1.87,19220,78.92
+2016-04-17,Hamburg,Middle East,bulk,5.43,13.82,2238.39,2.07,12095,74.99
+2024-09-08,Savannah,North America,ro-ro,4.02,37.29,2665.35,2.2,24971,70.77
+2021-09-19,Tanjung Priok,Africa,tanker,3.02,30.25,2164.6,1.97,17912,74.88
+2024-03-17,Shanghai,South America,tanker,2.55,26.47,935.28,2.6,31920,76.96
+2021-05-30,Manzanillo,Europe,tanker,2.87,33.79,1701.1,2.28,11461,74.12
+2019-10-27,Hamburg,North America,ro-ro,4.38,13.33,2212.77,1.89,6938,77.24
+2024-06-23,Shanghai,Asia,tanker,2.92,42.24,1837.99,2.75,26542,71.49
+2024-10-13,Jebel Ali,North America,tanker,1.89,7.06,1705.43,2.14,20555,84.1
+2020-01-19,Savannah,Europe,bulk,2.96,50.89,2106.5,2.06,28684,68.81
+2019-04-21,Hamburg,Middle East,bulk,2.17,10.78,2589.39,2.41,14594,82.43
+2016-12-04,Durban,South America,tanker,4.1,59.46,2024.3,1.86,23186,63.96
+2023-02-05,Jebel Ali,Middle East,tanker,2.0,39.9,2270.03,1.87,26986,74.03
+2020-11-15,New York/New Jersey,Europe,bulk,3.7,23.74,1951.74,2.91,22399,75.48
+2024-06-09,New York/New Jersey,Asia,container,1.65,21.58,1235.14,1.77,14598,80.23
+2023-07-23,Jebel Ali,Middle East,bulk,4.57,15.7,1922.68,1.96,9258,76.15
+2023-02-19,Santos,North America,tanker,2.71,16.66,2590.66,2.83,12676,79.58
+2022-04-10,Savannah,Asia,bulk,5.02,13.03,1751.29,1.61,15016,76.05
+2024-07-21,Santos,Middle East,bulk,5.5,13.27,2252.81,1.26,13697,75.02
+2022-12-18,Felixstowe,Europe,tanker,5.47,23.51,2002.49,3.55,18626,72.01
+2019-10-13,Tanjung Priok,Europe,tanker,0.95,13.8,2561.02,1.72,17913,83.96
+2018-02-18,Tanjung Priok,Asia,ro-ro,2.02,18.33,1799.11,2.47,19080,80.46
+2016-08-14,Savannah,North America,container,1.72,16.93,1915.24,1.96,19821,81.48
+2015-03-01,Houston,South America,ro-ro,5.93,21.55,2468.8,2.5,19219,71.68
+2024-09-01,New York/New Jersey,Africa,bulk,4.04,36.49,1039.09,2.52,22747,70.97
+2016-01-03,Los Angeles,Middle East,bulk,4.07,19.93,630.52,2.06,14900,75.88
+2015-08-23,Houston,Asia,tanker,1.02,29.02,1728.22,2.2,22039,79.25
+2022-01-02,Colombo,North America,container,3.63,20.43,2044.21,1.74,19518,76.61
+2018-04-01,Ningbo,Asia,container,2.25,37.53,2421.27,2.89,23617,74.24
+2015-10-04,Colombo,North America,container,2.09,27.28,2982.38,3.01,19673,77.64
+2015-01-04,Antwerp,Europe,ro-ro,6.21,36.84,1415.2,2.92,11225,66.53
+2024-08-18,Savannah,Asia,tanker,5.7,18.89,2444.87,1.87,10441,72.93
+2016-05-29,Tanjung Priok,Asia,bulk,1.63,25.89,1664.98,2.9,19330,78.97
+2016-04-10,Valencia,South America,tanker,6.66,33.61,2377.02,2.66,23377,66.6
+2018-02-04,Manzanillo,North America,ro-ro,3.67,70.38,2053.83,1.47,21449,61.55
+2019-05-26,Ningbo,North America,ro-ro,0.23,37.7,2292.38,2.56,22770,78.23
+2021-08-22,Rotterdam,Africa,ro-ro,5.89,24.82,1280.69,2.64,23418,70.77
+2023-11-19,Busan,South America,tanker,4.73,26.44,1186.61,2.35,17725,72.61
+2020-10-04,Jebel Ali,Middle East,bulk,5.55,27.42,2073.0,2.15,16745,70.67
+2021-01-24,Singapore,Europe,bulk,4.11,52.62,2783.75,1.82,27802,65.99
+2024-01-21,Houston,Africa,bulk,2.17,20.57,1969.92,3.24,19514,79.49
+2015-09-20,New York/New Jersey,North America,container,6.0,35.47,1925.11,1.96,13823,67.36
+2017-11-26,Savannah,Middle East,bulk,0.63,20.11,2604.04,2.79,19909,82.71
+2017-12-03,New York/New Jersey,Asia,tanker,6.07,8.76,1114.93,2.35,7364,75.23
+2021-04-11,Colombo,Europe,ro-ro,2.78,29.58,2999.46,2.6,19182,75.57
+2023-07-16,Felixstowe,North America,tanker,2.25,10.91,1606.83,2.52,15728,82.23
+2019-02-10,Santos,Africa,container,4.2,41.06,2291.48,2.71,25860,69.28
+2022-02-20,Rotterdam,Middle East,bulk,6.73,37.5,2395.78,2.94,14681,65.29
+2021-10-10,New York/New Jersey,North America,container,6.73,34.03,2291.74,1.92,24125,66.33
+2019-12-15,Jebel Ali,Europe,ro-ro,1.29,13.18,2819.64,2.48,10047,83.47
+2024-02-04,Jebel Ali,Africa,tanker,1.92,2.21,2627.79,2.06,17016,85.5
+2023-10-29,Houston,Asia,ro-ro,2.51,14.27,1114.13,2.47,19976,80.7
+2021-03-07,Colombo,Africa,bulk,0.25,8.39,2061.25,2.57,4264,86.98
+2015-02-22,Rotterdam,Asia,ro-ro,1.38,31.61,2836.29,3.35,20020,77.76
+2016-10-30,Santos,Asia,bulk,4.16,12.1,2519.44,2.57,13981,78.05
+2015-11-01,Houston,Europe,ro-ro,3.95,29.11,1793.77,3.42,11699,73.37
+2020-06-14,Antwerp,Africa,bulk,2.69,7.28,1884.2,2.73,9480,82.44
+2023-03-12,Long Beach,North America,tanker,6.69,20.07,1369.55,2.27,21444,70.6
+2021-09-26,Tanjung Priok,Asia,tanker,3.7,11.82,1490.93,2.82,8157,79.05
+2015-01-18,Savannah,Middle East,bulk,0.2,12.91,1468.26,3.41,6181,85.73
+2019-02-24,Houston,Asia,tanker,2.8,34.46,2618.48,1.99,20466,74.06
+2022-09-04,Manzanillo,South America,bulk,4.91,25.17,2402.53,2.46,11698,72.63
+2023-07-16,Long Beach,Middle East,tanker,2.91,7.61,2411.34,3.08,13718,81.9
+2023-12-17,Long Beach,Asia,tanker,3.73,69.84,2401.12,1.61,20802,61.59
+2015-05-10,Felixstowe,South America,container,5.76,49.33,3325.29,3.06,23324,63.68
+2024-04-21,Felixstowe,Middle East,bulk,3.77,21.91,1216.34,2.29,20316,75.89
+2021-03-07,Colombo,Europe,ro-ro,1.06,25.75,1853.68,2.98,19796,80.16
+2020-03-15,Ningbo,Africa,container,3.13,31.15,2089.82,2.66,27673,74.4
+2019-06-30,Colombo,Asia,ro-ro,2.13,35.47,2741.14,2.57,26313,75.1
+2020-03-15,Los Angeles,South America,bulk,5.84,38.91,2765.25,1.34,27635,66.65
+2015-10-18,Hamburg,Middle East,bulk,0.2,32.17,2503.32,2.56,11208,79.95
+2022-10-16,Los Angeles,Middle East,container,5.56,15.85,1869.52,2.26,19059,74.12
+2016-06-26,Shanghai,South America,ro-ro,4.99,11.8,2252.3,2.9,9695,76.48
+2015-04-26,Manzanillo,Africa,tanker,3.88,30.73,3415.71,3.46,13818,73.02
+2016-01-03,Santos,South America,bulk,2.9,45.34,2693.11,2.53,27511,70.6
+2020-08-23,Savannah,Europe,ro-ro,4.36,2.57,1919.57,2.49,9587,80.51
+2021-06-13,Rotterdam,South America,bulk,8.44,10.83,1368.13,2.34,17652,69.87
+2015-04-12,Felixstowe,North America,tanker,4.11,22.26,2596.13,2.14,7773,75.1
+2019-10-27,Santos,North America,container,7.63,29.16,2554.22,1.61,15308,65.99
+2017-07-16,Shanghai,Europe,tanker,6.71,24.62,1764.26,2.82,16184,69.19
+2020-01-19,Felixstowe,Europe,ro-ro,3.93,17.44,2056.63,1.86,13565,76.91
+2018-12-30,Rotterdam,Asia,container,0.2,15.82,2065.29,1.03,16118,84.85
+2020-08-30,Ningbo,South America,container,5.32,24.56,2593.83,2.81,10290,71.99
+2016-07-03,Houston,North America,container,2.57,40.74,3597.53,2.84,32573,72.64
+2019-09-15,New York/New Jersey,Asia,bulk,2.94,19.24,3181.53,2.03,21098,78.35
+2017-03-26,Valencia,Asia,container,1.98,20.55,2419.76,2.77,18430,79.88
+2024-10-27,Durban,Middle East,container,0.92,9.37,2418.89,2.16,17974,85.35
+2024-06-09,Tanjung Priok,Asia,container,4.31,8.04,1614.16,3.91,19189,78.97
+2021-12-26,New York/New Jersey,Asia,bulk,3.45,30.25,2848.25,3.11,22116,74.02
+2022-08-14,Antwerp,South America,tanker,3.04,54.21,2482.95,2.45,19541,67.66
+2015-05-10,Tanjung Priok,North America,container,1.86,8.42,2829.91,2.63,4351,83.75
+2018-03-11,Houston,Asia,bulk,1.84,16.85,1912.99,3.07,17846,81.26
+2018-10-21,Santos,Africa,tanker,0.2,16.35,3392.5,1.95,9655,84.7
+2015-08-02,Singapore,Middle East,ro-ro,5.36,21.2,2134.15,2.21,12258,72.92
+2017-01-15,Manzanillo,Middle East,bulk,5.55,17.88,1549.94,2.87,7686,73.54
+2018-04-15,Antwerp,South America,ro-ro,2.19,38.0,3209.05,2.99,23518,74.22
+2016-04-24,Hamburg,Africa,ro-ro,3.22,17.48,1582.77,2.07,10931,78.32
+2023-12-24,Jebel Ali,Asia,tanker,5.61,37.13,2722.46,2.7,23303,67.64
+2018-11-25,Long Beach,North America,ro-ro,0.2,21.74,2340.53,1.97,7473,83.08
+2018-09-09,Los Angeles,South America,tanker,5.47,13.15,410.23,2.21,18369,75.12
+2015-05-03,Busan,Africa,tanker,7.81,31.76,1045.02,3.6,19140,64.85
+2023-02-26,Los Angeles,Asia,ro-ro,3.72,22.76,2390.09,2.87,14892,75.73
+2016-09-04,Houston,North America,container,0.2,34.04,1667.05,1.52,22195,79.39
+2017-09-03,Santos,Middle East,tanker,6.99,48.08,2884.47,2.57,21468,61.6
+2017-05-07,Tanjung Priok,North America,tanker,3.37,40.08,2484.68,2.25,21668,71.24
+2019-10-27,Ningbo,South America,ro-ro,1.65,8.45,1655.86,3.29,13661,84.16
+2020-10-04,Long Beach,North America,container,3.62,3.93,2294.3,2.16,11702,81.58
+2020-11-22,Houston,Africa,tanker,3.55,24.86,2713.58,3.27,21751,75.44
+2022-06-12,Houston,Asia,tanker,5.93,27.11,2542.11,2.44,20083,70.01
+2023-01-29,New York/New Jersey,South America,tanker,4.81,32.71,1310.79,1.82,21910,70.57
+2016-06-19,Santos,Asia,tanker,4.04,24.54,1726.19,2.41,14670,74.56
+2022-12-25,Los Angeles,North America,tanker,4.88,19.52,2282.92,3.94,15171,74.38
+2021-06-06,Rotterdam,Africa,container,2.57,40.44,1443.82,2.39,17907,72.73
+2017-09-10,Manzanillo,South America,container,0.2,4.77,2162.73,2.57,12871,88.17
+2022-02-13,Savannah,North America,tanker,1.73,20.35,1955.62,2.25,13339,80.44
+2021-07-18,Singapore,North America,bulk,5.53,39.46,2875.68,3.23,18871,67.1
+2019-03-03,Colombo,North America,bulk,5.21,12.23,1688.27,2.2,12613,75.91
+2015-12-20,Shanghai,Asia,container,0.2,30.2,2088.63,2.25,19304,80.54
+2020-11-01,Durban,Africa,tanker,1.74,23.29,1452.38,1.55,15518,79.53
+2016-12-18,Jebel Ali,North America,tanker,4.87,54.11,2352.85,3.53,20808,64.03
+2023-04-02,New York/New Jersey,Africa,tanker,2.25,28.31,3095.3,2.73,25744,77.01
+2020-04-12,Long Beach,Europe,container,5.41,46.92,1784.71,1.31,16929,65.1
+2016-11-06,Colombo,North America,container,3.11,58.21,2363.88,2.38,31642,66.32
+2024-05-12,Long Beach,Middle East,tanker,0.2,13.62,1940.33,2.41,22081,85.51
+2022-12-18,Durban,North America,tanker,3.92,31.07,1832.87,1.81,16729,72.84
+2018-02-11,Colombo,South America,bulk,4.9,18.67,1689.88,2.5,16150,74.6
+2016-08-07,Singapore,Europe,bulk,1.93,57.87,2847.17,1.41,23318,68.78
+2017-01-15,Los Angeles,Middle East,bulk,6.57,23.08,1390.47,1.54,17767,69.94
+2017-06-25,Rotterdam,Africa,bulk,2.14,17.92,2074.83,2.93,20803,80.34
+2023-01-01,Los Angeles,Africa,tanker,3.24,64.47,2153.6,0.8,23264,64.18
+2018-09-09,Santos,South America,bulk,5.96,42.13,2103.91,1.97,17067,65.44
+2016-02-28,Felixstowe,Europe,ro-ro,4.96,16.94,1551.84,2.44,7126,75.0
+2018-10-14,Manzanillo,Asia,tanker,7.49,21.03,1801.82,1.6,16715,68.71
+2017-09-03,Jebel Ali,South America,ro-ro,2.41,58.84,1906.06,2.46,30792,67.53
+2020-08-23,Shanghai,Europe,container,2.88,16.84,2857.42,2.32,25481,79.19
+2023-04-02,Shanghai,Africa,ro-ro,0.2,16.85,2636.1,2.54,11994,84.54
+2015-01-11,Savannah,Middle East,bulk,1.25,6.17,1013.91,2.66,13021,85.65
+2019-12-22,Houston,South America,bulk,2.27,17.82,2323.2,3.12,14344,80.11
+2017-05-07,Hamburg,Europe,container,4.66,10.87,2630.8,2.02,17703,77.42
+2019-07-14,Hamburg,Africa,container,5.22,25.96,672.46,1.9,10503,71.77
+2016-05-29,Jebel Ali,Europe,bulk,6.95,34.07,2585.29,2.84,20331,65.88
+2020-06-07,Savannah,South America,container,2.07,40.74,1594.78,3.28,17905,73.64
+2019-02-17,Savannah,Africa,container,0.74,14.15,1865.39,3.0,21803,84.28
+2023-02-12,Savannah,Asia,bulk,0.4,32.21,1373.53,2.88,7031,79.54
+2023-10-08,Houston,Europe,container,2.05,41.94,1824.67,1.98,23306,73.32
+2022-03-27,Singapore,Middle East,ro-ro,5.31,17.76,1941.66,2.02,7768,74.05
+2020-05-24,Valencia,Africa,bulk,3.93,41.3,752.59,2.13,15792,69.75
+2017-11-12,Antwerp,Middle East,tanker,7.06,39.05,2327.96,1.92,17516,64.16
+2018-09-09,Hamburg,Middle East,ro-ro,5.03,14.58,1855.15,2.06,7154,75.57
+2020-05-17,Felixstowe,North America,tanker,3.76,19.14,2644.4,2.29,17905,76.74
+2015-01-25,Felixstowe,Middle East,bulk,3.74,31.7,2249.8,2.95,18982,73.01
+2016-03-13,Long Beach,Africa,ro-ro,5.73,4.87,2307.87,3.18,7849,77.08
+2020-09-06,Antwerp,Middle East,container,2.56,35.85,1479.93,1.81,10805,74.12
+2020-08-23,Houston,Asia,tanker,2.8,39.65,1381.2,3.09,21766,72.51
+2018-06-24,Felixstowe,North America,ro-ro,5.95,12.34,2192.68,2.12,15605,74.4
+2016-04-10,Colombo,Middle East,tanker,6.0,33.91,2202.13,2.35,16943,67.83
+2020-12-13,Hamburg,Middle East,bulk,5.19,27.89,2333.13,2.06,18388,71.25
+2020-05-31,Santos,Middle East,tanker,6.32,34.9,2205.21,2.94,15776,66.89
+2018-02-25,Santos,Europe,ro-ro,0.58,34.36,1798.94,2.82,8999,78.53
+2017-08-13,Los Angeles,Europe,ro-ro,4.18,42.63,2822.7,2.51,27989,68.85
+2022-07-17,Hamburg,South America,bulk,0.44,17.4,2263.89,2.01,5965,83.9
+2017-02-26,Shanghai,Africa,tanker,1.98,55.05,2570.8,1.6,27100,69.53
+2019-12-29,Savannah,Asia,tanker,3.3,63.45,3712.93,2.84,18263,64.37
+2022-12-04,Los Angeles,North America,container,6.31,43.59,3359.66,3.07,25066,64.3
+2019-09-29,Ningbo,Asia,bulk,4.62,45.5,1257.21,2.86,23062,67.11
+2018-08-05,Santos,South America,container,0.69,2.73,2180.5,1.95,15982,87.8
+2017-12-03,Los Angeles,Asia,ro-ro,4.89,20.96,1000.96,2.12,19915,73.93
+2021-09-12,Los Angeles,Middle East,bulk,4.2,22.05,1908.92,2.76,17687,74.98
+2018-09-02,Savannah,Africa,tanker,0.2,17.35,1569.55,2.66,20659,84.4
+2023-05-07,Shanghai,Africa,tanker,1.46,37.22,2470.88,3.18,14788,75.91
+2018-12-02,Jebel Ali,Africa,tanker,7.76,43.11,2255.41,2.29,14194,61.55
+2016-11-20,Jebel Ali,Middle East,bulk,0.2,15.96,2087.83,2.13,13505,84.81
+2019-10-20,Singapore,North America,tanker,5.61,6.68,2096.19,2.71,17943,76.78
+2022-01-02,Santos,Europe,tanker,0.51,37.68,1433.2,1.77,24726,77.68
+2024-09-01,Hamburg,Middle East,container,3.36,6.32,2221.91,1.63,22562,81.38
+2016-07-03,Savannah,South America,bulk,1.63,23.5,3623.05,1.95,17282,79.69
+2019-07-14,Felixstowe,North America,bulk,3.26,33.63,1460.21,2.12,10397,73.39
+2024-03-03,Felixstowe,South America,container,3.11,36.24,2016.07,2.59,18218,72.91
+2017-01-08,Durban,Middle East,bulk,3.75,17.39,1877.44,2.88,18203,77.28
+2019-05-05,Antwerp,Europe,tanker,3.15,3.84,2155.27,2.79,14133,82.55
+2016-11-27,Long Beach,Asia,container,5.82,17.67,2322.84,2.88,8936,73.06
+2023-01-08,Savannah,Asia,ro-ro,3.27,15.81,2714.87,2.7,14793,78.72
+2019-02-10,New York/New Jersey,Asia,bulk,3.06,37.35,2159.6,2.09,24939,72.68
+2017-04-30,New York/New Jersey,Asia,bulk,4.07,6.22,1460.75,2.41,20786,79.99
+2015-11-15,Santos,Africa,tanker,1.29,37.98,2302.18,2.14,17120,76.03
+2018-04-15,Los Angeles,Middle East,bulk,0.2,26.21,1920.78,1.31,20899,81.74
+2023-01-29,Singapore,North America,container,5.48,38.01,1369.41,2.58,17800,67.64
+2024-11-17,Colombo,Europe,tanker,6.6,39.77,2567.78,2.53,17930,64.87
+2015-01-04,Felixstowe,Africa,tanker,4.42,55.26,2910.57,1.93,26737,64.58
+2022-01-02,Valencia,South America,bulk,4.5,20.24,2597.37,1.77,12383,74.93
+2015-07-12,Savannah,Africa,container,6.45,33.28,2279.57,2.17,21461,67.12
+2020-05-24,Antwerp,Europe,bulk,3.45,39.77,1511.13,2.86,18448,71.17
+2019-08-04,Long Beach,Africa,bulk,1.7,28.07,1666.49,2.54,23087,78.18
+2018-11-04,Antwerp,Europe,bulk,3.2,20.15,782.42,1.6,9957,77.55
+2020-10-18,Valencia,North America,ro-ro,2.41,54.92,2556.63,2.09,27842,68.7
+2019-06-09,Tanjung Priok,Europe,container,5.03,56.63,2460.67,2.05,22038,62.95
+2017-04-23,Antwerp,Asia,tanker,2.85,31.18,1504.3,1.6,11992,74.95
+2023-06-25,Houston,Africa,container,8.82,49.29,3238.09,1.97,19873,57.57
+2018-02-11,Santos,Middle East,container,4.21,25.97,3277.68,1.99,20615,73.79
+2018-05-13,Busan,North America,bulk,4.48,33.99,1843.57,2.16,13736,70.84
+2023-04-02,Savannah,North America,bulk,2.7,34.73,2720.48,2.86,13547,74.18
+2019-02-24,New York/New Jersey,Europe,ro-ro,1.81,41.53,1882.97,2.45,24509,73.92
+2017-02-19,Felixstowe,Europe,bulk,3.39,41.93,2097.33,1.15,21192,70.64
+2020-03-22,Manzanillo,Africa,tanker,3.03,42.28,2565.41,2.06,20294,71.26
+2023-11-19,Rotterdam,South America,bulk,6.13,14.66,1356.27,3.08,18772,73.34
+2023-10-22,Felixstowe,Europe,ro-ro,5.17,59.31,3089.14,2.73,23507,61.87
+2020-06-21,Singapore,Asia,bulk,5.03,28.97,581.1,2.22,24573,71.25
+2015-05-24,Antwerp,Middle East,tanker,3.91,17.09,2264.56,3.37,19685,77.05
+2022-05-15,Durban,Middle East,container,4.63,56.17,2024.93,2.49,30809,63.89
+2017-04-09,Houston,North America,bulk,1.62,53.44,2397.29,2.03,26671,70.73
+2017-03-19,Durban,Middle East,ro-ro,6.38,25.16,2847.99,3.23,13898,69.69
+2017-08-27,Long Beach,South America,bulk,0.2,21.37,2976.27,1.28,12529,83.19
+2019-07-21,Houston,Europe,container,1.46,31.59,2080.26,1.8,25365,77.6
+2024-12-22,Tanjung Priok,South America,container,5.18,12.86,2027.34,2.17,8609,75.78
+2019-09-29,Durban,South America,container,3.83,32.47,1895.88,2.74,22530,72.6
+2021-08-29,Manzanillo,South America,container,0.2,38.9,2616.53,1.03,19939,77.93
+2020-02-02,Shanghai,Asia,bulk,4.36,7.49,1599.48,3.04,19974,79.03
+2018-07-01,Long Beach,Middle East,ro-ro,7.51,16.94,1670.56,2.69,19892,69.9
+2019-01-13,Houston,Europe,container,6.05,12.5,1999.87,1.9,5615,74.15
+2017-11-26,Tanjung Priok,Middle East,container,3.44,66.87,2377.01,2.81,16256,63.06
+2023-04-16,Durban,North America,tanker,3.07,13.57,1442.85,2.36,25849,79.79
+2024-01-14,Rotterdam,Africa,tanker,5.02,36.34,2485.51,2.9,20240,69.06
+2021-08-15,Los Angeles,North America,container,4.54,36.83,1169.9,2.45,30270,69.87
+2015-07-12,Los Angeles,Africa,container,4.76,23.6,2500.94,1.91,24162,73.4
+2016-08-21,Singapore,Europe,container,6.89,61.1,2786.42,2.05,14278,57.89
+2016-08-14,Antwerp,Middle East,container,2.86,3.64,2591.56,3.58,12099,83.19
+2023-08-13,Durban,Africa,tanker,1.5,8.25,1495.61,2.14,12948,84.52
+2016-02-14,Tanjung Priok,North America,bulk,1.05,24.29,1259.18,2.81,27609,80.61
+2021-12-05,Singapore,Middle East,container,3.38,24.68,1081.95,2.61,18989,75.84
+2024-11-24,Ningbo,Asia,tanker,3.63,37.14,2482.93,2.42,17381,71.6
+2018-02-18,New York/New Jersey,South America,bulk,1.65,10.51,2675.35,2.23,22294,83.55
+2024-05-12,Ningbo,Middle East,container,2.84,41.32,2343.62,3.35,25875,71.92
+2017-12-17,Rotterdam,Asia,container,4.77,46.16,1713.1,3.27,18605,66.61
+2021-02-28,Jebel Ali,Middle East,container,0.2,27.87,1538.43,3.53,14155,81.24
+2024-12-15,Felixstowe,Middle East,container,6.33,28.65,1638.28,2.49,13668,68.74
+2015-11-15,Tanjung Priok,North America,container,0.26,19.15,2460.01,2.35,16260,83.74
+2020-02-16,Hamburg,Middle East,tanker,3.61,20.0,1892.46,2.62,19789,76.78
+2021-09-12,New York/New Jersey,Asia,tanker,5.11,21.6,2773.04,1.91,8714,73.3
+2017-12-10,Jebel Ali,Middle East,container,4.75,31.57,2775.57,1.97,21014,71.03
+2019-08-18,Felixstowe,Europe,tanker,6.3,17.9,2075.2,2.54,15260,72.03
+2019-06-23,Singapore,Asia,container,3.11,24.88,2615.43,2.51,18409,76.32
+2022-03-06,Ningbo,Europe,ro-ro,5.83,26.44,1974.33,2.38,21372,70.41
+2015-10-25,Durban,Africa,container,5.98,2.74,1651.89,2.8,13410,77.22
+2024-03-24,Long Beach,Middle East,bulk,5.28,25.95,2831.09,2.35,9676,71.66
+2019-09-22,Felixstowe,South America,ro-ro,4.57,12.67,1196.75,2.87,18302,77.06
+2021-12-19,Los Angeles,South America,bulk,4.71,21.96,2194.37,2.16,16105,73.99
+2017-06-18,New York/New Jersey,North America,tanker,0.2,30.59,2235.46,2.41,12441,80.42
+2015-12-06,Savannah,Middle East,tanker,3.87,12.32,2246.44,1.91,13899,78.56
+2017-06-11,Durban,South America,container,4.23,10.74,1586.07,2.77,12230,78.32
+2020-02-16,Shanghai,Africa,bulk,2.51,11.65,1362.39,2.77,15319,81.48
+2024-04-21,Santos,Europe,bulk,3.17,40.45,2367.37,1.98,23263,71.52
+2022-06-05,Antwerp,South America,container,5.37,21.78,1604.88,1.64,16903,72.73
+2022-11-06,Shanghai,Europe,bulk,5.07,18.45,2439.74,1.29,21741,74.32
+2016-04-17,Houston,Africa,ro-ro,2.84,24.59,1563.84,2.37,13785,76.94
+2020-10-18,Rotterdam,South America,tanker,4.17,25.94,2566.67,3.84,14992,73.88
+2023-01-01,Ningbo,Europe,container,2.07,27.0,3454.78,2.4,29405,77.76
+2019-10-06,Felixstowe,Africa,bulk,5.12,42.94,2750.45,2.43,18534,66.88
+2022-03-27,Manzanillo,Middle East,bulk,6.38,4.15,1649.55,2.4,9491,75.99
+2017-01-15,Ningbo,Asia,container,3.81,10.63,1734.08,2.42,23201,79.19
+2024-01-28,Long Beach,Middle East,tanker,8.73,29.64,1724.79,2.6,23607,63.65
+2022-08-28,Rotterdam,Asia,tanker,4.3,17.22,1706.5,1.62,21514,76.23
+2020-09-13,Long Beach,Europe,ro-ro,0.2,32.86,1752.06,2.2,10990,79.74
+2019-06-30,Busan,Asia,bulk,0.2,16.2,2032.35,1.78,22001,84.74
+2020-10-04,Antwerp,Africa,container,1.04,27.29,1747.87,1.58,18895,79.73
+2016-08-28,Santos,Middle East,tanker,1.58,8.06,2026.05,2.21,11238,84.42
+2023-01-29,Shanghai,Asia,container,5.64,12.59,1213.76,1.56,11441,74.94
+2019-06-09,Savannah,Asia,bulk,5.46,51.62,3672.85,2.04,18449,63.59
+2024-10-27,Manzanillo,Europe,tanker,1.11,60.58,3480.86,2.68,20526,69.61
+2021-07-04,Houston,Middle East,container,2.47,26.04,1848.56,2.4,23755,77.25
+2021-09-05,Long Beach,Asia,container,2.27,53.26,2213.26,1.86,23303,69.48
+2020-09-20,Hamburg,Europe,bulk,4.31,17.23,1882.74,2.04,14929,76.21
+2019-02-03,Busan,Europe,tanker,0.52,33.47,2890.21,1.76,23766,78.92
+2021-03-07,Savannah,Middle East,bulk,3.52,15.05,2206.99,1.51,2374,78.44
+2017-10-08,Savannah,North America,container,5.82,13.36,2362.16,2.15,9285,74.35
+2023-12-03,Manzanillo,Middle East,container,1.4,12.8,1466.84,3.92,14317,83.36
+2015-12-13,Tanjung Priok,Europe,bulk,7.15,40.42,2603.91,2.49,29305,63.57
+2016-10-16,Antwerp,Middle East,bulk,5.16,9.8,2799.19,3.21,9672,76.74
+2017-08-20,Jebel Ali,Africa,tanker,2.06,47.52,2532.73,2.93,24388,71.62
+2019-06-09,Long Beach,Middle East,container,3.69,41.09,2987.0,1.21,15067,70.29
+2016-07-03,New York/New Jersey,South America,ro-ro,0.2,28.68,1370.27,2.48,18354,81.0
+2021-06-06,Jebel Ali,North America,ro-ro,3.34,46.67,1478.75,3.4,14299,69.32
+2024-10-27,Felixstowe,South America,container,0.45,11.26,2695.46,2.37,20622,85.72
+2015-03-15,Rotterdam,Europe,container,5.04,22.07,1941.89,1.54,20864,73.3
+2015-08-02,Colombo,North America,tanker,4.9,7.36,2740.97,2.73,12583,77.99
+2023-02-19,Savannah,South America,bulk,2.7,29.27,1602.25,1.48,22006,75.82
+2015-04-05,Hamburg,Africa,ro-ro,2.8,6.55,1679.94,2.14,16738,82.44
+2021-07-18,Santos,Africa,ro-ro,0.83,32.07,2402.45,2.27,18603,78.72
+2020-03-08,Ningbo,South America,container,0.2,7.55,2267.79,2.68,19867,87.34
+2023-02-26,Los Angeles,South America,bulk,2.89,46.88,2487.95,3.55,23610,70.16
+2022-09-11,Busan,South America,tanker,7.89,37.15,2032.15,3.16,19285,63.08
+2017-08-20,Long Beach,North America,tanker,0.27,43.89,3441.34,2.78,23652,76.29
+2016-05-22,Savannah,South America,tanker,4.23,15.2,2106.66,2.64,15732,76.98
+2017-02-19,Durban,Asia,bulk,3.16,49.86,2592.62,2.88,29795,68.72
+2019-07-14,Jebel Ali,South America,ro-ro,5.7,31.88,1781.67,2.41,17961,69.04
+2021-09-26,Los Angeles,South America,bulk,6.28,48.91,2940.99,2.36,32243,62.77
+2023-01-01,Antwerp,Europe,bulk,2.02,30.06,2314.25,2.46,21999,76.94
+2019-03-24,Tanjung Priok,South America,bulk,3.04,19.01,2030.96,1.35,11255,78.22
+2016-06-12,Hamburg,Middle East,tanker,8.05,42.37,1445.09,2.61,16820,61.19
+2021-08-01,Singapore,Middle East,container,3.7,27.18,2137.42,1.56,9840,74.45
+2016-10-23,Shanghai,North America,tanker,1.36,53.77,2026.61,1.51,18771,71.15
+2017-07-23,Manzanillo,South America,ro-ro,5.06,39.66,2783.67,2.81,19897,67.98
+2015-11-01,Busan,Africa,container,2.02,17.56,2666.75,3.2,16719,80.69
+2021-08-15,Hamburg,Middle East,ro-ro,2.59,33.72,2229.55,2.95,19696,74.7
+2023-05-28,Felixstowe,Africa,container,0.6,9.37,1451.58,2.79,13282,85.99
+2016-11-20,Savannah,Africa,bulk,3.51,38.98,3310.49,2.91,24221,71.29
+2023-05-14,Los Angeles,North America,bulk,4.83,14.65,1243.43,2.82,12591,75.95
+2016-01-31,Manzanillo,Europe,tanker,3.28,34.06,2022.13,2.03,11903,73.22
+2022-08-28,Jebel Ali,South America,container,3.42,37.06,2885.63,1.59,17907,72.04
+2015-07-12,Jebel Ali,Europe,ro-ro,1.62,10.77,3098.36,1.37,20610,83.53
+2016-06-05,Singapore,Africa,bulk,2.05,29.1,1337.55,2.12,18971,77.17
+2016-12-18,Rotterdam,Europe,tanker,4.75,31.61,2563.2,2.14,20672,71.02
+2021-09-05,Busan,North America,ro-ro,3.28,33.42,3459.31,2.47,18461,73.41
+2024-12-29,Durban,Europe,ro-ro,4.81,54.28,2404.74,0.8,29069,64.1
+2017-02-19,Santos,Africa,ro-ro,5.34,8.13,2433.47,2.81,18661,76.88
+2023-04-30,Durban,Africa,bulk,2.36,41.98,2129.71,2.38,13687,72.69
+2019-02-17,Manzanillo,Asia,tanker,3.22,29.18,2648.87,3.26,18398,74.81
+2015-10-18,Savannah,Europe,tanker,2.0,21.22,1902.69,3.01,17530,79.63
+2015-02-08,Manzanillo,Middle East,bulk,1.4,22.78,3467.63,2.27,16138,80.37
+2021-09-19,Ningbo,Europe,ro-ro,4.39,54.29,2172.62,2.87,34937,64.93
+2017-09-03,Felixstowe,North America,bulk,5.25,46.18,2060.83,1.61,20169,65.65
+2019-08-04,Busan,South America,container,3.45,12.54,1667.4,2.6,10141,79.34
+2016-01-17,Savannah,Africa,tanker,4.35,8.32,703.77,2.13,9248,78.8
+2023-11-12,Los Angeles,South America,container,5.78,27.65,847.24,1.57,21090,70.14
+2024-12-15,Busan,South America,container,3.56,38.41,3434.27,1.62,17641,71.36
+2020-09-06,Ningbo,South America,bulk,6.85,23.87,2718.56,2.04,14890,69.14
+2015-04-26,Valencia,Asia,bulk,1.66,21.12,2039.98,2.01,23419,80.34
+2022-11-27,Tanjung Priok,Africa,ro-ro,3.99,38.62,2101.4,2.32,24932,70.43
+2022-05-15,Ningbo,South America,ro-ro,1.13,38.89,2144.54,3.88,17312,76.07
+2016-10-02,Manzanillo,Asia,bulk,2.34,30.42,2283.12,1.74,21873,76.19
+2022-03-06,Colombo,Middle East,bulk,2.89,62.26,2152.48,1.87,15792,65.54
+2017-11-19,Singapore,South America,container,4.61,35.94,1766.08,2.2,25802,70.0
+2020-10-11,Los Angeles,South America,tanker,2.73,11.93,1619.32,2.66,10433,80.96
+2018-10-28,Rotterdam,Europe,container,2.91,26.32,1465.11,3.03,21014,76.28
+2018-08-19,Hamburg,Asia,bulk,6.78,43.43,1650.47,2.74,19689,63.41
+2023-06-11,Jebel Ali,South America,container,0.2,27.1,2496.61,1.72,9211,81.47
+2023-01-01,Tanjung Priok,Africa,container,5.99,23.83,2273.81,1.95,15176,70.87
+2024-04-14,Houston,Middle East,container,0.29,15.69,2918.15,2.36,20559,84.71
+2023-12-24,Felixstowe,North America,ro-ro,3.3,10.02,3139.2,2.76,9902,80.39
+2018-06-03,Antwerp,Asia,bulk,4.96,28.61,2024.97,1.4,16145,71.5
+2019-04-28,Singapore,Africa,tanker,3.88,10.69,2278.88,2.14,8882,79.03
+2019-10-13,Manzanillo,Europe,container,2.38,43.5,1559.13,3.22,19659,72.19
+2020-08-02,Los Angeles,Asia,ro-ro,2.44,32.9,2268.96,2.37,27857,75.25
+2017-04-23,Houston,Africa,ro-ro,7.32,39.34,1989.96,1.41,10352,63.56
+2021-09-12,Los Angeles,South America,bulk,3.26,23.4,2473.7,0.8,19621,76.46
+2022-12-18,Colombo,Asia,bulk,2.95,44.98,1299.9,1.28,15283,70.61
+2023-07-09,Shanghai,North America,ro-ro,4.03,5.56,1333.9,1.11,20662,80.27
+2022-06-05,Busan,Middle East,container,7.15,48.07,2464.82,0.8,26204,61.28
+2019-03-31,Los Angeles,South America,ro-ro,5.94,37.78,2197.22,2.0,26812,66.79
+2023-05-14,Savannah,Africa,bulk,3.87,34.46,2660.61,2.76,20142,71.92
+2018-09-23,Manzanillo,Asia,tanker,5.08,32.63,2601.55,2.37,22690,70.05
+2017-05-14,Shanghai,Europe,tanker,4.35,23.49,2523.94,2.59,8324,74.25
+2022-10-30,Durban,Europe,bulk,0.87,30.56,1269.48,2.28,13741,79.09
+2021-02-07,Manzanillo,Asia,container,6.47,65.03,3119.6,2.87,16141,57.55
+2015-08-02,Rotterdam,Middle East,bulk,5.85,34.17,2057.64,2.19,13945,68.05
+2015-01-11,Los Angeles,Africa,ro-ro,4.52,31.74,2484.37,2.38,21432,71.44
+2022-09-04,Jebel Ali,North America,container,2.95,21.16,2286.21,3.13,21470,77.75
+2017-04-16,Jebel Ali,South America,bulk,3.41,6.36,2193.01,2.53,17138,81.27
+2016-06-19,New York/New Jersey,Africa,bulk,2.76,10.09,1881.46,2.92,17785,81.45
+2021-07-25,Los Angeles,North America,container,2.52,20.44,3194.33,2.31,14720,78.83
+2022-05-15,Manzanillo,North America,tanker,4.08,8.16,1740.63,2.43,7357,79.39
+2016-07-31,Ningbo,Africa,container,2.77,23.68,1872.81,3.17,19456,77.36
+2021-04-25,Long Beach,Middle East,ro-ro,2.16,16.57,2176.27,2.17,18713,80.71
+2018-06-24,Manzanillo,Europe,ro-ro,3.58,17.48,2779.01,2.19,17611,77.6
+2023-01-29,Houston,North America,tanker,3.74,50.05,2390.32,1.35,18492,67.5
+2019-04-28,Shanghai,Asia,container,3.92,29.7,2118.83,1.97,19806,73.25
+2024-09-22,Valencia,Middle East,tanker,1.67,28.81,1215.69,2.6,18481,78.02
+2022-09-04,Rotterdam,North America,ro-ro,5.8,6.56,2313.34,3.27,9489,76.43
+2017-10-01,Jebel Ali,Middle East,bulk,1.77,32.95,1612.82,3.35,28722,76.57
+2017-09-10,Busan,North America,container,5.73,30.5,1880.52,2.89,13865,69.39
+2024-08-25,Santos,Middle East,container,3.81,32.2,2665.07,2.26,26955,72.72
+2018-02-25,Colombo,Africa,container,0.32,32.06,3635.6,2.95,13419,79.74
+2020-03-01,Los Angeles,Middle East,tanker,0.2,8.93,1473.13,2.9,12130,86.92
+2016-04-24,Antwerp,Europe,bulk,2.63,27.06,2058.44,2.95,20689,76.62
+2023-11-26,Hamburg,North America,bulk,3.54,21.82,3310.39,3.1,21326,76.37
+2021-02-28,Busan,Africa,bulk,3.19,8.14,2143.72,3.09,15769,81.18
+2018-12-23,Busan,Middle East,container,4.41,18.97,1890.0,3.27,1515,75.49
+2024-03-03,Durban,North America,ro-ro,3.2,23.74,2005.92,1.82,13124,76.48
+2015-03-15,Antwerp,Europe,container,3.43,36.86,1814.23,2.27,29419,72.08
+2016-07-17,Tanjung Priok,Europe,container,3.82,39.05,1719.01,3.31,20376,70.64
+2022-06-12,Savannah,Europe,ro-ro,3.36,44.4,2716.67,2.87,13737,69.96
+2019-09-01,Manzanillo,Africa,tanker,4.4,10.64,1607.19,2.95,12659,78.01
+2017-08-06,Valencia,Middle East,tanker,5.44,17.66,1245.91,2.88,11132,73.82
+2022-05-22,Savannah,Europe,bulk,3.79,41.87,2721.92,2.87,25687,69.86
+2023-10-15,New York/New Jersey,Africa,tanker,2.16,43.31,2292.15,3.26,22391,72.69
+2021-01-10,Shanghai,South America,container,3.11,19.12,1966.59,1.96,23808,78.04
+2018-04-22,Colombo,Asia,container,7.52,20.58,3042.49,3.27,13374,68.79
+2017-10-08,Jebel Ali,Asia,container,7.92,21.09,2600.27,2.03,17216,67.83
+2016-11-06,Felixstowe,Asia,tanker,3.31,35.39,2131.27,1.59,16101,72.76
+2016-01-17,Hamburg,Middle East,bulk,1.8,43.89,3324.34,2.85,22660,73.23
+2019-12-01,Savannah,Middle East,ro-ro,2.76,29.36,2251.74,3.7,18509,75.67
+2017-02-12,Houston,Middle East,ro-ro,3.55,13.65,1476.61,2.65,13304,78.81
+2018-05-06,Rotterdam,North America,container,4.73,22.69,2018.75,1.98,6410,73.73
+2018-03-04,New York/New Jersey,Middle East,bulk,2.37,4.35,1898.45,2.43,19247,83.96
+2017-01-01,Antwerp,Asia,ro-ro,3.43,9.02,1867.88,2.22,7846,80.43
+2018-05-13,Colombo,South America,tanker,1.92,32.89,2959.31,1.43,19440,76.29
+2024-08-25,Tanjung Priok,Middle East,bulk,0.78,5.21,1700.97,2.08,9532,86.88
+2023-05-14,Hamburg,South America,bulk,2.46,17.59,1837.86,2.08,24333,79.8
+2017-04-02,Manzanillo,Europe,tanker,5.05,34.17,3463.32,1.48,27785,69.65
+2023-01-08,Los Angeles,Asia,bulk,3.87,11.97,1546.93,2.67,15124,78.67
+2023-10-29,Los Angeles,Middle East,ro-ro,2.89,4.7,1326.24,1.89,16890,82.81
+2022-11-27,Savannah,Middle East,ro-ro,4.43,44.02,1773.5,1.99,13963,67.93
+2016-03-13,Jebel Ali,Middle East,bulk,3.88,8.57,708.99,1.65,9511,79.67
+2022-12-11,Manzanillo,Europe,container,0.2,51.84,2089.58,1.32,18189,74.05
+2022-02-27,Los Angeles,Middle East,bulk,7.0,34.68,1376.74,2.85,17280,65.6
+2016-08-28,Rotterdam,Europe,bulk,3.94,21.98,1762.54,2.87,10707,75.53
+2021-11-07,Singapore,Africa,bulk,2.98,15.43,2708.07,3.11,10012,79.41
+2016-09-11,Jebel Ali,Africa,tanker,3.52,38.64,1713.19,1.89,28742,71.37
+2015-04-19,Singapore,South America,ro-ro,1.16,37.47,1351.52,2.64,8218,76.44
+2017-01-22,Shanghai,Middle East,bulk,4.51,12.7,1901.19,2.76,15676,77.17
+2016-06-05,Manzanillo,Africa,bulk,6.0,35.48,1814.3,1.65,14245,67.36
+2016-06-05,Colombo,Europe,tanker,5.29,43.08,2029.31,2.16,12196,66.5
+2022-10-23,Valencia,South America,container,3.75,41.55,2769.25,2.94,16773,70.04
+2020-04-05,Hamburg,Middle East,tanker,1.24,22.54,2290.86,1.96,12445,80.76
+2015-04-26,Rotterdam,Europe,container,0.2,17.16,2115.96,2.41,22083,84.45
+2021-06-27,Long Beach,South America,bulk,7.98,50.31,1533.21,3.35,25198,58.95
+2023-07-02,Tanjung Priok,Africa,tanker,1.09,25.05,1447.64,2.37,9564,80.3
+2024-12-15,Ningbo,Africa,bulk,3.53,7.24,1568.43,2.46,18406,80.77
+2020-11-08,Tanjung Priok,Asia,container,5.27,39.06,3043.64,3.08,21799,67.74
+2016-08-28,Ningbo,Asia,ro-ro,1.07,45.98,1858.41,3.2,19435,74.07
+2024-12-15,Valencia,North America,ro-ro,6.88,6.92,2530.33,2.16,13010,74.16
+2016-10-16,Busan,Europe,bulk,3.58,8.9,1548.2,2.28,17373,80.17
+2022-11-20,Valencia,Middle East,ro-ro,4.39,33.17,1454.75,2.31,18378,71.27
+2018-11-04,Durban,Africa,bulk,5.42,42.02,2178.95,1.71,16285,66.55
+2015-07-05,Tanjung Priok,Middle East,tanker,3.4,10.69,2817.37,0.8,12418,79.99
+2022-06-19,New York/New Jersey,South America,container,5.65,5.93,1330.13,2.72,10711,76.92
+2024-01-21,Santos,South America,ro-ro,0.53,1.78,2827.93,2.11,14908,88.41
+2022-07-17,Durban,Europe,ro-ro,1.79,10.84,2224.59,2.21,11052,83.17
+2024-12-01,Santos,Africa,bulk,0.2,24.14,2429.51,2.78,23392,82.36
+2017-07-16,Singapore,South America,bulk,1.59,16.45,2416.33,2.06,12792,81.88
+2024-09-08,Long Beach,Africa,tanker,3.48,55.98,2304.32,1.87,20944,66.25
+2015-01-04,Jebel Ali,Africa,bulk,0.83,14.88,2665.35,1.84,10166,83.88
+2019-09-01,Busan,North America,tanker,5.96,51.74,2278.67,0.96,19511,62.56
+2015-08-02,Busan,Middle East,ro-ro,5.67,20.75,2475.32,2.62,12214,72.44
+2021-07-04,Valencia,South America,container,2.77,46.26,2406.42,2.11,21353,70.58
+2015-08-09,Savannah,Europe,tanker,6.18,17.09,1897.66,1.95,8991,72.51
+2018-06-17,Singapore,Asia,tanker,3.54,36.0,1899.5,1.96,13594,72.12
+2019-12-08,Rotterdam,South America,ro-ro,1.53,31.65,2396.85,3.68,12948,77.44
+2024-01-14,Colombo,Middle East,bulk,5.5,2.73,2292.49,2.61,12990,78.18
+2017-10-01,Busan,South America,tanker,1.7,57.53,2468.93,2.07,24329,69.34
+2018-08-26,Hamburg,Africa,bulk,0.75,49.83,1984.09,2.28,20097,73.55
+2020-04-12,Jebel Ali,Europe,bulk,5.99,5.87,1983.51,2.38,9928,76.26
+2017-01-08,Singapore,Middle East,bulk,4.58,22.33,2126.08,2.94,21524,74.14
+2020-02-09,New York/New Jersey,Africa,tanker,5.07,29.39,2246.57,2.25,18720,71.04
+2018-09-02,Durban,Asia,ro-ro,0.55,38.65,1908.22,1.32,21098,77.31
+2018-07-01,Singapore,Middle East,bulk,3.5,33.57,2286.33,2.8,14663,72.93
+2018-05-13,Jebel Ali,South America,bulk,5.08,31.14,3344.04,2.01,19435,70.5
+2019-05-12,Singapore,South America,tanker,3.59,7.33,1001.85,1.66,9979,80.62
+2017-01-01,Hamburg,South America,container,6.05,53.78,1793.32,2.15,21324,61.77
+2022-09-04,Busan,Asia,container,4.55,36.68,3026.82,3.45,19088,69.9
+2024-08-11,Manzanillo,Asia,ro-ro,2.35,77.65,3566.73,2.21,38931,62.0
+2021-05-16,Los Angeles,South America,tanker,0.2,42.01,2070.0,1.75,20979,77.0
+2024-07-28,Ningbo,Asia,bulk,3.39,19.36,1784.49,1.42,7418,77.41
+2015-02-22,Antwerp,Asia,container,5.37,8.35,1738.4,3.07,24242,76.76
+2016-06-19,Savannah,Middle East,ro-ro,0.92,12.04,2006.03,0.99,19126,84.55
+2018-03-25,Long Beach,Europe,tanker,3.23,5.85,789.69,2.76,13382,81.79
+2019-08-18,Shanghai,North America,container,0.2,23.05,1714.01,3.46,16628,82.68
+2022-02-20,Antwerp,Middle East,tanker,5.1,23.1,2191.12,2.18,12611,72.87
+2016-09-25,Singapore,Asia,ro-ro,0.45,21.74,2272.23,1.42,8317,82.58
+2017-02-12,Singapore,Asia,bulk,3.62,25.55,2195.9,3.06,12438,75.1
+2017-02-05,Antwerp,Africa,bulk,4.41,49.98,2006.37,2.41,32817,66.19
+2022-03-06,Tanjung Priok,Europe,ro-ro,2.05,15.07,939.83,1.28,19264,81.38
+2024-05-05,Manzanillo,North America,bulk,1.44,65.87,3053.33,1.7,26123,67.36
+2023-05-14,Valencia,Asia,container,6.33,31.79,1958.1,2.27,13429,67.8
+2015-04-26,Tanjung Priok,Asia,bulk,6.81,17.42,1253.6,2.79,12964,71.15
+2017-02-19,Ningbo,North America,container,3.22,5.06,1089.33,2.25,18314,82.04
+2021-12-12,Rotterdam,Middle East,ro-ro,4.19,18.03,1228.56,2.17,14876,76.21
+2017-05-21,Colombo,South America,ro-ro,4.64,34.79,2503.71,2.97,27417,70.28
+2016-03-06,Tanjung Priok,Africa,bulk,1.55,13.78,1580.36,2.44,12364,82.77
+2024-05-19,Los Angeles,Asia,tanker,4.24,25.08,2468.11,2.29,17760,74.0
+2017-07-16,Hamburg,South America,tanker,3.79,39.88,1477.3,3.54,26420,70.46
+2022-11-20,Rotterdam,Europe,tanker,3.6,26.06,2719.05,2.35,20573,74.98
+2023-05-28,Felixstowe,North America,tanker,5.59,41.6,1642.35,3.02,21504,66.34
+2024-12-08,Felixstowe,Middle East,ro-ro,3.04,62.7,2459.33,2.06,31583,65.11
+2020-06-28,Ningbo,Europe,bulk,1.26,30.18,3394.61,2.4,22476,78.43
+2024-09-01,Singapore,South America,tanker,3.58,23.66,2882.65,2.67,16498,75.74
+2020-06-28,Durban,Africa,tanker,2.25,33.25,1700.36,3.37,13931,75.53
+2023-04-16,Busan,Asia,tanker,1.94,33.5,1750.18,2.8,15484,76.07
+2018-07-01,Manzanillo,Europe,tanker,5.61,17.77,1982.02,2.47,14964,73.45
+2017-04-30,New York/New Jersey,Africa,ro-ro,3.39,34.71,2023.27,3.28,13845,72.81
+2021-07-11,Los Angeles,Europe,container,1.32,4.08,1720.88,1.62,12673,86.14
+2015-10-11,Long Beach,Europe,tanker,2.33,54.08,3467.83,2.5,20841,69.12
+2022-04-24,Hamburg,South America,bulk,2.99,33.54,2797.39,3.02,17906,73.96
+2016-06-05,Hamburg,Europe,container,5.68,34.16,1200.19,3.23,19461,68.39
+2021-05-23,Singapore,North America,bulk,2.31,19.32,2455.38,2.59,13569,79.58
+2015-02-08,Singapore,Asia,ro-ro,2.42,13.53,1497.68,2.85,10985,81.1
+2015-08-30,Manzanillo,Europe,ro-ro,3.04,49.79,1907.22,2.24,25660,68.98
+2018-07-29,Savannah,Asia,tanker,4.85,21.24,1629.48,3.59,14967,73.93
+2020-08-02,Manzanillo,South America,ro-ro,4.98,45.9,2824.67,2.09,14026,66.27
+2022-07-31,Colombo,South America,ro-ro,7.78,15.5,1687.02,2.46,26710,69.79
+2017-10-29,Santos,Africa,bulk,0.3,44.9,3320.42,1.91,21165,75.93
+2023-04-23,Valencia,Africa,ro-ro,5.37,14.16,3544.65,3.2,18162,75.01
+2020-09-27,Felixstowe,Europe,container,4.24,7.62,2107.78,1.8,8085,79.23
+2017-07-16,Busan,South America,bulk,8.06,58.04,2737.45,3.56,20113,56.47
+2022-03-27,Ningbo,Europe,container,3.9,16.76,2452.66,2.5,11016,77.17
+2019-04-14,Rotterdam,Africa,container,5.62,19.27,1544.25,2.74,9752,72.98
+2017-08-13,Antwerp,North America,bulk,5.36,23.46,939.0,2.39,19748,72.24
+2018-12-02,Tanjung Priok,Europe,container,4.78,19.93,1250.06,1.65,22840,74.46
+2020-12-27,Tanjung Priok,North America,container,5.94,15.7,1958.79,3.09,12727,73.41
+2022-05-29,Los Angeles,North America,bulk,3.82,16.93,2305.62,3.08,17717,77.28
+2023-02-26,Shanghai,Middle East,bulk,3.95,22.61,939.13,2.23,25947,75.32
+2018-12-30,Durban,Middle East,tanker,1.92,10.0,1316.2,3.12,16136,83.16
+2015-06-21,Durban,Europe,ro-ro,1.19,11.31,1749.95,1.38,16612,84.23
+2022-12-04,Manzanillo,Africa,container,4.27,17.55,2158.53,3.3,15260,76.19
+2023-12-10,Rotterdam,Europe,tanker,2.69,64.22,2698.65,1.78,25434,65.35
+2024-06-02,Valencia,Asia,tanker,1.35,17.28,2622.41,1.75,10651,82.12
+2022-02-13,Durban,Africa,tanker,1.02,16.66,979.11,2.54,26554,82.96
+2024-06-30,Houston,Middle East,bulk,4.47,21.22,1883.63,2.44,25730,74.69
+2015-08-23,Singapore,Europe,container,2.73,4.3,2463.43,1.8,15066,83.25
+2023-11-26,Jebel Ali,Africa,bulk,7.31,17.62,3082.99,2.58,18707,70.09
+2017-01-01,Jebel Ali,North America,bulk,5.8,15.14,2693.47,3.18,8609,73.86
+2023-08-20,Savannah,Africa,ro-ro,3.9,23.03,3467.59,2.84,23543,75.29
+2018-06-10,New York/New Jersey,Middle East,bulk,3.11,36.48,1653.06,2.09,17041,72.84
+2018-11-25,Valencia,Africa,bulk,4.65,22.91,1897.49,2.39,18767,73.83
+2018-08-26,Los Angeles,Asia,bulk,5.48,21.75,1551.01,2.01,18375,72.51
+2018-05-20,Houston,South America,bulk,4.69,21.86,1779.4,2.44,9954,74.06
+2023-01-29,Rotterdam,North America,ro-ro,3.11,13.11,2372.68,3.02,13329,79.85
+2021-05-30,Colombo,North America,tanker,3.67,11.49,1534.95,2.19,10706,79.21
+2019-08-18,Durban,South America,bulk,0.49,30.52,2100.31,2.49,20914,79.86
+2019-08-25,Rotterdam,Asia,tanker,3.0,27.28,2076.05,1.23,14960,75.82
+2019-10-20,Colombo,South America,bulk,7.18,42.18,2611.69,2.13,25269,62.99
+2021-04-11,Durban,Asia,tanker,4.75,27.99,938.15,3.24,15256,72.1
+2023-03-12,Savannah,Middle East,ro-ro,2.83,30.55,2530.89,1.43,20490,75.18
+2024-09-01,Hamburg,Europe,ro-ro,7.97,13.06,2731.12,2.95,12080,70.14
+2020-09-06,Hamburg,North America,tanker,4.37,35.38,2876.93,2.03,8600,70.65
+2020-02-16,Shanghai,South America,ro-ro,2.85,15.64,1075.73,2.33,12253,79.61
+2017-04-16,Rotterdam,Middle East,ro-ro,7.48,26.86,2413.5,3.31,22643,66.98
+2015-01-18,Rotterdam,South America,bulk,2.73,29.59,1348.97,2.38,18473,75.66
+2023-08-20,New York/New Jersey,Europe,container,3.64,51.56,2828.83,3.49,25424,67.25
+2021-07-04,Hamburg,Africa,ro-ro,4.61,24.41,2246.34,2.29,19183,73.46
+2024-10-06,Savannah,Europe,ro-ro,2.27,62.48,3208.38,2.26,21605,66.72
+2021-05-30,Houston,South America,bulk,3.66,15.41,1707.43,2.35,16172,78.06
+2017-07-23,Houston,North America,container,4.05,25.1,2002.55,2.6,22571,74.37
+2017-08-20,Busan,Middle East,container,6.76,36.33,1800.49,2.5,25084,65.58
+2018-09-09,Rotterdam,North America,container,2.91,47.86,729.59,2.5,23936,69.82
+2020-03-15,Durban,Middle East,ro-ro,3.04,9.77,1458.7,2.03,12201,80.99
+2024-11-17,Manzanillo,South America,ro-ro,2.67,40.32,1713.87,2.65,31947,72.56
+2021-11-07,Antwerp,Africa,tanker,1.93,17.09,1934.17,2.14,25914,81.01
+2022-01-02,Rotterdam,Europe,ro-ro,5.79,21.98,2372.08,3.33,9355,71.83
+2016-03-13,Long Beach,Europe,container,5.53,41.88,2312.13,2.9,25645,66.38
+2020-06-14,Ningbo,Europe,ro-ro,3.22,13.56,2487.96,2.64,22502,79.49
+2016-08-07,Colombo,South America,tanker,0.2,42.56,2165.31,2.71,16655,76.83
+2017-02-26,Valencia,North America,tanker,1.15,6.78,2246.13,1.7,16617,85.67
+2018-03-11,Antwerp,Africa,container,4.16,13.53,2518.32,2.86,12846,77.62
+2015-06-14,Houston,Africa,bulk,3.62,42.84,2370.35,1.93,16216,69.91
+2021-10-31,Los Angeles,North America,tanker,3.77,35.73,981.74,1.67,13647,71.74
+2018-11-25,Santos,Asia,bulk,3.99,68.87,2174.3,3.84,23352,61.36
+2016-02-14,Tanjung Priok,Europe,container,4.41,58.25,2170.99,3.34,20722,63.71
+2023-02-26,Santos,North America,bulk,1.75,17.77,2397.88,2.89,15435,81.17
+2024-10-20,New York/New Jersey,South America,container,3.03,62.25,2445.59,1.86,23255,65.26
+2017-11-05,Jebel Ali,North America,bulk,3.51,21.47,2985.35,2.74,10846,76.54
+2017-12-24,Savannah,Europe,bulk,2.87,46.22,2434.96,2.95,26911,70.39
+2017-04-23,Valencia,Middle East,ro-ro,1.19,36.24,2119.08,2.31,24206,76.75
+2017-09-24,Long Beach,North America,container,4.12,19.7,1798.64,2.91,19435,75.85
+2017-04-09,Savannah,Middle East,ro-ro,5.0,36.23,2249.18,2.91,29123,69.13
+2017-01-22,Houston,Europe,container,2.26,11.96,2853.62,1.92,18767,81.89
+2017-05-14,Tanjung Priok,Africa,container,1.92,30.07,1975.16,3.1,15366,77.14
+2023-10-08,Houston,Africa,tanker,0.97,41.94,2612.24,1.76,23783,75.48
+2023-08-06,Hamburg,Europe,bulk,2.21,44.43,1624.68,1.96,11588,72.25
+2015-09-20,Ningbo,South America,bulk,3.71,23.51,2142.38,1.48,14897,75.53
+2023-06-18,Jebel Ali,Asia,bulk,5.42,47.48,2765.95,2.23,29310,64.92
+2015-04-05,Rotterdam,Middle East,tanker,2.57,27.56,2110.29,1.34,20062,76.59
+2017-01-15,Houston,Asia,bulk,5.48,38.05,2154.63,1.81,21648,67.62
+2016-12-18,New York/New Jersey,Asia,container,5.76,26.46,2823.32,1.59,15277,70.54
+2022-10-02,Manzanillo,Europe,tanker,2.87,11.64,2252.77,1.2,17409,80.77
+2015-03-01,Colombo,Africa,tanker,2.75,26.56,3039.16,2.33,16146,76.53
+2017-08-20,Houston,South America,tanker,4.9,18.93,1597.42,2.39,9651,74.52
+2022-05-15,Houston,North America,bulk,4.75,4.08,2001.22,1.88,11401,79.28
+2022-03-13,Busan,Africa,ro-ro,4.61,22.21,1178.58,2.99,22029,74.12
+2016-04-17,Los Angeles,Europe,tanker,3.84,59.82,2976.38,2.98,26270,64.37
+2017-07-09,Colombo,Middle East,container,4.8,47.95,2785.58,1.76,20107,66.02
+2016-11-27,Hamburg,Middle East,container,3.93,38.79,3716.74,1.89,21674,70.5
+2017-10-15,Shanghai,Europe,ro-ro,7.99,23.57,1683.91,3.22,18644,66.95
+2022-01-16,Durban,Asia,tanker,6.15,31.48,2210.48,2.95,22241,68.26
+2022-08-07,Ningbo,Europe,bulk,8.1,39.36,1840.84,3.15,30031,61.99
+2015-07-12,Shanghai,North America,bulk,1.98,29.7,1811.85,1.8,17855,77.13
+2015-07-05,Houston,Middle East,container,5.88,52.37,2711.01,2.18,16956,62.53
+2023-04-16,Savannah,Asia,bulk,0.2,78.82,2757.48,1.93,24560,65.95
+2024-05-26,Hamburg,South America,ro-ro,5.25,52.34,3043.95,2.09,23075,63.8
+2020-06-14,Long Beach,Europe,container,10.96,22.66,2497.52,2.97,16387,61.28
+2023-09-10,New York/New Jersey,Middle East,ro-ro,1.99,42.66,2068.89,1.66,14827,73.22
+2015-06-07,Felixstowe,Europe,bulk,5.41,36.41,2009.27,1.72,23016,68.26
+2017-06-25,Ningbo,South America,container,4.02,21.83,1607.11,3.57,11217,75.41
+2021-09-19,Singapore,Asia,bulk,3.3,29.74,2049.12,1.94,22788,74.48
+2015-02-22,Hamburg,Africa,tanker,3.8,12.69,2304.96,1.62,23327,78.59
+2015-08-23,Hamburg,North America,container,6.53,41.31,3265.3,1.82,22032,64.55
+2015-05-03,Tanjung Priok,Asia,ro-ro,3.9,8.08,2399.26,2.25,9402,79.78
+2024-09-29,Colombo,Africa,ro-ro,3.88,62.32,2476.54,3.36,24185,63.54
+2022-03-27,Felixstowe,Asia,container,3.29,17.41,760.77,2.26,8576,78.2
+2022-04-10,Valencia,South America,tanker,4.81,41.15,3208.65,2.14,22805,68.04
+2022-04-17,Ningbo,Middle East,bulk,6.79,25.68,2752.07,2.36,17987,68.72
+2019-11-03,Shanghai,Middle East,container,3.81,25.5,1714.44,1.62,14867,74.73
+2017-09-10,Shanghai,Middle East,ro-ro,2.97,33.48,3008.9,2.28,16140,74.02
+2015-01-18,Savannah,North America,container,0.77,60.64,2342.37,3.27,20290,70.27
+2017-04-30,Manzanillo,North America,container,3.56,2.92,1764.6,2.23,12425,82.0
+2019-01-27,Los Angeles,Africa,ro-ro,1.35,41.01,1260.26,2.28,19654,75.0
+2019-07-07,Savannah,Middle East,ro-ro,3.78,20.7,3157.93,2.7,12244,76.23
+2020-05-31,New York/New Jersey,Middle East,bulk,4.8,21.09,1051.97,3.09,19638,74.07
+2023-04-23,Manzanillo,North America,container,4.21,25.18,1015.7,2.16,18685,74.03
+2016-11-27,Busan,Middle East,container,2.8,55.81,1848.17,1.87,27844,67.66
+2017-11-26,Colombo,North America,container,5.48,23.5,1561.87,2.72,20876,71.99
+2021-09-19,Long Beach,Middle East,container,5.37,33.59,2515.1,2.78,20771,69.18
+2018-11-04,Manzanillo,North America,ro-ro,0.32,9.48,1995.48,3.34,19314,86.52
+2023-11-19,Savannah,Europe,container,0.2,36.88,1849.07,2.2,17808,78.54
+2024-01-28,Hamburg,Asia,container,0.88,15.26,2157.92,2.57,10077,83.66
+2015-12-06,Ningbo,Asia,tanker,1.08,38.88,3536.95,2.55,21232,76.18
+2024-08-25,Ningbo,Europe,ro-ro,3.46,15.36,2884.69,2.85,8703,78.47
+2018-06-10,Savannah,Africa,bulk,0.84,46.6,2728.83,3.53,22078,74.34
+2015-06-28,Los Angeles,South America,ro-ro,4.8,29.22,2915.72,3.33,15725,71.63
+2018-07-29,Busan,South America,tanker,2.16,26.9,1798.31,3.34,15356,77.61
+2023-10-08,Felixstowe,Africa,ro-ro,2.3,6.66,2296.66,0.8,6788,83.4
+2019-12-22,Santos,North America,bulk,2.74,25.07,1650.94,2.16,14102,77.0
+2017-05-14,Durban,North America,tanker,2.31,23.04,1847.78,1.76,20438,78.47
+2018-11-25,Antwerp,South America,ro-ro,5.97,13.43,2311.09,2.3,12078,74.03
+2018-01-28,Valencia,Asia,ro-ro,4.18,34.04,1718.54,3.93,11143,71.43
+2022-09-25,Felixstowe,Europe,container,1.8,30.83,2841.99,1.76,20912,77.15
+2021-12-05,Colombo,North America,bulk,3.0,46.03,2313.71,3.81,6434,70.19
+2017-09-17,Santos,North America,container,7.14,23.71,1540.31,1.15,11012,68.61
+2016-02-14,Shanghai,Middle East,ro-ro,1.2,5.35,2166.16,2.43,15114,85.99
+2023-05-07,Savannah,Asia,tanker,3.84,62.02,2435.96,3.23,31182,63.71
+2015-06-28,New York/New Jersey,North America,container,4.65,15.47,680.16,3.81,17388,76.06
+2023-10-08,Colombo,Middle East,ro-ro,1.29,47.4,2607.0,1.6,24491,73.2
+2017-06-11,Shanghai,North America,container,2.49,55.21,3077.96,2.78,22430,68.46
+2020-02-23,Colombo,Europe,container,4.34,14.85,877.53,1.32,14704,76.87
+2020-04-19,Colombo,North America,tanker,2.45,59.37,1791.49,1.34,17055,67.29
+2019-11-24,New York/New Jersey,Asia,bulk,4.16,61.35,1897.29,2.61,32227,63.28
+2015-11-01,Shanghai,South America,container,3.35,35.73,2414.98,1.92,21600,72.58
+2020-11-01,Tanjung Priok,Middle East,ro-ro,0.58,20.78,2314.4,1.98,16858,82.61
+2024-09-01,Hamburg,Africa,container,7.34,47.54,2421.48,2.48,14061,61.06
+2018-11-25,Valencia,South America,ro-ro,7.5,51.37,1851.28,1.78,19103,59.59
+2017-05-14,Felixstowe,Middle East,tanker,4.34,17.29,807.41,2.49,23461,76.13
+2017-01-01,Felixstowe,Middle East,container,2.56,39.44,3355.21,2.28,23321,73.05
+2017-12-03,Antwerp,Middle East,tanker,7.19,13.6,1422.77,3.62,10659,71.54
+2015-12-20,Santos,Middle East,tanker,2.77,25.75,1507.91,2.07,20626,76.74
+2019-11-17,Hamburg,Europe,tanker,5.31,41.89,2089.14,2.5,25818,66.81
+2023-07-30,Rotterdam,Europe,tanker,0.2,49.7,1615.36,2.46,27070,74.69
+2017-03-26,Tanjung Priok,Middle East,container,2.56,9.76,1768.09,2.07,19734,81.95
+2016-04-24,Shanghai,Europe,ro-ro,0.58,46.92,3344.1,2.28,16912,74.76
+2017-09-24,Los Angeles,Europe,ro-ro,3.41,22.29,2521.93,1.48,23210,76.49
+2016-01-03,Manzanillo,Middle East,bulk,1.61,30.78,1685.21,3.08,14185,77.55
+2017-01-29,New York/New Jersey,Middle East,container,6.34,45.42,1660.39,2.32,24568,63.69
+2018-02-11,Los Angeles,Africa,tanker,4.43,30.31,2319.45,1.62,13675,72.05
+2016-11-13,Durban,North America,bulk,4.24,10.27,1788.08,1.74,16418,78.44
+2022-04-03,Tanjung Priok,South America,ro-ro,6.64,9.77,1312.2,1.32,16758,73.79
+2017-11-19,Savannah,North America,ro-ro,2.78,7.72,600.2,2.09,5051,82.12
+2015-06-07,Durban,South America,tanker,1.86,24.36,2024.43,2.59,24676,78.97
+2024-12-22,Los Angeles,North America,ro-ro,2.1,19.98,2476.63,3.09,13576,79.81
+2020-02-09,Ningbo,South America,bulk,3.34,29.68,2193.5,1.57,15268,74.42
+2018-02-25,Savannah,Middle East,tanker,6.13,19.09,2158.04,2.28,8846,72.01
+2019-07-28,Colombo,Middle East,tanker,4.63,12.95,677.11,2.01,13958,76.85
+2023-08-06,Los Angeles,South America,bulk,4.62,14.95,2288.22,3.17,13015,76.28
+2016-03-20,Los Angeles,Asia,container,4.81,46.89,2480.58,2.22,23217,66.31
+2023-03-19,Santos,Asia,ro-ro,2.43,7.94,829.56,2.51,17030,82.76
+2016-10-30,Rotterdam,Europe,ro-ro,3.77,57.72,2283.67,3.1,25078,65.14
+2016-09-04,Ningbo,South America,ro-ro,1.71,30.07,2710.64,2.55,18586,77.56
+2016-10-16,New York/New Jersey,Europe,ro-ro,5.13,27.92,1569.94,2.95,17900,71.36
+2020-04-19,Rotterdam,South America,ro-ro,2.73,19.92,2414.63,2.43,13060,78.56
+2024-11-24,Houston,Middle East,ro-ro,4.39,29.28,1408.25,3.62,23485,72.44
+2024-05-12,Long Beach,Asia,container,3.02,45.65,1924.83,2.21,19166,70.26
+2021-12-19,Hamburg,Africa,container,5.2,43.63,1436.78,1.94,9933,66.51
+2020-01-26,New York/New Jersey,South America,ro-ro,1.64,25.27,2405.31,2.97,22992,79.14
+2017-03-19,Busan,Middle East,container,1.45,8.57,2061.63,3.49,7032,84.53
+2024-09-15,Durban,Africa,bulk,3.51,44.43,2152.14,1.76,20381,69.65
+2018-06-24,Santos,Asia,bulk,1.31,15.61,2126.53,1.93,10138,82.7
+2021-07-18,Jebel Ali,Asia,container,4.76,31.89,715.38,3.03,21622,70.91
+2024-01-14,Colombo,Africa,ro-ro,3.33,43.33,2388.66,2.78,19120,70.34
+2018-07-29,Ningbo,Africa,container,3.34,46.61,3264.23,3.02,25306,69.34
+2023-04-09,Ningbo,South America,ro-ro,0.2,34.87,1809.67,2.31,15625,79.14
+2022-07-10,Durban,Europe,tanker,4.24,37.03,2826.05,1.53,16886,70.41
+2023-06-04,Los Angeles,Asia,ro-ro,5.19,18.21,2715.57,2.08,10228,74.16
+2021-02-14,Houston,North America,ro-ro,3.93,28.69,2424.5,1.72,15022,73.53
+2015-03-22,Houston,South America,tanker,0.26,75.92,3513.3,3.26,33866,66.7
+2017-01-01,Jebel Ali,Europe,bulk,3.72,34.03,979.37,3.04,16889,72.35
+2021-12-26,Colombo,Europe,ro-ro,4.2,24.43,1477.95,2.95,21741,74.27
+2020-05-24,Durban,South America,bulk,4.09,49.82,1663.7,2.66,25587,66.87
+2015-01-04,Manzanillo,South America,bulk,0.2,60.61,2102.07,2.56,30692,71.42
+2020-03-22,Durban,Middle East,bulk,1.67,27.4,2004.36,3.69,19763,78.44
+2015-10-25,Felixstowe,Europe,tanker,4.13,43.55,2934.46,3.78,13388,68.68
+2022-10-02,Santos,Europe,ro-ro,6.97,42.98,2574.17,3.96,23618,63.17
+2016-05-01,Felixstowe,North America,container,3.54,18.02,1907.53,2.01,20628,77.51
+2016-10-02,Ningbo,North America,bulk,5.47,30.79,2440.31,1.52,26816,69.82
+2017-03-19,Colombo,Africa,bulk,2.99,24.34,2167.63,2.44,20312,76.72
+2022-01-09,Tanjung Priok,Africa,bulk,3.68,80.13,3521.69,2.04,29969,58.6
+2019-01-06,Felixstowe,North America,bulk,2.94,36.01,2758.45,2.39,9095,73.32
+2019-03-10,Santos,Africa,ro-ro,0.2,18.02,1846.77,2.17,18314,84.19
+2015-01-04,Singapore,Europe,bulk,2.16,36.01,2578.43,1.98,18937,74.88
+2015-11-08,Shanghai,Asia,container,6.31,17.67,3063.7,2.66,18056,72.08
+2022-11-13,Singapore,Africa,container,1.31,9.59,1021.68,2.12,6900,84.5
+2018-04-01,Busan,Asia,tanker,4.68,11.84,2417.16,2.92,16296,77.09
+2024-09-22,Houston,Asia,container,1.02,55.28,2957.96,2.09,23448,71.38
+2016-11-27,Felixstowe,Asia,container,2.54,72.27,1569.51,2.87,29830,63.24
+2018-10-14,Ningbo,Asia,container,3.38,17.35,1740.53,2.39,19333,78.04
+2023-03-05,Jebel Ali,North America,ro-ro,6.94,18.17,1570.39,1.84,7173,70.67
+2024-06-30,New York/New Jersey,South America,bulk,0.62,12.67,2299.55,2.63,16921,84.96
+2020-01-26,Tanjung Priok,South America,container,2.55,17.7,2171.62,2.23,17263,79.59
+2015-01-18,Jebel Ali,Middle East,bulk,3.43,18.1,1685.68,1.25,17302,77.71
+2016-11-27,Shanghai,North America,ro-ro,4.99,34.93,2180.83,1.64,18539,69.54
+2020-04-26,Felixstowe,South America,container,3.11,45.88,2301.08,3.45,9023,70.02
+2019-06-09,Singapore,South America,bulk,5.13,11.76,2011.26,2.58,21524,76.21
+2022-09-25,Jebel Ali,Asia,ro-ro,2.52,18.39,2297.56,2.92,7783,79.44
+2019-11-17,Colombo,Middle East,ro-ro,2.82,38.87,2555.37,2.11,12140,72.7
+2021-02-14,Manzanillo,Middle East,tanker,3.73,19.92,2619.0,2.25,17416,76.56
+2016-10-09,Singapore,Asia,tanker,2.22,17.09,2619.16,2.4,19452,80.43
+2021-02-28,Long Beach,North America,container,2.46,5.16,1346.04,2.14,6366,83.53
+2017-08-27,Tanjung Priok,Africa,bulk,2.94,32.92,2041.72,1.36,21870,74.24
+2016-02-21,Santos,Asia,bulk,1.09,40.34,1837.4,2.48,19516,75.72
+2022-06-26,Long Beach,Asia,container,2.27,43.83,2869.01,1.55,22136,72.31
+2016-05-22,Santos,North America,ro-ro,2.28,18.65,1514.71,2.38,13393,79.84
+2016-03-20,Hamburg,South America,ro-ro,0.4,21.77,1642.42,2.48,21743,82.67
+2019-01-27,Felixstowe,Asia,bulk,4.43,21.6,3615.98,2.42,18269,74.66
+2023-01-22,Houston,North America,tanker,1.33,49.45,2335.79,2.3,15493,72.5
+2021-06-06,Busan,South America,container,6.62,40.3,2155.58,1.59,19543,64.67
+2022-06-12,Santos,North America,container,2.54,11.19,1451.93,1.36,17315,81.56
+2015-06-28,Tanjung Priok,Africa,tanker,5.04,48.81,2281.41,2.73,21641,65.28
+2017-09-03,Ningbo,South America,tanker,1.81,13.55,2691.14,2.38,8151,82.32
+2018-07-08,Long Beach,Asia,ro-ro,2.46,22.87,2037.46,3.61,21015,78.22
+2022-05-15,Shanghai,Africa,ro-ro,4.95,9.91,1713.22,3.11,18063,77.13
+2023-06-18,Santos,Middle East,container,3.79,8.73,1901.25,2.26,12949,79.8
+2021-05-30,Felixstowe,Asia,bulk,1.9,40.58,2742.53,1.95,26495,74.03
+2015-04-12,Ningbo,Asia,ro-ro,5.02,27.77,2367.82,1.68,12350,71.63
+2022-02-20,Santos,Middle East,tanker,4.11,16.91,2252.69,2.55,17022,76.71
+2015-07-26,Colombo,Middle East,tanker,2.54,19.85,1966.12,1.82,14852,78.96
+2021-04-04,Hamburg,Europe,container,5.0,8.3,1561.75,1.15,22937,77.51
+2023-05-07,Houston,Europe,tanker,5.59,4.41,1196.82,2.64,13498,77.5
+2020-01-26,Jebel Ali,Middle East,bulk,2.36,57.11,3097.45,3.17,22098,68.15
+2018-08-12,Felixstowe,Asia,tanker,4.17,34.38,1112.49,2.13,9107,71.35
+2016-01-24,Savannah,Middle East,tanker,1.3,29.49,1525.55,2.2,9693,78.55
+2021-10-24,Hamburg,North America,container,3.1,8.77,2152.38,3.91,18588,81.17
+2023-05-07,Rotterdam,Europe,container,3.24,27.47,824.86,1.96,14387,75.28
+2018-06-10,Houston,Asia,bulk,3.14,20.76,2002.72,2.2,11781,77.49
+2023-11-12,Felixstowe,Middle East,ro-ro,3.8,58.61,3226.95,2.12,25401,64.82
+2021-02-07,Jebel Ali,Europe,tanker,2.7,41.61,1905.31,1.27,12459,72.12
+2016-04-24,Jebel Ali,North America,container,1.47,28.97,919.54,2.66,11612,78.37
+2016-07-17,Rotterdam,Asia,container,3.39,23.61,1612.59,2.16,15435,76.14
+2016-10-23,Busan,South America,tanker,5.2,54.97,1775.35,2.78,15007,63.11
+2022-08-14,Long Beach,North America,container,5.34,40.42,1668.7,2.62,23599,67.19
+2017-02-12,Santos,South America,ro-ro,4.23,5.6,1412.08,3.09,8166,79.86
+2024-06-09,Santos,South America,bulk,0.67,6.01,2103.86,2.37,9312,86.86
+2018-11-04,New York/New Jersey,Europe,tanker,3.75,13.63,2409.5,2.67,10889,78.41
+2023-09-17,Los Angeles,Asia,ro-ro,8.08,22.29,1425.61,1.96,12596,67.15
+2017-08-27,Felixstowe,Asia,bulk,2.4,53.99,2587.76,2.15,31373,69.0
+2023-05-07,New York/New Jersey,Europe,container,3.93,69.35,1732.32,3.05,33605,61.34
+2018-03-25,Long Beach,Europe,tanker,4.5,14.3,1951.47,1.86,22448,76.71
+2019-06-30,Santos,Asia,bulk,4.28,73.1,2527.69,4.01,29767,59.51
+2023-06-11,Busan,Africa,ro-ro,5.06,36.25,1986.01,1.71,15607,69.0
+2015-12-13,Valencia,South America,tanker,2.77,6.9,1466.51,2.4,17557,82.39
+2018-04-22,Busan,Asia,bulk,2.33,15.28,3058.55,2.71,16909,80.76
+2021-01-31,Houston,North America,bulk,3.17,26.09,3313.17,1.61,14490,75.83
+2024-11-17,Singapore,Asia,tanker,1.75,23.94,3024.2,2.86,15563,79.32
+2020-04-05,Long Beach,North America,ro-ro,4.15,18.83,1384.53,2.53,22132,76.05
+2019-12-29,Ningbo,Africa,tanker,3.04,25.56,1589.02,2.25,18290,76.25
+2020-08-09,Valencia,Asia,bulk,1.34,24.33,1669.69,1.83,15876,80.02
+2018-11-11,New York/New Jersey,North America,bulk,0.82,30.68,1940.91,2.12,24626,79.16
+2018-10-21,Houston,Africa,ro-ro,1.66,37.58,988.12,3.15,23510,75.41
+2020-08-09,Durban,South America,ro-ro,3.63,36.72,1949.5,1.43,14259,71.72
+2016-08-28,Valencia,Middle East,ro-ro,3.17,31.66,2996.13,3.97,23866,74.16
+2019-01-20,Hamburg,Africa,tanker,2.0,22.24,1602.13,2.79,15791,79.33
+2018-04-08,Santos,Europe,container,1.86,37.57,2525.13,2.19,33359,75.01
+2018-10-07,Durban,South America,ro-ro,8.07,16.55,3022.69,2.31,9838,68.9
+2018-04-29,New York/New Jersey,Middle East,tanker,0.2,26.44,2364.18,3.04,21769,81.67
+2015-03-29,Durban,North America,container,0.93,8.02,1072.05,2.96,18200,85.73
+2022-08-07,Hamburg,North America,tanker,3.76,13.74,2375.22,2.11,17449,78.36
+2021-06-13,Antwerp,North America,ro-ro,4.17,3.8,983.47,3.35,13658,80.52
+2019-07-07,Singapore,Africa,bulk,4.62,23.0,2377.91,1.56,11160,73.86
+2020-03-29,Tanjung Priok,Europe,tanker,2.89,8.47,598.2,2.39,21907,81.68
+2019-07-07,Ningbo,North America,container,3.56,30.33,1504.36,2.5,25828,73.78
+2017-01-15,Manzanillo,North America,ro-ro,0.65,13.99,1378.1,2.08,15060,84.5
+2023-08-27,Santos,South America,tanker,3.67,54.25,1634.04,3.37,17504,66.38
+2016-04-24,Felixstowe,Asia,bulk,4.67,52.37,2177.12,2.24,14569,64.95
+2020-06-21,Shanghai,Asia,tanker,7.07,17.37,2232.59,1.93,22141,70.65
+2020-02-16,Shanghai,Middle East,container,3.4,26.92,2245.23,2.68,16305,75.12
+2019-02-17,Durban,Asia,container,4.51,23.17,2326.89,1.71,23023,74.03
+2024-04-28,Tanjung Priok,South America,bulk,3.0,28.95,1615.39,1.91,12402,75.32
+2023-11-05,Durban,North America,container,3.02,39.31,2002.64,3.14,24858,72.17
+2021-04-18,Hamburg,Africa,container,5.14,36.31,3062.47,3.07,12048,68.83
+2017-11-19,Durban,Middle East,tanker,4.02,25.7,2442.04,2.31,5234,74.25
+2022-07-31,Tanjung Priok,South America,ro-ro,3.66,21.95,2078.57,2.4,24271,76.1
+2018-01-14,Tanjung Priok,North America,tanker,4.85,34.19,2255.89,1.75,18205,70.04
+2021-03-07,Santos,South America,bulk,0.2,40.78,1794.82,2.35,17204,77.37
+2024-05-26,Savannah,Asia,ro-ro,4.94,3.94,1500.82,3.18,0,78.94
+2017-09-10,Shanghai,Middle East,bulk,0.2,23.33,1968.33,2.75,21572,82.6
+2015-09-20,New York/New Jersey,Africa,ro-ro,4.83,29.66,2104.04,2.37,12810,71.44
+2019-12-15,Rotterdam,Asia,bulk,1.93,26.12,1718.77,2.27,16479,78.3
+2018-12-30,Durban,Africa,bulk,4.33,30.77,2266.99,2.27,16118,72.11
+2023-10-29,Rotterdam,South America,bulk,1.39,30.15,3110.85,2.4,19567,78.18
+2019-09-01,Colombo,North America,bulk,3.76,56.69,1741.66,3.05,19282,65.47
+2017-03-19,Durban,Middle East,container,1.98,29.75,1750.33,1.67,23875,77.12
+2022-09-11,Rotterdam,South America,bulk,1.07,22.9,1623.83,1.91,14366,80.99
+2018-05-20,Manzanillo,South America,container,5.92,6.82,1308.6,2.5,5795,76.11
+2019-03-03,Rotterdam,Europe,container,5.44,8.98,1228.08,2.13,8268,76.43
+2015-11-15,Savannah,North America,bulk,4.16,11.65,3148.73,2.16,12845,78.18
+2019-07-07,Rotterdam,North America,container,2.76,18.84,2443.48,2.41,8751,78.83
+2016-03-27,Manzanillo,Middle East,ro-ro,2.69,46.89,1819.82,2.17,16960,70.55
+2023-07-09,Jebel Ali,North America,container,4.29,50.46,3036.16,1.6,20542,66.28
+2015-08-02,Manzanillo,Africa,ro-ro,3.37,1.66,1932.15,3.19,8371,82.76
+2022-07-31,Savannah,North America,container,0.2,40.4,2832.72,2.65,3819,77.48
+2020-10-18,Antwerp,Asia,ro-ro,0.27,34.0,2050.45,2.58,21046,79.26
+2016-10-30,Ningbo,North America,bulk,0.2,5.39,2834.87,2.88,14265,87.98
+2020-09-06,Singapore,Africa,bulk,3.0,21.64,2219.55,2.63,17949,77.51
+2016-09-04,Colombo,South America,container,1.88,17.08,2873.69,2.08,13690,81.12
+2024-06-23,Shanghai,Middle East,bulk,0.2,51.64,2987.67,2.63,14748,74.11
+2018-10-28,Singapore,Asia,ro-ro,3.96,15.48,1282.18,2.77,14944,77.44
+2021-03-14,Savannah,North America,container,3.07,23.52,942.25,1.2,14049,76.8
+2018-11-25,Los Angeles,Middle East,ro-ro,5.31,71.11,3124.91,1.61,22894,58.05
+2018-07-29,Los Angeles,Asia,tanker,5.33,51.74,3027.79,2.52,15032,63.82
+2021-06-20,Colombo,Middle East,ro-ro,5.34,15.32,2183.1,2.32,9539,74.72
+2016-06-19,Singapore,North America,container,3.72,34.83,2273.94,2.26,16347,72.11
+2023-07-23,Felixstowe,Africa,ro-ro,4.51,32.48,2045.33,1.71,19556,71.24
+2023-04-16,Shanghai,North America,container,3.4,44.93,1742.14,2.98,16138,69.72
+2015-04-05,Jebel Ali,Asia,tanker,0.9,15.83,2458.45,2.3,14340,83.45
+2016-09-11,New York/New Jersey,Africa,bulk,3.39,44.61,1760.71,2.77,21208,69.84
+2020-07-12,Los Angeles,Middle East,tanker,1.41,10.82,2463.46,3.14,13038,83.93
+2016-12-18,Jebel Ali,South America,tanker,3.83,50.83,1967.07,4.12,26138,67.09
+2024-03-17,Long Beach,South America,container,3.19,3.58,2096.14,2.58,6162,82.55
+2022-03-20,Durban,Europe,ro-ro,2.18,30.86,2151.29,2.71,18644,76.38
+2023-03-26,Durban,Europe,tanker,0.44,39.29,2774.1,2.14,24008,77.33
+2017-10-08,Jebel Ali,South America,ro-ro,4.59,14.72,1261.52,2.43,23237,76.4
+2018-02-18,Jebel Ali,South America,ro-ro,4.47,39.39,2179.15,2.8,14408,69.24
+2015-04-19,Manzanillo,Europe,ro-ro,1.57,25.32,3312.89,2.24,15828,79.26
+2017-04-30,Santos,South America,ro-ro,5.16,37.86,1560.68,2.32,27185,68.32
+2016-06-05,Busan,North America,tanker,2.06,12.86,2273.29,2.66,20925,82.02
+2023-06-04,Rotterdam,Asia,ro-ro,5.62,25.08,2035.66,2.91,19109,71.24
+2016-07-10,Colombo,Middle East,ro-ro,2.55,14.29,2082.26,1.91,14093,80.61
+2015-06-14,Tanjung Priok,Europe,bulk,5.68,38.98,3046.28,1.58,19846,66.95
+2015-06-07,New York/New Jersey,Europe,ro-ro,1.87,58.03,2061.24,2.06,20231,68.85
+2022-01-16,Valencia,Africa,bulk,4.87,14.94,2117.8,2.93,17887,75.78
+2022-06-19,Los Angeles,Asia,container,1.7,13.11,1850.37,1.95,13290,82.67
+2015-02-08,Colombo,Asia,bulk,6.74,10.23,1547.99,2.5,11648,73.45
+2016-06-05,Valencia,Asia,tanker,4.4,7.22,2262.54,1.77,12210,79.03
+2021-02-28,Savannah,Middle East,ro-ro,3.09,22.19,2246.03,1.39,7696,77.16
+2023-12-17,Ningbo,Africa,container,1.61,31.42,2432.94,3.16,27556,77.35
+2017-09-17,Santos,Asia,ro-ro,1.2,32.69,1592.09,2.64,15055,77.79
+2018-08-19,New York/New Jersey,North America,bulk,3.43,15.26,2417.68,1.87,15556,78.56
+2020-07-05,New York/New Jersey,South America,ro-ro,4.77,41.36,1753.25,2.04,18659,68.05
+2017-09-17,Felixstowe,Asia,bulk,8.16,13.94,2386.03,1.55,22005,69.5
+2018-03-11,Houston,South America,ro-ro,1.42,13.6,2414.71,2.54,12055,83.08
+2021-07-25,Manzanillo,South America,container,0.31,33.66,1430.41,2.2,22521,79.28
+2023-10-29,Long Beach,Africa,tanker,5.82,22.72,2280.99,2.57,19211,71.54
+2022-03-13,Shanghai,Europe,container,3.42,39.59,3310.62,2.18,13684,71.28
+2021-10-17,Ningbo,Asia,ro-ro,3.76,36.0,847.29,2.58,28449,71.68
+2015-11-22,Singapore,Middle East,bulk,3.41,10.48,1836.85,1.99,19689,80.04
+2015-01-18,Colombo,Europe,bulk,3.85,55.75,3833.76,1.83,22646,65.58
+2022-03-13,Santos,North America,container,6.88,47.59,2807.68,2.97,21409,61.96
+2015-12-20,New York/New Jersey,Africa,ro-ro,3.46,8.05,1842.87,1.41,7321,80.66
+2019-04-21,Singapore,Middle East,tanker,1.64,10.59,1305.1,2.11,16313,83.54
+2016-01-17,Valencia,Europe,bulk,4.44,13.19,1909.75,2.62,13993,77.16
+2017-09-03,Shanghai,Middle East,bulk,2.0,18.84,1702.02,3.63,20404,80.35
+2024-11-17,Rotterdam,South America,tanker,1.31,35.42,2429.55,1.19,12316,76.75
+2020-06-28,Los Angeles,North America,container,1.79,48.24,1825.95,1.53,26626,71.95
+2024-07-14,Manzanillo,Africa,bulk,6.83,42.32,2237.91,2.31,17771,63.64
+2018-02-25,Shanghai,Africa,ro-ro,2.17,42.96,2954.73,2.08,19997,72.77
+2019-09-22,New York/New Jersey,Europe,ro-ro,4.62,28.94,2619.96,1.95,16027,72.08
+2016-06-05,Jebel Ali,South America,tanker,2.55,9.76,1721.49,2.59,877,81.97
+2015-02-15,Santos,North America,container,4.88,26.47,1860.92,2.93,15075,72.3
+2021-11-21,Durban,Africa,container,5.47,17.45,2758.69,2.78,14638,73.82
+2016-10-16,Savannah,South America,tanker,2.52,4.71,1887.52,1.46,7977,83.55
+2015-01-11,Tanjung Priok,Europe,ro-ro,4.27,10.02,2314.5,3.14,20229,78.45
+2017-02-19,New York/New Jersey,Asia,bulk,4.05,5.46,2863.17,3.18,13223,80.26
+2023-05-21,New York/New Jersey,Africa,container,4.99,7.29,1480.24,2.01,9395,77.83
+2022-02-13,Hamburg,Middle East,container,2.7,14.32,2146.48,2.57,9519,80.3
+2017-09-03,Antwerp,North America,container,2.97,39.82,1681.54,1.7,20974,72.11
+2024-01-28,New York/New Jersey,Middle East,tanker,2.91,45.37,2502.5,3.27,17275,70.57
+2015-04-19,Los Angeles,Middle East,tanker,4.48,27.19,1688.67,2.12,16511,72.88
+2016-09-11,Manzanillo,South America,tanker,3.04,29.49,2029.12,3.03,12575,75.07
+2021-06-06,Ningbo,Europe,bulk,3.24,40.0,2307.02,2.47,22986,71.52
+2024-03-10,Felixstowe,South America,bulk,4.46,6.07,2167.0,2.91,10853,79.26
+2023-02-05,Busan,Europe,tanker,3.41,51.73,2969.77,1.44,22244,67.66
+2020-06-21,Santos,North America,ro-ro,2.5,55.52,2386.31,3.3,26046,68.34
+2016-09-25,Tanjung Priok,Africa,bulk,1.57,22.79,2568.71,2.3,5982,80.02
+2024-04-21,Antwerp,Asia,container,4.61,25.4,1691.35,2.3,19771,73.16
+2019-03-10,New York/New Jersey,North America,tanker,1.26,31.83,840.95,3.36,15401,77.93
+2021-07-11,Long Beach,Europe,tanker,4.94,19.49,2141.83,2.65,9721,74.27
+2022-11-27,Hamburg,Africa,bulk,7.25,20.75,1451.38,1.78,13901,69.28
+2016-05-08,Valencia,Asia,bulk,4.17,23.32,2449.24,2.75,4579,74.66
+2022-01-23,Valencia,Asia,bulk,2.76,48.61,2562.82,2.54,18490,69.9
+2021-08-15,Houston,Middle East,container,0.87,16.55,1895.87,2.59,15011,83.3
+2022-12-18,Shanghai,South America,ro-ro,7.89,19.25,2831.95,2.69,16977,68.44
+2015-10-04,Felixstowe,Middle East,bulk,2.62,42.39,1719.14,3.34,15579,72.04
+2019-04-21,Shanghai,Asia,bulk,2.71,20.47,1501.62,1.85,27382,78.44
+2020-12-13,Rotterdam,Asia,bulk,2.43,12.98,2156.72,2.19,15965,81.25
+2022-07-03,Ningbo,Middle East,bulk,4.36,49.61,2408.3,1.62,22435,66.4
+2015-12-06,Singapore,Asia,container,0.2,26.0,2422.42,2.68,18200,81.8
+2023-10-01,Valencia,Asia,container,0.81,21.02,2505.77,1.95,20652,82.07
+2022-09-18,Busan,Middle East,tanker,2.44,44.1,2887.57,2.77,19279,71.89
+2021-11-28,New York/New Jersey,Asia,ro-ro,3.77,4.99,1382.06,3.04,15576,80.96
+2018-02-18,Antwerp,South America,bulk,1.32,23.87,2148.81,2.85,21260,80.2
+2015-03-08,Tanjung Priok,North America,tanker,4.03,41.62,2140.04,2.49,24051,69.45
+2021-05-16,Savannah,North America,ro-ro,4.52,7.99,2591.65,3.03,14511,78.56
+2021-01-24,Los Angeles,Africa,container,5.88,6.17,1080.43,1.87,13499,76.39
+2019-08-04,Savannah,North America,container,3.81,51.28,3108.67,2.89,20562,67.0
+2024-01-28,Manzanillo,Middle East,container,1.09,18.39,1166.41,2.91,22116,82.3
+2015-05-17,Houston,Asia,tanker,1.44,42.94,2628.46,1.67,19538,74.24
+2023-09-24,Jebel Ali,North America,bulk,6.11,43.74,2074.53,1.47,22921,64.66
+2018-04-22,Los Angeles,Middle East,tanker,3.17,21.82,1406.67,2.28,23580,77.11
+2019-08-04,Singapore,Asia,container,5.07,45.06,2916.35,2.77,18379,66.34
+2018-06-24,Los Angeles,North America,bulk,2.27,17.86,1929.61,2.1,19578,80.1
+2018-07-29,Valencia,Asia,tanker,4.38,8.32,1907.99,1.86,15979,78.74
+2016-02-28,Los Angeles,Europe,ro-ro,3.48,2.23,1509.1,2.07,13295,82.37
+2015-12-27,New York/New Jersey,Asia,container,3.53,27.6,2310.53,3.01,16505,74.66
+2021-08-15,Antwerp,Africa,bulk,5.32,3.15,2510.62,3.05,8183,78.42
+2021-10-24,Colombo,Asia,ro-ro,2.19,10.16,2054.29,3.42,26031,82.57
+2021-08-29,Long Beach,Middle East,tanker,4.8,42.99,2206.03,2.63,17416,67.5
+2015-11-08,Santos,North America,ro-ro,0.2,31.49,2602.79,3.33,20659,80.15
+2018-09-30,Houston,Middle East,container,3.71,49.21,2976.13,1.91,25675,67.82
+2021-12-12,Colombo,Africa,tanker,4.94,6.67,2002.74,2.84,6731,78.12
+2015-07-19,Hamburg,Africa,container,3.8,35.27,2561.15,2.42,15681,71.82
+2015-12-13,Los Angeles,Middle East,tanker,3.31,23.04,1272.64,2.44,15777,76.47
+2019-03-31,Ningbo,Africa,container,2.97,46.61,2998.85,2.3,22074,70.08
+2018-12-30,Colombo,North America,container,4.64,27.85,1721.4,1.99,11990,72.36
+2020-06-14,Busan,Europe,container,2.97,10.49,658.7,2.67,16309,80.91
+2019-03-17,Felixstowe,North America,tanker,3.14,12.28,3565.17,1.68,14351,80.04
+2016-04-03,New York/New Jersey,South America,tanker,2.15,21.35,2401.54,2.49,13823,79.3
+2016-11-06,Hamburg,Africa,tanker,0.2,46.84,2880.04,2.62,25218,75.55
+2018-06-03,Durban,Asia,tanker,5.22,54.12,1852.14,3.13,31875,63.32
+2019-10-13,Busan,Africa,tanker,5.88,39.53,1793.59,1.97,20215,66.38
+2017-11-19,Long Beach,Asia,ro-ro,2.72,25.12,2233.52,2.95,20375,77.02
+2016-05-22,Long Beach,North America,ro-ro,4.33,11.58,1574.29,2.6,15638,77.87
+2024-07-21,Colombo,South America,container,0.2,15.86,2477.04,0.93,22528,84.84
+2015-05-17,Jebel Ali,South America,ro-ro,3.58,44.24,3011.68,2.7,20860,69.57
+2016-02-28,New York/New Jersey,South America,ro-ro,3.56,12.51,1748.02,3.04,14092,79.13
+2023-08-13,Santos,Asia,container,5.99,26.65,2616.34,3.68,25414,70.02
+2019-09-29,Santos,South America,tanker,4.43,37.26,2387.03,3.07,29353,69.96
+2017-06-18,Antwerp,Africa,bulk,0.6,20.8,1973.07,2.85,16929,82.56
+2020-08-30,Ningbo,South America,tanker,0.2,17.65,1508.15,2.73,17142,84.3
+2019-06-02,Los Angeles,North America,ro-ro,1.77,17.05,701.21,2.84,14615,81.34
+2024-08-18,Valencia,Middle East,bulk,0.26,13.93,1263.55,1.89,25624,85.3
+2021-07-25,Singapore,North America,bulk,0.77,31.75,1367.06,1.72,16689,78.93
+2018-02-25,Busan,North America,container,3.84,36.88,2034.63,0.9,18125,71.26
+2024-09-08,Antwerp,Middle East,tanker,1.66,37.51,2410.11,3.81,20511,75.43
+2020-01-05,Houston,Middle East,bulk,4.26,4.45,1789.21,2.37,5999,80.15
+2020-08-09,Savannah,Middle East,tanker,0.73,51.98,3438.81,3.14,16252,72.95
+2018-08-12,Colombo,North America,bulk,5.76,18.31,2770.19,1.73,6177,72.99
+2017-12-10,Hamburg,Europe,tanker,3.65,31.04,3032.96,2.84,20551,73.39
+2021-06-27,Savannah,North America,container,5.96,5.61,1720.56,4.21,10532,76.4
+2015-08-16,Colombo,North America,ro-ro,3.71,33.87,1139.55,2.73,16650,72.42
+2015-11-29,Busan,Europe,container,7.37,6.4,3122.06,2.2,19660,73.34
+2023-02-12,Manzanillo,Asia,bulk,1.92,22.56,2042.42,1.84,18812,79.39
+2015-04-12,Houston,North America,container,0.2,11.58,1267.61,2.74,13513,86.13
+2022-07-17,Jebel Ali,Middle East,bulk,4.31,28.05,1685.83,3.12,11964,72.96
+2017-09-03,Tanjung Priok,North America,tanker,1.25,17.59,2259.91,2.4,14379,82.22
+2021-07-25,Valencia,Asia,ro-ro,4.53,53.5,2039.94,2.52,25815,64.89
+2021-05-09,Colombo,Europe,container,4.97,33.1,2447.16,2.36,14478,70.13
+2018-05-13,Colombo,Africa,ro-ro,6.39,11.08,1353.7,2.69,12689,73.9
+2021-02-14,Rotterdam,Middle East,container,3.11,31.81,3451.41,2.39,12824,74.24
+2019-07-14,Hamburg,Middle East,bulk,0.2,32.46,1904.59,2.4,16120,79.86
+2015-03-01,Houston,Middle East,tanker,0.2,36.42,2886.75,1.76,17440,78.67
+2021-12-12,Manzanillo,Europe,container,4.64,39.64,2132.32,3.08,13052,68.83
+2020-01-05,Valencia,Middle East,container,3.73,6.82,2369.64,2.6,14489,80.49
+2017-06-25,Los Angeles,Middle East,container,3.14,36.24,1329.46,2.08,18601,72.85
+2016-10-16,Busan,Europe,bulk,6.35,53.05,2322.7,2.11,29476,61.39
+2015-02-15,Rotterdam,Europe,ro-ro,7.67,34.7,3211.63,2.47,18199,64.25
+2018-04-22,Savannah,Africa,bulk,3.06,35.64,2036.53,2.11,22109,73.19
+2016-05-01,Busan,South America,container,2.0,29.11,1961.05,2.17,12252,77.27
+2024-08-04,Los Angeles,Africa,tanker,1.93,39.85,2782.12,1.64,23973,74.18
+2016-11-06,Felixstowe,North America,container,1.61,45.06,2720.53,3.15,14215,73.26
+2024-11-17,Felixstowe,Europe,tanker,3.93,8.73,1245.04,2.92,13912,79.52
+2021-07-11,Durban,South America,container,3.88,43.76,2672.0,2.55,18457,69.11
+2021-02-21,Colombo,Africa,ro-ro,2.4,28.83,3145.69,1.83,15727,76.55
+2024-03-24,Rotterdam,Africa,container,5.89,20.39,1724.62,2.0,23876,72.1
+2022-06-26,Durban,South America,container,3.25,21.0,1556.53,2.56,12866,77.2
+2015-12-27,Singapore,Europe,ro-ro,4.68,34.8,508.38,1.68,19104,70.2
+2019-03-31,New York/New Jersey,South America,ro-ro,2.05,14.92,1467.02,1.99,11862,81.42
+2018-01-14,Manzanillo,South America,ro-ro,6.56,29.7,3222.75,3.39,25711,67.97
+2018-05-20,Manzanillo,Asia,tanker,4.84,24.7,2053.47,2.02,17759,72.91
+2021-02-07,Long Beach,Africa,container,2.61,33.47,687.08,2.6,14487,74.74
+2017-09-17,Rotterdam,Africa,ro-ro,5.04,42.44,1241.34,2.84,18649,67.19
+2018-03-11,Los Angeles,North America,bulk,2.21,62.52,2703.01,1.36,21923,66.82
+2019-03-10,Tanjung Priok,Asia,bulk,3.43,51.36,1904.39,2.23,19682,67.73
+2019-06-30,Houston,Africa,bulk,5.52,19.82,2699.13,1.35,17720,73.01
+2016-02-28,Shanghai,North America,tanker,2.04,50.11,2545.41,3.12,17662,70.89
+2020-06-21,Santos,Asia,bulk,5.29,19.2,1276.06,1.94,17063,73.66
+2017-07-30,Manzanillo,Africa,container,5.51,28.5,1561.66,1.6,11187,70.43
+2016-04-17,Felixstowe,Asia,bulk,2.12,23.66,1900.57,2.38,7800,78.66
+2015-03-15,Houston,Africa,container,5.81,1.66,1491.8,0.94,16392,77.88
+2017-07-02,Long Beach,Africa,bulk,1.88,45.91,3117.71,1.91,22899,72.47
+2015-12-27,Shanghai,Africa,bulk,3.84,38.59,2207.9,2.82,21196,70.74
+2019-04-21,Houston,Europe,ro-ro,3.07,8.5,2400.28,2.02,4673,81.31
+2024-10-06,Busan,Europe,container,3.5,24.58,2057.22,1.8,14919,75.63
+2019-10-13,Busan,Africa,bulk,5.58,43.46,2672.62,2.46,19043,65.8
+2015-10-25,Houston,South America,container,5.99,12.39,1552.65,2.17,13022,74.3
+2023-03-12,Singapore,North America,ro-ro,0.2,4.7,1035.65,2.91,15243,88.19
+2019-12-22,Jebel Ali,Europe,container,5.83,23.74,1790.07,1.6,17428,71.22
+2016-02-14,Busan,Africa,bulk,5.38,54.22,3335.4,3.47,16319,62.97
+2023-08-20,Valencia,Middle East,tanker,4.47,36.59,1481.33,2.82,25399,70.08
+2022-10-23,Colombo,North America,bulk,2.41,44.43,2319.03,2.65,17373,71.85
+2017-08-06,New York/New Jersey,Africa,container,0.25,48.2,2287.46,4.0,18488,75.04
+2018-03-04,Tanjung Priok,North America,ro-ro,2.72,20.9,1451.54,2.48,13467,78.29
+2016-06-12,Santos,Asia,ro-ro,3.63,17.02,2318.32,2.08,10317,77.63
+2015-10-18,Rotterdam,South America,bulk,3.63,11.69,1156.92,2.57,16189,79.23
+2017-05-07,Los Angeles,Asia,bulk,1.51,29.95,2643.51,2.32,17540,78.0
+2020-05-31,New York/New Jersey,South America,ro-ro,0.9,2.85,1507.78,2.55,14582,87.34
+2022-09-11,Rotterdam,Europe,container,3.9,13.16,1287.65,2.52,18976,78.25
+2018-12-23,Savannah,Middle East,ro-ro,4.69,23.41,2175.37,2.73,20433,73.6
+2015-04-12,Manzanillo,North America,tanker,0.83,20.96,1778.96,2.5,12972,82.05
+2022-12-18,Durban,Asia,ro-ro,6.64,34.21,967.34,2.65,24211,66.46
+2022-09-18,Valencia,North America,ro-ro,3.22,24.44,1352.59,2.8,20977,76.23
+2019-08-04,Jebel Ali,Europe,container,5.34,39.3,1649.22,2.34,14772,67.53
+2022-09-25,Busan,Asia,container,2.11,10.95,2442.07,3.03,17543,82.5
+2020-12-13,Colombo,Asia,tanker,6.33,9.65,1961.09,3.57,12742,74.45
+2020-11-22,Long Beach,Middle East,ro-ro,5.1,49.97,2118.17,2.17,13436,64.81
+2022-09-04,Antwerp,Africa,tanker,2.58,6.05,935.3,2.64,18898,83.02
+2018-09-16,Hamburg,South America,ro-ro,4.96,14.64,1757.63,2.67,7144,75.69
+2021-10-03,Los Angeles,Asia,ro-ro,2.49,37.63,2354.83,2.69,24948,73.73
+2018-04-15,Valencia,Europe,bulk,5.06,63.85,1701.27,2.73,25664,60.72
+2018-04-22,Jebel Ali,Europe,ro-ro,5.27,18.66,943.43,3.58,9040,73.86
+2017-04-23,New York/New Jersey,Asia,bulk,1.88,11.38,1427.71,3.05,15850,82.83
+2020-01-05,Antwerp,Middle East,bulk,0.52,29.44,2392.48,2.8,12870,80.13
+2021-09-26,Durban,Africa,tanker,5.35,11.78,1816.32,1.81,14197,75.77
+2020-03-22,Houston,North America,container,2.81,26.83,2046.63,1.79,23611,76.33
+2024-09-01,Tanjung Priok,Africa,container,4.13,47.04,2465.67,2.62,23010,67.63
+2023-01-01,Houston,Africa,bulk,4.3,18.63,1407.97,2.73,9659,75.81
