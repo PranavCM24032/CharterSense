@@ -433,13 +433,9 @@
       const cells = rows.map(r => {
         const pct = Math.max(12, Math.min(100, 18 + 78 * ((r.totalCost - minCost) / range)));
         const isBest = `${fmtDate(r.date)}|${r.vessel}` === bestKey;
-        return `<div class="ledger-cell ${isBest ? 'best' : ''}">
+        const tipText = `${fmtDate(r.date)} (${r.vessel}) — Total: ${usd(r.totalCost)} · Freight: $${r.rate.toFixed(2)}/t`;
+        return `<div class="ledger-cell ${isBest ? 'best' : ''}" data-tip="${tipText.replace(/"/g, '&quot;')}">
           <div class="fill" style="height:${pct}%;"></div>
-          <div class="tip">
-            <strong>${fmtDate(r.date)} (${r.vessel})</strong><br>
-            Total: ${usd(r.totalCost)}<br>
-            Freight: $${r.rate.toFixed(2)}/t
-          </div>
         </div>`;
       }).join("");
 
@@ -451,6 +447,8 @@
       wrap.appendChild(rowEl);
     });
 
+    wireLedgerTooltips(wrap);
+
     const first = Object.values(byClass)[0];
     if (first && first.length) {
       const scale = document.createElement("div");
@@ -458,6 +456,42 @@
       scale.innerHTML = `<span>Laycan Start: ${fmtDate(first[0].date)}</span><span>Bar Height: Relative Procurement Cost (Lower = Cheaper)</span><span>Laycan End: ${fmtDate(first[first.length - 1].date)}</span>`;
       wrap.appendChild(scale);
     }
+  }
+
+  function wireLedgerTooltips(container) {
+    let tipEl = document.getElementById("floatingLedgerTip");
+    if (!tipEl) {
+      tipEl = document.createElement("div");
+      tipEl.id = "floatingLedgerTip";
+      tipEl.className = "ledger-tip-float";
+      document.body.appendChild(tipEl);
+    }
+    if (!container._ledgerTipBound) {
+      container._ledgerTipBound = true;
+      container.addEventListener("mouseover", e => {
+        const cell = e.target.closest(".ledger-cell");
+        if (!cell) { tipEl.style.display = "none"; return; }
+        tipEl.textContent = cell.getAttribute("data-tip") || "";
+        tipEl.style.display = "block";
+        positionLedgerTip(tipEl, cell);
+      });
+      container.addEventListener("mouseout", e => {
+        if (e.target.closest(".ledger-cell")) tipEl.style.display = "none";
+      });
+      container.addEventListener("mousemove", e => {
+        if (tipEl.style.display === "block") {
+          positionLedgerTip(tipEl, e.target.closest(".ledger-cell"));
+        }
+      });
+    }
+  }
+
+  function positionLedgerTip(tipEl, cell) {
+    if (!cell) return;
+    const rect = cell.getBoundingClientRect();
+    tipEl.style.left = (rect.left + rect.width / 2) + "px";
+    tipEl.style.top = (rect.top - 12) + "px";
+    tipEl.style.transform = "translate(-50%, -100%)";
   }
 
   function renderTable(plan, bestKey) {

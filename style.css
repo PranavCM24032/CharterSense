@@ -821,27 +821,20 @@ body.enterprise-theme {
   background: var(--brand-yellow);
 }
 
-.ledger-cell .tip {
-  position: absolute;
-  bottom: 58px;
-  left: 50%;
-  transform: translateX(-50%);
+.ledger-tip-float {
+  position: fixed;
+  z-index: 1000;
   background: var(--brand-black);
   color: #FFFFFF;
   font-family: var(--font-mono);
   font-size: 11px;
   padding: 6px 10px;
   white-space: nowrap;
-  display: none;
-  z-index: 20;
   border-radius: 4px;
   border: 1px solid #334155;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   pointer-events: none;
-}
-
-.ledger-cell:hover .tip {
-  display: block;
+  display: none;
 }
 
 .ledger-scale {
